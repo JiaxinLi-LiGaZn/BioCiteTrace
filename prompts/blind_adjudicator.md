@@ -40,7 +40,7 @@ Any execution label requires `{{EXECUTED_FIELD}} = true`. `MENTION_ONLY` must be
 
 Keep multiple execution labels when the paper has multiple genuine purposes. Select one primary label according to the codebook and, when applicable, the order `APPLY_BIOLOGICAL`, `EXTEND_DEVELOP`, `BENCHMARK_EVALUATE`, then `OTHER_EXECUTED_USE`.
 
-Support every positive execution label with a short exact quotation and stable locator. Related-work mentions and bibliography entries do not establish execution.
+Support every positive execution label with a short exact quotation and stable locator. In every `use_evidence` item, list the label or labels supported by that passage in `supports_labels`. Collectively, the evidence items must support every assigned use label and no unassigned label. Related-work mentions and bibliography entries do not establish execution.
 
 ## Biological insight
 

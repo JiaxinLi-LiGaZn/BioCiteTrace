@@ -34,7 +34,7 @@ Any execution label requires `{{EXECUTED_FIELD}} = true`. `MENTION_ONLY` must st
 
 If several execution labels are supported, retain all of them. Choose the primary label using the codebook and, where it permits, the order `APPLY_BIOLOGICAL`, `EXTEND_DEVELOP`, `BENCHMARK_EVALUATE`, then `OTHER_EXECUTED_USE`.
 
-For every execution label, provide a minimal exact quotation that establishes the relevant action. A citation in related work, a bibliography record, or a statement that a method exists does not establish use.
+For every execution label, provide a minimal exact quotation that establishes the relevant action. In every `use_evidence` item, list the label or labels supported by that passage in `supports_labels`. Collectively, the evidence items must support every assigned use label and no unassigned label. A citation in related work, a bibliography record, or a statement that a method exists does not establish use.
 
 ## Biological insight
 

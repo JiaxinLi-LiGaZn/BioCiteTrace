@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JiaxinLi-lipluszn/fulltext-citation-use-review/blob/main/schemas/classification.schema.json",
+  "title": "Evidence-grounded citation-use classification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "study_id",
+    "use_labels",
+    "primary_label",
+    "biological_insight",
+    "insight_role",
+    "data_origin",
+    "confidence",
+    "method_executed",
+    "citation_instances",
+    "use_evidence",
+    "insight_evidence",
+    "attribution_bridge",
+    "risk_codes",
+    "rationale"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["CLASSIFIED", "CITATION_NOT_LOCATED", "COVERAGE_INCOMPLETE"]
+    },
+    "study_id": {"type": "string", "minLength": 1, "maxLength": 256},
+    "use_labels": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 5,
+      "items": {"$ref": "#/$defs/useLabel"}
+    },
+    "primary_label": {
+      "type": "string",
+      "enum": [
+        "APPLY_BIOLOGICAL",
+        "EXTEND_DEVELOP",
+        "BENCHMARK_EVALUATE",
+        "OTHER_EXECUTED_USE",
+        "MENTION_ONLY",
+        "UNRESOLVED"
+      ]
+    },
+    "biological_insight": {"type": "string", "enum": ["YES", "NO", "UNCLEAR"]},
+    "insight_role": {"type": "string", "enum": ["DIRECT", "ENABLING", "CORROBORATIVE", "NONE"]},
+    "data_origin": {
+      "type": "string",
+      "enum": [
+        "NEW_EXPERIMENTAL",
+        "PUBLIC_OR_PRIOR",
+        "MIXED",
+        "SYNTHETIC_ONLY",
+        "UNREPORTED_OR_NOT_APPLICABLE",
+        "NONE"
+      ]
+    },
+    "confidence": {"type": "string", "enum": ["HIGH", "MEDIUM", "LOW"]},
+    "method_executed": {"type": "boolean"},
+    "citation_instances": {
+      "type": "array",
+      "maxItems": 256,
+      "items": {"$ref": "#/$defs/citationInstance"}
+    },
+    "use_evidence": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {"$ref": "#/$defs/useEvidenceSpan"}
+    },
+    "insight_evidence": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {"$ref": "#/$defs/evidenceSpan"}
+    },
+    "attribution_bridge": {"type": "string", "maxLength": 4000},
+    "risk_codes": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 17,
+      "items": {"type": "string", "maxLength": 100}
+    },
+    "rationale": {"type": "string", "minLength": 1, "maxLength": 4000}
+  },
+  "$defs": {
+    "useLabel": {
+      "type": "string",
+      "enum": [
+        "APPLY_BIOLOGICAL",
+        "EXTEND_DEVELOP",
+        "BENCHMARK_EVALUATE",
+        "OTHER_EXECUTED_USE",
+        "MENTION_ONLY"
+      ]
+    },
+    "evidenceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "section", "page_index", "printed_page", "paragraph_id", "source_file"],
+      "properties": {
+        "quote": {"type": "string", "minLength": 1, "maxLength": 4000},
+        "section": {"type": "string", "maxLength": 500},
+        "page_index": {"type": ["integer", "null"], "minimum": 0},
+        "printed_page": {"type": "string", "maxLength": 100},
+        "paragraph_id": {"type": "string", "minLength": 1, "maxLength": 500},
+        "source_file": {"type": "string", "minLength": 1, "maxLength": 500}
+      }
+    },
+    "useEvidenceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "section", "page_index", "printed_page", "paragraph_id", "source_file", "supports_labels"],
+      "properties": {
+        "quote": {"type": "string", "minLength": 1, "maxLength": 4000},
+        "section": {"type": "string", "maxLength": 500},
+        "page_index": {"type": ["integer", "null"], "minimum": 0},
+        "printed_page": {"type": "string", "maxLength": 100},
+        "paragraph_id": {"type": "string", "minLength": 1, "maxLength": 500},
+        "source_file": {"type": "string", "minLength": 1, "maxLength": 500},
+        "supports_labels": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/useLabel"}
+        }
+      }
+    },
+    "citationInstance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "instance_id",
+        "occurrence_id",
+        "citation_marker",
+        "reference_id",
+        "quote",
+        "section",
+        "page_index",
+        "printed_page",
+        "paragraph_id",
+        "source_file",
+        "context_type",
+        "supports_use",
+        "description"
+      ],
+      "properties": {
+        "instance_id": {"type": "string", "minLength": 1, "maxLength": 200},
+        "occurrence_id": {"type": "string", "minLength": 1, "maxLength": 200},
+        "citation_marker": {"type": "string", "minLength": 1, "maxLength": 500},
+        "reference_id": {"type": "string", "maxLength": 500},
+        "quote": {"type": "string", "minLength": 1, "maxLength": 4000},
+        "section": {"type": "string", "maxLength": 500},
+        "page_index": {"type": ["integer", "null"], "minimum": 0},
+        "printed_page": {"type": "string", "maxLength": 100},
+        "paragraph_id": {"type": "string", "minLength": 1, "maxLength": 500},
+        "source_file": {"type": "string", "minLength": 1, "maxLength": 500},
+        "context_type": {
+          "type": "string",
+          "enum": ["INTRODUCTION", "METHODS", "RESULTS", "DISCUSSION", "FIGURE_TABLE", "SUPPLEMENT", "REFERENCES", "OTHER"]
+        },
+        "supports_use": {"type": "boolean"},
+        "description": {"type": "string", "minLength": 1, "maxLength": 2000}
+      }
+    }
+  }
+}

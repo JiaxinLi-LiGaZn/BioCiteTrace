@@ -40,6 +40,6 @@ Then calculate:
 - recall = TP / (TP + FN);
 - F1 = 2 × precision × recall / (precision + recall).
 
-A genuine precision-recall curve requires a frozen continuous or ordered machine score. A hard yes/no machine label supplies only one operating point, not a curve. Cases judged unevaluable because of insufficient coverage, an unlocated citation, or unresolved human evidence should be reported separately rather than silently counted as negative.
+A genuine precision-recall curve requires a frozen continuous or ordered machine score and both human reference classes in the evaluated data. A hard yes/no machine label supplies only one operating point, not a curve. Cases judged unevaluable because of insufficient coverage, an unlocated citation, or unresolved human evidence should be reported separately rather than silently counted as negative.
 
 Use `sample_weight = 1` for an unweighted validation sample. If the sample was selected with unequal probabilities and the goal is a population estimate, insert the preregistered inverse-probability weight and report both weighted and unweighted results.

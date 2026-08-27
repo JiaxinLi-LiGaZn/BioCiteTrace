@@ -1,0 +1,39 @@
+{
+  "paths": {
+    "codebook": "codebook/citation_use_codebook.json",
+    "classification_schema": "schemas/classification.schema.json",
+    "capsule_schema": "schemas/evidence_capsule.schema.json",
+    "classifier_prompt": "prompts/classifier.md",
+    "reviewer_prompt": "prompts/independent_reviewer.md",
+    "adjudicator_prompt": "prompts/blind_adjudicator.md"
+  },
+  "agents": {
+    "command": "codex",
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "high",
+    "max_prompt_bytes": 640000,
+    "timeout_seconds": 900,
+    "max_retries": 2,
+    "retry_backoff_seconds": 1.0,
+    "expected_codex_cli_version": "codex-cli 0.148.0-alpha.9",
+    "disable_features": [
+      "shell_tool",
+      "unified_exec",
+      "multi_agent",
+      "multi_agent_v2",
+      "browser_use",
+      "browser_use_external",
+      "computer_use",
+      "code_mode",
+      "code_mode_host",
+      "apps",
+      "plugins",
+      "remote_plugin",
+      "skill_search",
+      "tool_suggest"
+    ]
+  },
+  "batch": {
+    "max_workers": 3
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "codebook_version": "1.0.0",
+  "counting_unit": "citing_study",
+  "status_definitions": {
+    "CLASSIFIED": "The approved evidence is adequate to determine how the citing study uses the target method.",
+    "COVERAGE_INCOMPLETE": "A missing version, supplement, unreadable region, incomplete occurrence inventory, or context limit could materially change the classification.",
+    "CITATION_NOT_LOCATED": "Coverage is adequate, but no physical citation of the target method is present in the approved evidence."
+  },
+  "use_labels": {
+    "APPLY_BIOLOGICAL": "The citing study executes the target method on biological data to answer a biological question or produce a biological result.",
+    "EXTEND_DEVELOP": "The citing study modifies, adapts, fine-tunes, integrates, or directly develops the target method.",
+    "BENCHMARK_EVALUATE": "The citing study executes the target method as an evaluated comparator, baseline, or benchmark component.",
+    "OTHER_EXECUTED_USE": "The citing study executes the target method for another substantive purpose.",
+    "MENTION_ONLY": "The citing study cites or discusses the target method but does not execute it in the reported analysis."
+  },
+  "labels_are_non_exclusive": true,
+  "primary_label_priority": [
+    "APPLY_BIOLOGICAL",
+    "EXTEND_DEVELOP",
+    "BENCHMARK_EVALUATE",
+    "OTHER_EXECUTED_USE"
+  ],
+  "execution_rules": {
+    "execution_labels": [
+      "APPLY_BIOLOGICAL",
+      "EXTEND_DEVELOP",
+      "BENCHMARK_EVALUATE",
+      "OTHER_EXECUTED_USE"
+    ],
+    "mention_only_is_exclusive": true,
+    "background_or_related_work_is_not_execution": true,
+    "planned_or_future_use_is_not_execution": true,
+    "using_outputs_from_a_method_counts_as_execution_when_directly_evidenced": true
+  },
+  "biological_insight_rule": {
+    "allowed_values": ["YES", "NO", "UNCLEAR"],
+    "positive_requires": [
+      "The target method was executed on biological data.",
+      "The paper makes a concrete biological claim, discovery, prioritization, or experimentally relevant interpretation.",
+      "The evidence links the method output to that biological claim."
+    ],
+    "technical_performance_alone_is_not_an_insight": true
+  },
+  "evidence_rules": {
+    "quotes_must_be_exact_capsule_substrings": true,
+    "every_positive_use_label_requires_direct_evidence": true,
+    "citation_instances_must_biject_to_the_occurrence_registry": true,
+    "every_citation_instance_quote_must_contain_its_citation_marker": true,
+    "absence_requires_complete_coverage": true
+  },
+  "data_origin_values": [
+    "NEW_EXPERIMENTAL",
+    "PUBLIC_OR_PRIOR",
+    "MIXED",
+    "SYNTHETIC_ONLY",
+    "UNREPORTED_OR_NOT_APPLICABLE",
+    "NONE"
+  ],
+  "risk_codes": [
+    "MISSING_CITATION_MARKER",
+    "REFERENCE_ONLY",
+    "AMBIGUOUS_METHOD_IDENTITY",
+    "CONFLICTING_VERSIONS",
+    "INSUFFICIENT_USE_EVIDENCE",
+    "INSUFFICIENT_INSIGHT_EVIDENCE",
+    "ATTRIBUTION_AMBIGUOUS",
+    "SUPPLEMENT_NOT_AVAILABLE",
+    "PARTIAL_FULLTEXT",
+    "OCR_UNCERTAIN",
+    "TEMPORAL_METADATA_CONFLICT",
+    "INSTRUCTION_LIKE_CONTENT",
+    "VERSION_INCOMPLETE",
+    "SUPPLEMENT_RETRIEVAL_INCOMPLETE",
+    "SUPPLEMENT_RIGHTS_EXCLUDED",
+    "SUPPLEMENT_PARSE_INCOMPLETE",
+    "OTHER_UNCERTAINTY"
+  ]
+}

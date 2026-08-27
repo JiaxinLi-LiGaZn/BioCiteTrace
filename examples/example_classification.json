@@ -1,0 +1,91 @@
+{
+  "status": "CLASSIFIED",
+  "study_id": "synthetic-study-001",
+  "use_labels": ["APPLY_BIOLOGICAL", "EXTEND_DEVELOP"],
+  "primary_label": "APPLY_BIOLOGICAL",
+  "biological_insight": "YES",
+  "insight_role": "ENABLING",
+  "data_origin": "PUBLIC_OR_PRIOR",
+  "confidence": "HIGH",
+  "method_executed": true,
+  "citation_instances": [
+    {
+      "instance_id": "instance-0001",
+      "occurrence_id": "occ-0001",
+      "citation_marker": "CellMapFM [12]",
+      "reference_id": "SYNTHETIC-METHOD-001",
+      "quote": "We initialized the analysis encoder with CellMapFM [12] and fine-tuned it on a public peripheral-blood single-cell dataset collected before and after interferon stimulation.",
+      "section": "Methods",
+      "page_index": null,
+      "printed_page": "",
+      "paragraph_id": "p-0001",
+      "source_file": "example_article.txt",
+      "context_type": "METHODS",
+      "supports_use": true,
+      "description": "The target method was fine-tuned and applied to a biological single-cell dataset."
+    },
+    {
+      "instance_id": "instance-0002",
+      "occurrence_id": "occ-0002",
+      "citation_marker": "CellMapFM [12]",
+      "reference_id": "SYNTHETIC-METHOD-001",
+      "quote": "CellMapFM [12] separated an interferon-responsive monocyte state and ranked IFITM3 and ISG15 among the genes most associated with that state.",
+      "section": "Results",
+      "page_index": null,
+      "printed_page": "",
+      "paragraph_id": "p-0002",
+      "source_file": "example_article.txt",
+      "context_type": "RESULTS",
+      "supports_use": true,
+      "description": "The target method produced a biological state and gene-prioritization result."
+    },
+    {
+      "instance_id": "instance-0003",
+      "occurrence_id": "occ-0003",
+      "citation_marker": "CellMapFM",
+      "reference_id": "SYNTHETIC-METHOD-001",
+      "quote": "[12] The fictional CellMapFM method paper used only for this synthetic, CC0-licensed example.",
+      "section": "References",
+      "page_index": null,
+      "printed_page": "",
+      "paragraph_id": "p-0003",
+      "source_file": "example_article.txt",
+      "context_type": "REFERENCES",
+      "supports_use": false,
+      "description": "The bibliography entry identifies the cited method but does not itself establish use."
+    }
+  ],
+  "use_evidence": [
+    {
+      "quote": "We initialized the analysis encoder with CellMapFM [12] and fine-tuned it on a public peripheral-blood single-cell dataset collected before and after interferon stimulation.",
+      "section": "Methods",
+      "page_index": null,
+      "printed_page": "",
+      "paragraph_id": "p-0001",
+      "source_file": "example_article.txt",
+      "supports_labels": ["APPLY_BIOLOGICAL", "EXTEND_DEVELOP"]
+    },
+    {
+      "quote": "CellMapFM [12] separated an interferon-responsive monocyte state and ranked IFITM3 and ISG15 among the genes most associated with that state.",
+      "section": "Results",
+      "page_index": null,
+      "printed_page": "",
+      "paragraph_id": "p-0002",
+      "source_file": "example_article.txt",
+      "supports_labels": ["APPLY_BIOLOGICAL"]
+    }
+  ],
+  "insight_evidence": [
+    {
+      "quote": "CellMapFM [12] separated an interferon-responsive monocyte state and ranked IFITM3 and ISG15 among the genes most associated with that state.",
+      "section": "Results",
+      "page_index": null,
+      "printed_page": "",
+      "paragraph_id": "p-0002",
+      "source_file": "example_article.txt"
+    }
+  ],
+  "attribution_bridge": "The method-derived state separation and gene ranking directly support the reported interferon-response interpretation.",
+  "risk_codes": [],
+  "rationale": "The study both fine-tunes the target method and applies it to public biological data; the resulting state and gene ranking support a concrete biological interpretation."
+}

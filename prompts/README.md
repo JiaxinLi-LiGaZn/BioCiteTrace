@@ -6,7 +6,7 @@ This folder contains the English prompt templates used for the three machine-rev
 2. `independent_reviewer.md` — a second, mutually blind classification of the same study.
 3. `blind_adjudicator.md` — a conditional third review used only when the first two classifications materially conflict or when one baseline role has an eligible terminal failure.
 
-The templates are method-agnostic. Before use, the controller must insert the target method name, the frozen codebook, the one-study evidence capsule, and the exact output schema. They are not designed to receive a raw folder of papers or several studies in one context.
+The templates are method-agnostic. Before each review, the workflow provides the model with the agreed classification rules, all approved evidence for one citing study, and a structured response form. Each model call reviews one study at a time.
 
 ## Recommended and actual model settings
 

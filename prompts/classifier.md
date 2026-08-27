@@ -57,7 +57,7 @@ The primary label is a reporting convenience; it must not erase a genuine second
 
 ## Evidence requirements
 
-For each positive execution label, provide a short exact quotation and a stable locator that directly support the claimed action. A bibliography entry, related-work sentence, or broad statement about the field is not sufficient.
+For each positive execution label, provide a short exact quotation and a stable locator that directly support the claimed action. In every `use_evidence` item, list the label or labels supported by that passage in `supports_labels`. Collectively, the evidence items must support every assigned use label and no unassigned label. A bibliography entry, related-work sentence, or broad statement about the field is not sufficient.
 
 For `MENTION_ONLY`, cite the strongest local occurrence and explain briefly why it does not establish execution. Absence of execution evidence is acceptable only when coverage is adequate.
 

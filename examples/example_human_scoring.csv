@@ -1,0 +1,6 @@
+record_id,study_id,category,machine_score,machine_positive,human_consensus,human_evaluable,sample_weight,true_positive,false_positive,false_negative,true_negative,notes
+EX-001-APPLY,synthetic-study-001,APPLY_BIOLOGICAL,0.90,1,1,1,1,,,,,Synthetic example only
+EX-001-EXTEND,synthetic-study-001,EXTEND_DEVELOP,0.80,1,1,1,1,,,,,Synthetic example only
+EX-001-BENCH,synthetic-study-001,BENCHMARK_EVALUATE,0.10,0,0,1,1,,,,,Synthetic example only
+EX-001-OTHER,synthetic-study-001,OTHER_EXECUTED_USE,0.05,0,0,1,1,,,,,Synthetic example only
+EX-001-MENTION,synthetic-study-001,MENTION_ONLY,0.02,0,0,1,1,,,,,Synthetic example only

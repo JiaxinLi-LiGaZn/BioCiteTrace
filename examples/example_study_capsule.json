@@ -1,0 +1,91 @@
+{
+  "capsule_version": "1.0.0",
+  "coverage_risk_codes": [],
+  "documents": [
+    {
+      "cloud_processing_allowed": true,
+      "document_type": "MAIN",
+      "license": "CC0-1.0",
+      "sections": [
+        {
+          "page_index": null,
+          "paragraph_id": "p-0001",
+          "printed_page": "",
+          "section": "Methods",
+          "text": "We initialized the analysis encoder with CellMapFM [12] and fine-tuned it on a public peripheral-blood single-cell dataset collected before and after interferon stimulation."
+        },
+        {
+          "page_index": null,
+          "paragraph_id": "p-0002",
+          "printed_page": "",
+          "section": "Results",
+          "text": "CellMapFM [12] separated an interferon-responsive monocyte state and ranked IFITM3 and ISG15 among the genes most associated with that state. Targeted expression measurements in the source dataset supported the same response pattern."
+        },
+        {
+          "page_index": null,
+          "paragraph_id": "p-0003",
+          "printed_page": "",
+          "section": "References",
+          "text": "[12] The fictional CellMapFM method paper used only for this synthetic, CC0-licensed example."
+        }
+      ],
+      "sha256": "880dffd83108b3d5509e3089cee5896dee4f3c813d8a6c18f5928f45d54e7566",
+      "source_file": "example_article.txt",
+      "version_id": "synthetic-version-1"
+    }
+  ],
+  "evidence_complete": true,
+  "physical_target_occurrences": [
+    {
+      "citation_marker": "CellMapFM [12]",
+      "occurrence_id": "occ-0001",
+      "page_index": null,
+      "paragraph_id": "p-0001",
+      "printed_page": "",
+      "quote": "We initialized the analysis encoder with CellMapFM [12] and fine-tuned it on a public peripheral-blood single-cell dataset collected before and after interferon stimulation.",
+      "reference_id": "SYNTHETIC-METHOD-001",
+      "section": "Methods",
+      "source_file": "example_article.txt"
+    },
+    {
+      "citation_marker": "CellMapFM [12]",
+      "occurrence_id": "occ-0002",
+      "page_index": null,
+      "paragraph_id": "p-0002",
+      "printed_page": "",
+      "quote": "CellMapFM [12] separated an interferon-responsive monocyte state and ranked IFITM3 and ISG15 among the genes most associated with that state. Targeted expression measurements in the source dataset supported the same response pattern.",
+      "reference_id": "SYNTHETIC-METHOD-001",
+      "section": "Results",
+      "source_file": "example_article.txt"
+    },
+    {
+      "citation_marker": "CellMapFM",
+      "occurrence_id": "occ-0003",
+      "page_index": null,
+      "paragraph_id": "p-0003",
+      "printed_page": "",
+      "quote": "[12] The fictional CellMapFM method paper used only for this synthetic, CC0-licensed example.",
+      "reference_id": "SYNTHETIC-METHOD-001",
+      "section": "References",
+      "source_file": "example_article.txt"
+    }
+  ],
+  "study": {
+    "identifiers": {"example_id": "SYNTHETIC-STUDY-001"},
+    "study_id": "synthetic-study-001",
+    "title": "A synthetic example of adapting a cell foundation model for immune-response analysis"
+  },
+  "target_method": {
+    "aliases": ["CellMapFM"],
+    "canonical_name": "CellMapFM",
+    "seed_identifiers": {"example_id": "SYNTHETIC-METHOD-001"}
+  },
+  "version_coverage": [
+    {
+      "included": true,
+      "reason": "Rights-approved text included in the capsule.",
+      "version_id": "synthetic-version-1",
+      "version_type": "PUBLISHED"
+    }
+  ]
+}

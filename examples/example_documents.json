@@ -1,0 +1,11 @@
+[
+  {
+    "path": "examples/example_article.txt",
+    "source_file": "example_article.txt",
+    "document_type": "MAIN",
+    "version_id": "synthetic-version-1",
+    "version_type": "PUBLISHED",
+    "license": "CC0-1.0",
+    "cloud_processing_allowed": true
+  }
+]
