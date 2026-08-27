@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JiaxinLi-lipluszn/fulltext-citation-use-review/blob/main/schemas/cluster_review.schema.json",
+  "title": "One cluster-candidate review decision",
+  "type": "object",
+  "required": ["candidate_id", "work_id_a", "work_id_b", "recommendation", "reviewer", "reviewed_at"],
+  "properties": {
+    "candidate_id": {"type": "string", "minLength": 1},
+    "work_id_a": {"type": "string", "minLength": 1},
+    "work_id_b": {"type": "string", "minLength": 1},
+    "recommendation": {"type": "string", "enum": ["MERGE", "KEEP_SEPARATE", "DO_NOT_MERGE"]},
+    "reviewer": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "minLength": 1},
+    "notes": {"type": "string"}
+  }
+}

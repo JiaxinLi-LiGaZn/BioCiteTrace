@@ -1,6 +1,6 @@
 # Input contract for a new method
 
-This document describes the minimum handoff needed to repeat the citation-use review for another biological method. It separates literature preparation, which depends on databases and access rights, from the machine-review core included in this repository.
+This document describes the minimum handoff needed to repeat the citation-use review for another biological method. The optional upstream commands can now prepare this handoff from public citation databases, but access-rights decisions remain the responsibility of the research team.
 
 ## 1. Freeze the target identity
 
@@ -117,16 +117,16 @@ After independent review, reconcile disagreements into a consensus reference. Sc
 
 The scoring template accepts an optional frozen continuous `machine_score`. Without such a score, report precision and recall at the observed hard-label operating point; do not describe it as a full precision-recall curve or AUROC.
 
-## What this repository does not automate
+## What this repository still does not decide
 
-The public starter does not automatically:
+The public workflow does not:
 
-- query citation databases;
-- merge bibliographic versions or adjudicate difficult duplicates;
-- download publisher files;
 - interpret licenses or publisher terms;
+- approve any full text without a completed human rights-review row;
+- automatically adjudicate difficult version or duplicate candidates;
+- scrape Google Scholar, automate institutional login, or bypass paywalls;
 - parse arbitrary PDF, XML, OCR, or supplement formats;
 - approve transmission of article text; or
 - design a statistically powered validation sample.
 
-Those steps remain visible parts of the scientific workflow. Their decisions and provenance should be frozen alongside the runnable review artifacts.
+Public OpenAlex, Europe PMC, OpenCitations, PubMed, and Crossref adapters, approved PDF/XML/HTML/text retrieval, and the manual review queues are described in [`UPSTREAM_WORKFLOW.md`](UPSTREAM_WORKFLOW.md). Unsupported formats and project-specific governance remain visible parts of the scientific workflow, and their decisions and provenance should be frozen alongside the runnable review artifacts.

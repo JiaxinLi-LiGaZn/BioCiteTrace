@@ -13,7 +13,9 @@ from .contracts import validate_capsule, validate_classification
 from .errors import CitationReviewError, ContractError
 from .pipeline import run_batch, run_one_study
 from .prompting import assemble_prompt, load_contract_files
+from .rights import build_agent_handoff, prepare_rights_review, retrieve_approved
 from .scoring import load_scoring_rows, score_categories
+from .upstream import derive_reviewed_snapshot, discover_snapshot, snapshot_summary
 from .util import atomic_write_json, atomic_write_text, load_json
 
 
@@ -105,6 +107,34 @@ def build_parser() -> argparse.ArgumentParser:
     scoring = subparsers.add_parser("score-human", help="Score categories against adjudicated human consensus.")
     scoring.add_argument("--input", type=_path, required=True)
     scoring.add_argument("--output", type=_path)
+
+    discover = subparsers.add_parser("discover-citations", help="Discover citations and freeze an immutable source snapshot.")
+    discover.add_argument("--config", type=_path, required=True)
+    discover.add_argument("--snapshot-id", required=True)
+
+    cluster_review = subparsers.add_parser("apply-cluster-review", help="Create a reviewed snapshot from all duplicate/version decisions.")
+    cluster_review.add_argument("--parent-snapshot", required=True)
+    cluster_review.add_argument("--review", type=_path, required=True)
+    cluster_review.add_argument("--derived-snapshot", required=True)
+    cluster_review.add_argument("--allow-incomplete-sources", action="store_true")
+
+    inspect_snapshot = subparsers.add_parser("inspect-snapshot", help="Verify and summarize one immutable citation snapshot.")
+    inspect_snapshot.add_argument("--snapshot-id", required=True)
+
+    rights_review = subparsers.add_parser("prepare-rights-review", help="Create a blank human rights-review queue.")
+    rights_review.add_argument("--snapshot-id", required=True)
+
+    retrieve = subparsers.add_parser("retrieve-approved", help="Retrieve only candidates explicitly approved by a human.")
+    retrieve.add_argument("--config", type=_path, required=True)
+    retrieve.add_argument("--snapshot-id", required=True)
+    retrieve.add_argument("--approval", type=_path, required=True)
+
+    handoff = subparsers.add_parser("build-agent-handoff", help="Build ordered one-study capsules from approved retrieved text.")
+    handoff.add_argument("--config", type=_path, required=True)
+    handoff.add_argument("--snapshot-id", required=True)
+    handoff.add_argument("--codebook", type=_path, default=Path("codebook/citation_use_codebook.json"))
+    handoff.add_argument("--coverage-review", type=_path, required=True)
+    handoff.add_argument("--duplicate-review", type=_path)
     return parser
 
 
@@ -162,6 +192,54 @@ def main(argv: Sequence[str] | None = None) -> int:
             print(json.dumps({"study_count": len(results), "output": str(args.output_root / "batch_results.jsonl")}, sort_keys=True))
         elif args.command == "score-human":
             _write_or_print(score_categories(load_scoring_rows(args.input)), args.output)
+        elif args.command == "discover-citations":
+            config = load_json(args.config)
+            if not isinstance(config, dict):
+                raise ContractError("configuration must be a JSON object")
+            _write_or_print(discover_snapshot(project_root=root, config=config, snapshot_id=args.snapshot_id), None)
+        elif args.command == "apply-cluster-review":
+            _write_or_print(
+                derive_reviewed_snapshot(
+                    project_root=root,
+                    parent_snapshot_id=args.parent_snapshot,
+                    review_path=args.review,
+                    derived_snapshot_id=args.derived_snapshot,
+                    allow_incomplete_sources=args.allow_incomplete_sources,
+                ),
+                None,
+            )
+        elif args.command == "inspect-snapshot":
+            _write_or_print(snapshot_summary(root, args.snapshot_id), None)
+        elif args.command == "prepare-rights-review":
+            _write_or_print(prepare_rights_review(project_root=root, snapshot_id=args.snapshot_id), None)
+        elif args.command == "retrieve-approved":
+            config = load_json(args.config)
+            if not isinstance(config, dict):
+                raise ContractError("configuration must be a JSON object")
+            _write_or_print(
+                retrieve_approved(
+                    project_root=root,
+                    snapshot_id=args.snapshot_id,
+                    approval_path=args.approval,
+                    config=config,
+                ),
+                None,
+            )
+        elif args.command == "build-agent-handoff":
+            config = load_json(args.config)
+            if not isinstance(config, dict):
+                raise ContractError("configuration must be a JSON object")
+            _write_or_print(
+                build_agent_handoff(
+                    project_root=root,
+                    snapshot_id=args.snapshot_id,
+                    config=config,
+                    codebook_path=args.codebook,
+                    coverage_review_path=args.coverage_review,
+                    duplicate_review_path=args.duplicate_review,
+                ),
+                None,
+            )
         else:
             raise ContractError(f"unimplemented command: {args.command}")
     except (CitationReviewError, OSError, ValueError, TypeError) as error:

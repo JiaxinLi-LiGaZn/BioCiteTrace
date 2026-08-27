@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JiaxinLi-lipluszn/fulltext-citation-use-review/blob/main/schemas/upstream_config.schema.json",
+  "title": "Upstream citation discovery configuration",
+  "type": "object",
+  "required": ["upstream"],
+  "properties": {
+    "upstream": {
+      "type": "object",
+      "required": ["method", "seed_versions", "first_public_date", "sources"],
+      "properties": {
+        "method": {
+          "type": "object",
+          "required": ["canonical_name", "aliases"],
+          "properties": {
+            "canonical_name": {"type": "string", "minLength": 1},
+            "aliases": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2}}
+          }
+        },
+        "seed_versions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["version_type", "title", "identifiers"],
+            "properties": {
+              "seed_id": {"type": "string", "minLength": 1},
+              "version_type": {"type": "string", "enum": ["PREPRINT", "PUBLISHED", "OTHER"]},
+              "title": {"type": "string", "minLength": 1},
+              "identifiers": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}},
+              "europe_pmc_source": {"type": "string"},
+              "europe_pmc_id": {"type": "string"}
+            }
+          }
+        },
+        "first_public_date": {"type": "string", "format": "date"},
+        "sources": {"type": "object"},
+        "http": {"type": "object"},
+        "retrieval": {"type": "object"}
+      }
+    }
+  }
+}

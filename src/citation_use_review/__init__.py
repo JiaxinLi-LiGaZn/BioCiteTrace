@@ -5,4 +5,4 @@ from .contracts import validate_capsule, validate_classification
 from .comparison import compare_classifications
 
 __all__ = ["compare_classifications", "validate_capsule", "validate_classification"]
-__version__ = "0.1.0"
+__version__ = "0.2.0"

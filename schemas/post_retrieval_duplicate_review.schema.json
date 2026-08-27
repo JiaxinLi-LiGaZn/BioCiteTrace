@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JiaxinLi-lipluszn/fulltext-citation-use-review/blob/main/schemas/post_retrieval_duplicate_review.schema.json",
+  "title": "One post-retrieval duplicate decision",
+  "type": "object",
+  "required": ["collision_id", "study_id_a", "study_id_b", "reasons", "decision", "keep_study_id", "reviewer", "reviewed_at"],
+  "properties": {
+    "collision_id": {"type": "string", "minLength": 1},
+    "study_id_a": {"type": "string", "minLength": 1},
+    "study_id_b": {"type": "string", "minLength": 1},
+    "reasons": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "decision": {"type": "string", "enum": ["SAME_STUDY", "DISTINCT_STUDIES"]},
+    "keep_study_id": {"type": "string"},
+    "reviewer": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "minLength": 1},
+    "notes": {"type": "string"}
+  }
+}

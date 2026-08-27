@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JiaxinLi-lipluszn/fulltext-citation-use-review/blob/main/schemas/rights_review.schema.json",
+  "title": "One completed full-text rights-review decision",
+  "type": "object",
+  "required": [
+    "queue_version", "snapshot_id", "candidate_id", "study_id", "work_id", "url",
+    "decision", "cloud_processing_allowed", "permission_basis", "reviewer", "reviewed_at"
+  ],
+  "properties": {
+    "queue_version": {"const": "rights-review-v1"},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "study_id": {"type": "string", "minLength": 1},
+    "work_id": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "pattern": "^https://"},
+    "decision": {"type": "string", "enum": ["APPROVE", "DENY", "DEFER"]},
+    "cloud_processing_allowed": {"type": "boolean"},
+    "permission_basis": {"type": "string"},
+    "reviewer": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "minLength": 1},
+    "notes": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"decision": {"const": "APPROVE"}}},
+      "then": {
+        "properties": {
+          "cloud_processing_allowed": {"const": true},
+          "permission_basis": {"minLength": 1},
+          "reviewer": {"minLength": 1},
+          "reviewed_at": {"minLength": 1}
+        }
+      },
+      "else": {
+        "properties": {
+          "cloud_processing_allowed": {"const": false}
+        }
+      }
+    }
+  ]
+}

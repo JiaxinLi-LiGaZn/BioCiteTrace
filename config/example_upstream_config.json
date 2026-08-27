@@ -1,0 +1,70 @@
+{
+  "upstream": {
+    "method": {
+      "canonical_name": "MethodName",
+      "aliases": [
+        "MethodName",
+        "Unambiguous long-form method name"
+      ]
+    },
+    "seed_versions": [
+      {
+        "seed_id": "methodname-published",
+        "version_type": "PUBLISHED",
+        "title": "Published method paper title",
+        "identifiers": {
+          "doi": "10.xxxx/published-doi",
+          "openalex": "W000000001"
+        },
+        "europe_pmc_source": "MED",
+        "europe_pmc_id": "00000001"
+      },
+      {
+        "seed_id": "methodname-preprint",
+        "version_type": "PREPRINT",
+        "title": "Preprint method paper title",
+        "identifiers": {
+          "doi": "10.1101/yyyy.mm.dd.xxxxxx",
+          "openalex": "W000000002"
+        },
+        "europe_pmc_source": "PPR",
+        "europe_pmc_id": "PPR000001"
+      }
+    ],
+    "first_public_date": "2024-01-01",
+    "sources": {
+      "openalex": {
+        "enabled": true,
+        "per_page": 200,
+        "mailto": "researcher@example.edu"
+      },
+      "europe_pmc": {
+        "enabled": true,
+        "page_size": 1000
+      },
+      "opencitations": {
+        "enabled": true
+      },
+      "pubmed": {
+        "enabled": true,
+        "batch_size": 200
+      },
+      "crossref": {
+        "enabled": true
+      }
+    },
+    "http": {
+      "timeout_seconds": 60,
+      "minimum_delay_seconds": 0.2,
+      "max_retries": 5,
+      "user_agent": "fulltext-citation-use-review/0.2"
+    },
+    "retrieval": {
+      "concurrency": 4,
+      "timeout_seconds": 120,
+      "max_retries": 5,
+      "retry_backoff_seconds": 1.0,
+      "max_bytes_per_file": 100000000
+    }
+  }
+}

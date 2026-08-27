@@ -6,7 +6,7 @@ import json
 import os
 from pathlib import Path
 import tempfile
-from typing import Any, Mapping
+from typing import Any, Iterable, Mapping
 from datetime import datetime, timezone
 
 from .errors import ContractError
@@ -48,6 +48,37 @@ def load_json(path: Path | str) -> Any:
         return json.loads(source.read_text(encoding="utf-8"), object_pairs_hook=reject_duplicate_keys)
     except (OSError, UnicodeError, json.JSONDecodeError) as error:
         raise ContractError(f"cannot read valid JSON from {source}: {error}") from error
+
+
+def load_jsonl(path: Path | str) -> list[dict[str, Any]]:
+    """Read a JSON Lines file while rejecting duplicate keys and nonobjects.
+
+    Args:
+        path: UTF-8 JSONL file path.
+
+    Returns:
+        Object rows in source order; blank lines are ignored.
+
+    Raises:
+        ContractError: If any nonblank line is invalid or is not an object.
+    """
+
+    source = Path(path)
+    rows: list[dict[str, Any]] = []
+    try:
+        with source.open(encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, start=1):
+                if not line.strip():
+                    continue
+                value = json.loads(line, object_pairs_hook=reject_duplicate_keys)
+                if not isinstance(value, Mapping):
+                    raise ContractError(f"{source}:{line_number} is not a JSON object")
+                rows.append(dict(value))
+    except ContractError:
+        raise
+    except (OSError, UnicodeError, json.JSONDecodeError) as error:
+        raise ContractError(f"cannot read valid JSONL from {source}: {error}") from error
+    return rows
 
 
 def canonical_json_bytes(value: Any) -> bytes:
@@ -213,6 +244,21 @@ def atomic_write_text(path: Path | str, value: str) -> None:
     """
 
     atomic_write_bytes(path, value.encode("utf-8"))
+
+
+def atomic_write_jsonl(path: Path | str, rows: Iterable[Mapping[str, Any]]) -> None:
+    """Atomically write mapping rows as canonical JSON Lines.
+
+    Args:
+        path: Destination JSONL file.
+        rows: Ordered mapping values.
+
+    Returns:
+        ``None`` after durable publication.
+    """
+
+    payload = b"".join(canonical_json_bytes(dict(row)) + b"\n" for row in rows)
+    atomic_write_bytes(path, payload)
 
 
 def write_exclusive_json(path: Path | str, value: Mapping[str, Any]) -> None:

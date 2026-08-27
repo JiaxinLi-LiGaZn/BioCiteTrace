@@ -4,11 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fulltext-citation-use-review"
-version = "0.1.0"
+version = "0.2.0"
 description = "Evidence-grounded, multi-agent review of how scientific papers use a cited method"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.optional-dependencies]
+upstream = [
+  "lxml>=5.0",
+  "pypdf>=5.0",
+]
 
 [project.scripts]
 citation-use-review = "citation_use_review.cli:main"

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JiaxinLi-lipluszn/fulltext-citation-use-review/blob/main/schemas/evidence_coverage_review.schema.json",
+  "title": "One completed study-level evidence coverage decision",
+  "type": "object",
+  "required": [
+    "coverage_review_version", "snapshot_id", "study_id", "title",
+    "known_version_work_ids", "retrieved_work_ids", "retrieved_candidate_ids",
+    "evidence_complete", "supplement_coverage", "missing_version_work_ids",
+    "coverage_risk_codes", "reviewer", "reviewed_at"
+  ],
+  "properties": {
+    "coverage_review_version": {"const": "evidence-coverage-review-v1"},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "study_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string"},
+    "known_version_work_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "retrieved_work_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "retrieved_candidate_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "evidence_complete": {"type": "boolean"},
+    "supplement_coverage": {"type": "string", "enum": ["COMPLETE", "NONE_IDENTIFIED", "INCOMPLETE", "NOT_ASSESSED"]},
+    "missing_version_work_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "coverage_risk_codes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "reviewer": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "minLength": 1},
+    "notes": {"type": "string"}
+  }
+}

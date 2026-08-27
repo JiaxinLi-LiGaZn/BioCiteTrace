@@ -6,8 +6,11 @@ Citation counts cannot answer that question. This project develops a full-text r
 
 ## What can be run from this repository
 
-The repository now includes a small, method-agnostic implementation of the review core. Starting from rights-approved UTF-8 article text, it can:
+The repository now covers the path from citation discovery to rights-approved one-study evidence. It can:
 
+- discover incoming citations from a seed version cluster and preserve exact source responses;
+- reconcile provider records, propose uncertain version/duplicate pairs, and freeze reviewed study snapshots;
+- prepare a human rights-review queue and retrieve only explicitly approved open-access documents;
 - build and validate a one-study evidence capsule;
 - render the three English review prompts from a frozen codebook and schema;
 - run two fresh, mutually blind Codex reviews for each study;
@@ -18,7 +21,7 @@ The repository now includes a small, method-agnostic implementation of the revie
 
 The included article is fictional and released as a CC0 synthetic example. No copyrighted paper is needed to test the workflow.
 
-Citation discovery, bibliographic version linking, lawful full-text retrieval, and publisher-specific rights review remain project-specific upstream tasks. The public runner deliberately does not scrape search engines, log in to institutional subscriptions, or decide legal permissions on the user's behalf. It begins only after a researcher has prepared an eligible document manifest with explicit processing permission.
+The upstream commands reproduce the main procedure used for the scGPT audit while keeping the legal decision with the research team. Provider open-access and license fields are shown as evidence, but they never authorize processing automatically. The public runner does not scrape search engines, log in to institutional subscriptions, bypass paywalls, or decide legal permissions on the user's behalf.
 
 ## Quick start
 
@@ -30,6 +33,12 @@ cd fulltext-citation-use-review
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
+```
+
+Install the optional PDF/XML readers when discovery and approved retrieval are needed:
+
+```bash
+python -m pip install -e '.[upstream]'
 ```
 
 Rebuild the synthetic capsule from the plain-text article and rights manifest:
@@ -85,6 +94,52 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 The exact input fields and the boundary between upstream literature work and the runnable review core are described in [`docs/INPUT_CONTRACT.md`](docs/INPUT_CONTRACT.md).
+
+### Reproduce the upstream literature preparation
+
+Copy [`config/example_upstream_config.json`](config/example_upstream_config.json), replace the placeholder method and seed identifiers, and run:
+
+```bash
+citation-use-review --project-root . discover-citations \
+  --config config/my_method_upstream.json \
+  --snapshot-id 20260827_my_method_source_v1
+```
+
+This creates an immutable source snapshot and a complete `cluster_candidates.csv`. Resolve every candidate as `MERGE`, `KEEP_SEPARATE`, or `DO_NOT_MERGE`, save the decisions as JSONL, and derive a reviewed snapshot:
+
+```bash
+citation-use-review --project-root . apply-cluster-review \
+  --parent-snapshot 20260827_my_method_source_v1 \
+  --review reviews/cluster_review.jsonl \
+  --derived-snapshot 20260827_my_method_reviewed_v1
+```
+
+Next prepare—not prefill—the rights review:
+
+```bash
+citation-use-review --project-root . prepare-rights-review \
+  --snapshot-id 20260827_my_method_reviewed_v1
+```
+
+A human reviewer must complete every row. Only a row with `decision: "APPROVE"`, an explicit Boolean `cloud_processing_allowed: true`, a permission basis, reviewer, and review time may be retrieved:
+
+```bash
+citation-use-review --project-root . retrieve-approved \
+  --config config/my_method_upstream.json \
+  --snapshot-id 20260827_my_method_reviewed_v1 \
+  --approval reviews/rights_review_completed.jsonl
+```
+
+After reviewing the frozen study-level evidence-coverage queue and resolving any post-retrieval DOI/file-hash collisions, build the exact ordered capsule manifest consumed by `run-batch`:
+
+```bash
+citation-use-review --project-root . build-agent-handoff \
+  --config config/my_method_upstream.json \
+  --snapshot-id 20260827_my_method_reviewed_v1 \
+  --coverage-review reviews/evidence_coverage_completed.jsonl
+```
+
+The field-by-field procedure, decision files, failure behavior, and provenance layout are documented in [`docs/UPSTREAM_WORKFLOW.md`](docs/UPSTREAM_WORKFLOW.md).
 
 The synthetic human-scoring example can also be run without any external service:
 
@@ -270,6 +325,9 @@ The reusable pieces are organized as follows:
 | [`schemas/`](schemas/) | Exact capsule and machine-output contracts. |
 | [`prompts/`](prompts/) | Blind classifier, reviewer, and adjudicator prompts plus model settings. |
 | [`src/citation_use_review/`](src/citation_use_review/) | Capsule construction, validation, execution, comparison, and scoring library. |
+| [`src/citation_use_review/sources.py`](src/citation_use_review/sources.py) | OpenAlex, Europe PMC, OpenCitations, PubMed, and Crossref source interfaces. |
+| [`src/citation_use_review/upstream.py`](src/citation_use_review/upstream.py) | Immutable discovery and reviewed-snapshot workflow. |
+| [`src/citation_use_review/rights.py`](src/citation_use_review/rights.py) | Human rights queue, approved retrieval, duplicate audit, and capsule handoff. |
 | [`scripts/`](scripts/) | Small commands for the main workflow operations. |
 | [`examples/`](examples/) | Fully synthetic, redistributable end-to-end example. |
 | [`human_reviewers/`](human_reviewers/) | Blinded-review backups and generic blank templates. |
@@ -279,4 +337,4 @@ Before changing method names or labels, freeze a new codebook and schema version
 
 ## Project status
 
-The public reviewer core is runnable and covered by offline tests. It is a transparent research starter, not a turnkey literature-retrieval service or a substitute for institutional rights review. Production studies should add a frozen cohort manifest, an explicit transmission authorization, environment-specific scheduler controls, and a preregistered human-validation analysis before scaling to a large corpus.
+The public workflow is runnable and covered by offline tests. It is a transparent research starter, not a substitute for institutional rights review. Production studies should add an explicit transmission authorization, environment-specific scheduler controls, and a preregistered human-validation analysis before scaling to a large corpus.
