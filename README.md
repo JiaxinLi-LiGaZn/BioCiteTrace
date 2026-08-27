@@ -129,6 +129,8 @@ If an initial review form encourages single-choice answers, the reviewers should
 
 Papers sampled to examine abstention or incomplete evidence are described separately. They are not automatically pooled with the classification sample when accuracy is calculated.
 
+Point-in-time reviewer backups and method-agnostic blank review and scoring templates are available in [`human_reviewers/`](human_reviewers/).
+
 ## 9. Reporting and interpretation
 
 The final structured output separates scientific labels from evidence and processing states. In particular:

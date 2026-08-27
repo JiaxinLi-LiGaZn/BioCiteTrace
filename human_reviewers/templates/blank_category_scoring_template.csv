@@ -1,0 +1,1 @@
+record_id,study_id,category,machine_score,machine_positive,human_consensus,human_evaluable,sample_weight,true_positive,false_positive,false_negative,true_negative,notes
