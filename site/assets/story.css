@@ -114,3 +114,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20
   .figure-scroll { overflow: visible; }
   .figure-scroll img { min-width: 0; }
 }
+
+.review-status { font-size: 18px; font-weight: 600; margin-top: 28px; }
+.ai-disclaimer { border: 2px solid var(--accent); border-left-width: 6px; padding: 24px; margin-bottom: 32px; scroll-margin-top: 24px; }
+.ai-disclaimer h3 { color: var(--accent); font-size: 22px; }
+.ai-disclaimer p { font-size: 18px; max-width: 1080px; }

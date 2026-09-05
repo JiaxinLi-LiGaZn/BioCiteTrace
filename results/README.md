@@ -1,5 +1,7 @@
 # The first comparison
 
+**AI disclaimer:** Citation-use classifications were produced with LLMs and may contain errors. Human checks cover samples, not every paper. **Sampled human reviews for scGen and GEARS are on the way; their results remain preliminary.** The human-validation results currently shown cover scVI and scGPT only.
+
 Among papers with resolved classifications, biological application was much more common for scVI. For scGPT, scGen and GEARS, mention only was the most common primary category.
 
 This is a snapshot from Figure 2 of the September 2026 manuscript draft. The figure and the values below were taken from PDF page 16 of `revision_1_0904 (1).pdf`. They have not been recomputed from the underlying study-level records.
