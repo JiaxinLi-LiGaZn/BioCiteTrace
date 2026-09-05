@@ -15,7 +15,7 @@ The page has a white background, dark text and blue links. Headings and body tex
 
 There are no pagination controls, keyboard interception, animations or third-party runtime requests. Ordinary section links work without JavaScript. The four old chapter URLs redirect to the corresponding anchors so previously shared links remain useful.
 
-The font files come from [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) and are distributed under the [SIL Open Font License](assets/fonts/OFL.txt). The draft's technical-document links use a committed version already available on GitHub, so they also work before the homepage change is merged.
+The font files come from [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) and are distributed under the [SIL Open Font License](assets/fonts/OFL.txt). Technical-document links point to the main branch on GitHub.
 
 ## Preview
 
