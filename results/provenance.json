@@ -1,0 +1,21 @@
+{
+  "source_document": "revision_1_0904 (1).pdf",
+  "source_sha256": "63ef2a2df928f0d70f1f54986f17ec268977637466ce4a6f2d44254efcf1ca9c",
+  "pdf_page": 16,
+  "figure": "Figure 2",
+  "transcribed_on": "2026-09-05",
+  "status": "manuscript_draft_snapshot",
+  "full_figure": {
+    "path": "../site/assets/figure-2.png",
+    "extraction": "Original embedded image Im6.png, without redrawing",
+    "sha256": "afddac55e6ad40657616115c75cf703f65beab7fab9c1881c3e15b7d6a379064"
+  },
+  "panel_c": {
+    "path": "../site/assets/citation-use-panel.png",
+    "extraction": "Poppler render of page 16 at 240 dpi; crop x=379 y=965 width=1279 height=459",
+    "sha256": "37d815143996fdfa409187b6759b8925dc7dc362a905491905fd7f318ccb5b43"
+  },
+  "data_note": "Values transcribed from panels B-D; percentages are rounded as displayed, not recomputed from study-level records.",
+  "denominator": "Panel C: resolved classified studies per method. Panel D: resolved classifications in the human-validation sample.",
+  "label_semantics": "Mutually exclusive primary-category display; not proportions of any non-exclusive use label."
+}

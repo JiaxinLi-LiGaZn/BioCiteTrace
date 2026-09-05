@@ -43,3 +43,23 @@ Then calculate:
 A genuine precision-recall curve requires a frozen continuous or ordered machine score and both human reference classes in the evaluated data. A hard yes/no machine label supplies only one operating point, not a curve. Cases judged unevaluable because of insufficient coverage, an unlocated citation, or unresolved human evidence should be reported separately rather than silently counted as negative.
 
 Use `sample_weight = 1` for an unweighted validation sample. If the sample was selected with unequal probabilities and the goal is a population estimate, insert the preregistered inverse-probability weight and report both weighted and unweighted results.
+
+## Sampling and independent review
+
+Human validation takes place after the machine review has been frozen. The sample is stratified to include papers classified as executed use, mention-only papers, biological-insight candidates, and uncertain evidence states such as coverage incomplete, citation not located, or machine unresolved.
+
+Within each stratum, selection is fixed before the reviewers see the titles. Machine-defined strata may be used to construct the sample and calculate inverse-probability weights, but the machine labels themselves are hidden from the reviewers.
+
+Two human reviewers independently read each sampled paper. They are shown article identifiers, approved full-text links, and neutral citation-location guidance, but not the machine labels, confidence, selected machine evidence, or machine adjudication history. The reviewers also receive different paper orders. After completing their independent reviews, they discuss disagreements and record a consensus reference.
+
+The human reference treats citation purposes as non-exclusive. A paper judged to both apply and extend a method is counted in both categories while remaining one study.
+
+If an initial review form encourages single-choice answers, the reviewers should revisit the sampled papers under the non-exclusive label scheme before category-level estimates are finalized.
+
+Papers sampled to examine abstention or incomplete evidence are described separately. They are not automatically pooled with the classification sample when accuracy is calculated.
+
+## Interpreting a validation result
+
+Report precision, recall, F1, specificity and accuracy separately for each category, with reviewed and target-population denominators. Report both unweighted results and sampling-weighted results when the sampling design calls for weights. Hard labels provide one operating point, not a full PR curve or AUROC.
+
+The [current manuscript figure](../results/README.md) reports primary-category validation. That display should not be treated as a validation of every non-exclusive use label. The public scoring code supports category-wise inputs; a real analysis must supply the matching frozen machine labels and human consensus.
