@@ -74,7 +74,8 @@
       <aside id="ai-disclaimer" class="ai-disclaimer" aria-labelledby="ai-disclaimer-heading">
         <h3 id="ai-disclaimer-heading">AI disclaimer — please read before the results</h3>
         <p>This website was built with AI assistance. The citation-use classifications were produced with LLMs and may contain errors. Human checks cover samples, not every paper.</p>
-        <p><strong>Sampled human reviews for scGen and GEARS are on the way.</strong> These results remain preliminary; the human-validation results currently shown cover scVI and scGPT only.</p>
+        <p><strong>Sampled human reviews for scVI and scGPT are complete.</strong> <a href="#human-validation">See precision and recall below.</a></p>
+        <p><strong>Sampled human reviews for scGen and GEARS are on the way.</strong> Their results remain preliminary.</p>
       </aside>
       <p class="acknowledgment">Thanks to Tibo for the resets that helped us run the LLM review pipeline across all four methods.</p>
       <div class="results-intro">
@@ -93,6 +94,38 @@
         <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md">Figure, data &amp; human validation ↗</a>
         <a href="assets/figure-2.png">Open the complete figure ↗</a>
       </div>
+    </section>
+    <section id="human-validation" class="section human-validation" aria-labelledby="validation-heading">
+      <p class="section-label">The human check</p>
+      <h2 id="validation-heading">How well did the LLM labels agree with people?</h2>
+      <p>Sampled human reviews are complete for scVI and scGPT. Two blinded reviewers assessed 50 studies per method and agreed on reference labels. The scores below cover studies with resolved machine classifications: 39 for scVI and 40 for scGPT.</p>
+      <p>Precision asks how often an assigned label was right. Recall asks how many of the human-labeled cases the LLMs found.</p>
+      <div class="validation-tables">
+        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scVI precision and recall; scroll horizontally on smaller screens">
+          <table class="validation-table">
+            <caption>scVI</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
+            <tbody><tr><th scope="row">Macro average</th><td>79.3%</td><td>77.5%</td></tr>
+<tr><th scope="row">Biological application</th><td>88.9%</td><td>80.0%</td></tr>
+<tr><th scope="row">Method extension</th><td>50.0%</td><td>50.0%</td></tr>
+<tr><th scope="row">Benchmark evaluation</th><td>88.9%</td><td>80.0%</td></tr>
+<tr><th scope="row">Mention only</th><td>89.5%</td><td>100.0%</td></tr></tbody>
+          </table>
+        </div>
+        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scGPT precision and recall; scroll horizontally on smaller screens">
+          <table class="validation-table">
+            <caption>scGPT</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
+            <tbody><tr><th scope="row">Macro average</th><td>69.4%</td><td>71.4%</td></tr>
+<tr><th scope="row">Biological application</th><td>44.4%</td><td>100.0%</td></tr>
+<tr><th scope="row">Method extension</th><td>33.3%</td><td>40.0%</td></tr>
+<tr><th scope="row">Benchmark evaluation</th><td>100.0%</td><td>45.5%</td></tr>
+<tr><th scope="row">Mention only</th><td>100.0%</td><td>100.0%</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <p>These scores evaluate each study’s primary citation-use category. Agreement varies by category; the biological-application labels for scGPT need particular care.</p>
+      <p><a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md">Validation details &amp; source data ↗</a></p>
     </section>
   </main>
   <footer><a href="#explore">Back to the reading choices ↑</a><a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace">BioCiteTrace on GitHub ↗</a></footer>
