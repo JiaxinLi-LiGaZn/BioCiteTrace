@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BioCiteTrace — How are cited AI models used?</title>
+  <meta name="description" content="Read the story, explore the workflow, inspect the findings or try BioCiteTrace: a closer look at how papers use AI methods in single-cell biology.">
+  <link rel="preload" href="assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/JetBrainsMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/story.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
+  <header id="top" class="masthead">
+    <a class="brand" href="#top">Bio<span>Cite</span>Trace</a>
+    <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace" class="repo-link">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="opening" aria-labelledby="question">
+      <h1 id="question">When an AI model is cited,<br>how is it <span>used?</span></h1>
+      <p class="lede">Citations tell us that a method has attracted attention. We wanted to understand what happened next.</p>
+      <nav id="explore" class="entry-points" aria-label="Choose what to explore">
+        <ul>
+          <li>
+            <a class="entry-title" href="#story">Read the story <span aria-hidden="true">↓</span></a>
+            <p>Why we started looking.</p>
+          </li>
+          <li>
+            <a class="entry-title" href="#findings">See the findings <span aria-hidden="true">↓</span></a>
+            <a class="entry-detail" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md">Figure &amp; study notes ↗</a>
+          </li>
+          <li>
+            <a class="entry-title" href="#workflow">Explore the workflow <span aria-hidden="true">↓</span></a>
+            <a class="entry-detail" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/docs/README.md">Methods &amp; prompts ↗</a>
+          </li>
+          <li>
+            <a class="entry-title" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/scripts/README.md">Try the example <span aria-hidden="true">↗</span></a>
+            <a class="entry-detail" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/tree/main/src/citation_use_review">Browse the code ↗</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="story" class="section" aria-labelledby="story-heading">
+      <div class="section-heading">
+        <p class="section-label">The story</p>
+        <h2 id="story-heading">A question from our own reading.</h2>
+      </div>
+      <div class="prose">
+        <p>While writing a review of AI in single-cell biology, we spent time with many thoughtful and ambitious methods. Their citation counts reflected considerable interest.</p>
+        <p>Yet in the biological analyses we encountered, some of these models seemed to appear much less often.</p>
+        <p>We wondered whether a closer look at the literature would support that impression.</p>
+      </div>
+    </section>
+
+    <section id="workflow" class="section" aria-labelledby="workflow-heading">
+      <div class="section-heading">
+        <p class="section-label">The workflow</p>
+        <h2 id="workflow-heading">So <del>we</del> <span class="reviewer-name">LLMs</span> read the citing papers.</h2>
+        <p>Large language models make it practical to review a substantial body of literature. We built BioCiteTrace to ask how each paper uses a method, and to keep the evidence behind the answer.</p>
+        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/docs/README.md">Read the full workflow ↗</a>
+      </div>
+      <ol class="steps" role="list">
+        <li><h3>Find the studies</h3><p>Follow the citations, link versions of the same study, and prepare the available full text.</p></li>
+        <li><h3>Read for use</h3><p>Two LLM reviewers work independently: was the method applied, developed, evaluated, used another way, or mentioned?</p></li>
+        <li><h3>Resolve differences</h3><p>Check the supporting passages. Bring in a third blind review when needed, and keep unresolved cases visible.</p></li>
+        <li><h3>Check with people</h3><p>Two human reviewers assess a sample without seeing the machine answers, then agree on reference labels.</p></li>
+      </ol>
+    </section>
+
+    <section id="findings" class="section findings" aria-labelledby="findings-heading">
+      <p class="acknowledgment">Thanks to Tibo for the resets that helped us run the LLM review pipeline across all four methods.</p>
+      <div class="results-intro">
+        <p class="section-label">The first comparison</p>
+        <h2 id="findings-heading">The pattern depends on the method.</h2>
+        <p>Among papers with resolved classifications, biological application was much more common for scVI. For scGPT, scGen and GEARS, mention only was the most common category.</p>
+      </div>
+      <figure aria-labelledby="figure-caption">
+        <div class="figure-scroll" tabindex="0" role="region" aria-label="Citation-use figure; scroll horizontally to see all categories on smaller screens">
+          <img src="assets/citation-use-panel.png" width="1279" height="459" loading="lazy" alt="Primary citation-use categories among classified papers. scVI: 40.2% biological application and 16.4% mention only, n=951. scGPT: 5.0% and 70.9%, n=402. scGen: 7.9% and 73.4%, n=214. GEARS: 7.1% and 61.9%, n=84. All five categories and exact values are available in the study notes.">
+        </div>
+        <figcaption id="figure-caption">Primary citation-use categories among classified papers. Figure 2C, September 2026 draft.</figcaption>
+      </figure>
+      <p class="scope-note">The comparison is limited to resolved classifications. Missing evidence remains unresolved, and agreement with human reviewers varies by category.</p>
+      <div class="result-links">
+        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md">Figure, data &amp; human validation ↗</a>
+        <a href="assets/figure-2.png">Open the complete figure ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><a href="#explore">Back to the reading choices ↑</a><a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace">BioCiteTrace on GitHub ↗</a></footer>
+</div>
+</body>
+</html>

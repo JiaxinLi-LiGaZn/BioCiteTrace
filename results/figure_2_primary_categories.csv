@@ -1,0 +1,5 @@
+method,publication_year,candidate_records,llm_reviewed,classified_studies,biological_application_pct,method_extension_pct,benchmark_evaluation_pct,other_executed_use_pct,mention_only_pct
+scVI,2018,2382,1634,951,40.2,6.9,35.9,0.6,16.4
+scGPT,2024,1291,726,402,5.0,10.2,13.7,0.2,70.9
+scGen,2019,582,274,214,7.9,3.7,14.5,0.5,73.4
+GEARS,2023,353,100,84,7.1,11.9,19.0,0.0,61.9
