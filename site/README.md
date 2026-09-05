@@ -1,14 +1,21 @@
 # The short story
 
-Five static pages follow the reader's question: what does a citation mean, why did we look, how did we read, what did we find, and where can someone look closer?
+One page offers several ways into BioCiteTrace. The reading choices appear directly beneath the opening question, before the longer story:
 
-- `index.html`: the opening question.
-- `story.html`: the experience that motivated the review.
-- `workflow.html`: a short account of the reading process.
-- `findings.html`: the first comparison, using the original Figure 2C.
-- `explore.html`: links to the study notes and reusable workflow.
+- **Read the story** jumps to the experience that motivated the review.
+- **See the findings** jumps to Figure 2C, with a direct link to the study notes.
+- **Explore the workflow** jumps to the short process description and links to the methods and prompts.
+- **Try the example** opens the runnable example instructions; the code is one link away.
 
-Keep technical instructions in the relevant folder README. Keep result scope visible beside the figure. The HTML pages are the source; no generator, package installation or build service is needed.
+Readers can follow those branches or continue down the page through the story, workflow and findings. Technical instructions stay in their folder READMEs. The original result figure and its scope are preserved.
+
+## Design
+
+The page has a white background, dark text and blue links. Headings and body text use locally hosted **JetBrains Mono**. Text outside the original figure is at least 18px, including navigation, captions and source notes. On narrow screens the figure scrolls horizontally instead of reducing its labels to tiny text.
+
+There are no pagination controls, keyboard interception, animations or third-party runtime requests. Ordinary section links work without JavaScript. The four old chapter URLs redirect to the corresponding anchors so previously shared links remain useful.
+
+The font files come from [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) and are distributed under the [SIL Open Font License](assets/fonts/OFL.txt). The draft's technical-document links use a committed version already available on GitHub, so they also work before the homepage change is merged.
 
 ## Preview
 
@@ -18,12 +25,12 @@ From the repository root:
 python -m http.server 8000 --directory site
 ```
 
-Open `http://localhost:8000`. Ordinary links work without JavaScript; left and right arrow keys also turn pages. On small screens, the figure has its own horizontal scroll area. The site respects reduced-motion preferences and uses system fonts, with no analytics or third-party scripts.
+Open `http://localhost:8000`. The HTML and CSS are the source; no generator, package installation or build service is needed.
 
 ## GitHub Pages
 
-The included `.github/workflows/pages.yml` validates and uploads only this folder. It deploys on a change to the website on `main`, or a manual run from `main`. Pull requests validate the pages without publishing them.
+The included `.github/workflows/pages.yml` validates and uploads only this folder. It deploys on a website change to `main`, or a manual run from `main`. Pull requests validate the page without publishing it.
 
 In the repository's **Settings → Pages**, choose **GitHub Actions** as the publishing source. The intended URL is `https://jiaxinli-ligazn.github.io/BioCiteTrace/`.
 
-The setup follows [GitHub's static Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). Keep source paper files outside `site/`; only the selected figure and its transcription belong here. See [results provenance](../results/README.md).
+The setup follows [GitHub's static Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). Keep source paper files outside `site/`; only the selected figure belongs here. See [results provenance](../results/README.md).
