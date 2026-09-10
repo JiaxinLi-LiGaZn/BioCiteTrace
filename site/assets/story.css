@@ -131,25 +131,3 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20
 .validation-table tbody th { font-weight: 400; }
 .validation-table tbody tr:first-child th, .validation-table tbody tr:first-child td { font-weight: 600; }
 @media (max-width: 1100px) { .validation-tables { grid-template-columns: 1fr; } }
-
-/* New result content follows the established reading style. */
-.section-wide { display: block; }
-.section-intro { max-width: 1080px; }
-.figure-card { margin: 34px 0 24px; }
-.figure-portrait { max-width: 1150px; margin-inline: auto; }
-.figure-portrait .figure-scroll img { min-width: 1150px; }
-.download-links { display: flex; flex-wrap: wrap; gap: 16px 32px; margin-top: 20px; font-size: 18px; }
-.validation-table caption span { font-size: 18px; font-weight: 400; color: var(--ink); }
-.validation-table tbody tr:first-child th { font-weight: 400; }
-.validation-table tbody tr:first-child td { font-weight: 400; }
-.validation-note { max-width: 1080px; font-size: 18px; }
-.resource-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; }
-.resource-grid a { display: block; }
-.resource-grid strong, .resource-grid span { display: block; }
-.resource-grid span { margin-top: 8px; color: var(--ink); font-size: 18px; }
-.snapshot { display: flex; flex-wrap: wrap; gap: 24px 40px; margin: 28px 0; }
-.snapshot dt, .snapshot dd { display: inline; font-size: 18px; color: var(--ink); }
-.snapshot dt { font-weight: 600; }
-.snapshot dd { margin-left: 8px; }
-footer p { margin: 0; }
-@media (max-width: 760px) { .resource-grid { grid-template-columns: 1fr; } }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BioCiteTrace — How are cited single-cell AI models used?</title>
-  <meta name="description" content="BioCiteTrace follows citations to four single-cell AI methods and distinguishes biological application, method extension, benchmarking and mention-only use.">
+  <title>BioCiteTrace — How are cited AI models used?</title>
+  <meta name="description" content="Read the story, explore the workflow, inspect the findings or try BioCiteTrace: a closer look at how papers use AI methods in single-cell biology.">
   <link rel="preload" href="assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/JetBrainsMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/story.css">
@@ -16,12 +16,11 @@
     <a class="brand" href="#top">Bio<span>Cite</span>Trace</a>
     <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace" class="repo-link">GitHub <span aria-hidden="true">↗</span></a>
   </header>
-
   <main id="main">
     <section class="opening" aria-labelledby="question">
       <h1 id="question">When an AI model is cited,<br>how is it <span>used?</span></h1>
-      <p class="lede">Citation counts measure attention, but not what a citing study actually did. BioCiteTrace follows the evidence in citing papers to distinguish biological application, method extension, benchmark evaluation, other executed use and mention only.</p>
-      <p class="review-status"><a href="#validation">Sampled human validation is complete for all four methods ↓</a></p>
+      <p class="lede">Citations tell us that a method has attracted attention. We wanted to understand what happened next.</p>
+      <p class="review-status"><a href="#ai-disclaimer">AI-assisted results · sampled human review complete for all four methods ↓</a></p>
       <nav id="explore" class="entry-points" aria-label="Choose what to explore">
         <ul>
           <li>
@@ -46,148 +45,111 @@
 
     <section id="story" class="section" aria-labelledby="story-heading">
       <div class="section-heading">
-        <p class="section-label">The question</p>
-        <h2 id="story-heading">A citation is evidence of attention, not necessarily application</h2>
+        <p class="section-label">The story</p>
+        <h2 id="story-heading">A question from our own reading.</h2>
       </div>
       <div class="prose">
-        <p>While reviewing AI methods in single-cell biology, we saw substantial citation counts for several influential models. Yet the biological analyses we encountered seemed less frequent than the headline numbers suggested.</p>
-        <p>That observation led to a more specific question: did a citing paper apply the method to answer a biological question, extend it, benchmark it, use it in another executed way, or only mention it?</p>
-        <p>BioCiteTrace turns that question into a study-level evidence review for scVI, scGPT, scGen and GEARS.</p>
+        <p>While writing a review of AI in single-cell biology, we spent time with many thoughtful and ambitious methods. Their citation counts reflected considerable interest.</p>
+        <p>Yet in the biological analyses we encountered, some of these models seemed to appear much less often.</p>
+        <p>We wondered whether a closer look at the literature would support that impression.</p>
       </div>
     </section>
 
     <section id="workflow" class="section" aria-labelledby="workflow-heading">
       <div class="section-heading">
-        <p class="section-label">From citation to evidence</p>
+        <p class="section-label">The workflow</p>
         <h2 id="workflow-heading">So <del>we</del> <span class="reviewer-name">LLMs</span> read the citing papers.</h2>
-        <p>Two independent LLM assessments are consolidated from eligible study evidence, followed by blinded human review of evaluation samples.</p>
+        <p>Large language models make it practical to review a substantial body of literature. We built BioCiteTrace to ask how each paper uses a method, and to keep the evidence behind the answer.</p>
         <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/docs/README.md">Read the full workflow ↗</a>
       </div>
       <ol class="steps" role="list">
-        <li><h3>Identify citing studies</h3><p>Link paper versions and deduplicate records so the counting unit is one scientific study.</p></li>
-        <li><h3>Verify eligible evidence</h3><p>Locate approved full text and retain explicit evidence-coverage states.</p></li>
-        <li><h3>Independent LLM review</h3><p>Two reviewers classify the study from the same evidence without seeing one another’s answers.</p></li>
-        <li><h3>Consolidate review outcomes</h3><p>Resolve supported decisions and keep genuinely unresolved cases out of result denominators.</p></li>
-        <li><h3>Sampled human validation</h3><p>Two blinded human reviewers establish consensus reference labels for an evaluation sample.</p></li>
+        <li><h3>Find the studies</h3><p>Follow the citations, link versions of the same study, and prepare the available full text.</p></li>
+        <li><h3>Read for use</h3><p>Two LLM reviewers work independently: was the method applied, developed, evaluated, used another way, or mentioned?</p></li>
+        <li><h3>Resolve differences</h3><p>Check the supporting passages. Bring in a third blind review when needed, and keep unresolved cases visible.</p></li>
+        <li><h3>Check with people</h3><p>Two human reviewers assess a sample without seeing the machine answers, then agree on reference labels.</p></li>
       </ol>
     </section>
 
-    <section id="findings" class="section section-wide findings" aria-labelledby="findings-heading">
+    <section id="findings" class="section findings" aria-labelledby="findings-heading">
       <aside id="ai-disclaimer" class="ai-disclaimer" aria-labelledby="ai-disclaimer-heading">
         <h3 id="ai-disclaimer-heading">AI disclaimer — please read before the results</h3>
-        <p>This website was built with AI assistance. LLM classifications may contain errors. Sampled human reviews are complete for all four methods.</p>
-        <p>LLMs produced the corpus-wide citation-use classifications. Human consensus was used as a sampled reference standard, not as absolute ground truth. The results are point estimates and do not yet include confidence intervals.</p>
+        <p>This website was built with AI assistance. The citation-use classifications were produced with LLMs and may contain errors. Human checks cover samples, not every paper.</p>
+        <p><strong>Sampled human reviews for scVI, scGPT, scGen and GEARS are complete.</strong> <a href="#human-validation">See precision and recall below.</a></p>
       </aside>
       <p class="acknowledgment">Thanks to Tibo for the resets that helped us run the LLM review pipeline across all four methods.</p>
       <div class="results-intro">
-        <p class="section-label">What the review found</p>
-        <h2 id="findings-heading">The meaning of a citation differs markedly by method</h2>
-        <p>Among studies with resolved primary-use classifications, <strong>40.2%</strong> of scVI citations were biological applications and <strong>16.4%</strong> were mention only. For scGPT, scGen and GEARS, mention only was the largest category, accounting for <strong>70.9%</strong>, <strong>73.4%</strong> and <strong>61.9%</strong> of classified studies, respectively.</p>
-      <dl class="snapshot" aria-label="Analysis snapshot">
-        <div><dt>4,608</dt><dd>candidate records</dd></div>
-        <div><dt>2,734</dt><dd>LLM reviewed</dd></div>
-        <div><dt>1,651</dt><dd>classified studies</dd></div>
-        <div><dt>4</dt><dd>methods with sampled validation</dd></div>
-      </dl>
-        <p>The screening funnel is essential context. The 1,651 classified studies are fewer than the 4,608 candidate records because duplicate versions, unavailable or ineligible evidence, coverage-incomplete cases, citation-not-located cases and unresolved classifications are not silently converted into mention-only observations.</p>
+        <p class="section-label">The first comparison</p>
+        <h2 id="findings-heading">The pattern depends on the method.</h2>
+        <p>Among papers with resolved classifications, biological application was much more common for scVI. For scGPT, scGen and GEARS, mention only was the most common category.</p>
       </div>
-
-
-      <figure class="figure-card figure-portrait" aria-labelledby="figure-2-caption">
-        <div class="figure-scroll" tabindex="0" role="region" aria-label="High-resolution Figure 2; scroll horizontally on smaller screens">
-          <img src="assets/figures/figure-2-high-resolution.png" width="4251" height="5196" decoding="sync" alt="Figure 2. Panel A shows the citation-analysis workflow. Panel B is a three-stage funnel with candidate, LLM-reviewed and classified counts for scVI, scGPT, scGen and GEARS. Panel C is a blue logarithmic heatmap of five primary citation-use categories. Biological-application and mention-only fractions are 40.2% and 16.4% for scVI, 5.0% and 70.9% for scGPT, 7.9% and 73.4% for scGen, and 7.1% and 61.9% for GEARS. Panel D gives category-level precision and recall for all four methods, with N/A where the human reference contained no positive labels.">
+      <figure aria-labelledby="figure-caption">
+        <div class="figure-scroll" tabindex="0" role="region" aria-label="Citation-use figure; scroll horizontally to see all categories on smaller screens">
+          <img src="assets/citation-use-panel.png" width="1279" height="459" loading="lazy" alt="Primary citation-use categories among classified papers. scVI: 40.2% biological application and 16.4% mention only, n=951. scGPT: 5.0% and 70.9%, n=402. scGen: 7.9% and 73.4%, n=214. GEARS: 7.1% and 61.9%, n=84. All five categories and exact values are available in the study notes.">
         </div>
-        <figcaption id="figure-2-caption"><strong>Figure 2 | Citation-analysis workflow and results</strong> Panel B reports method-specific retention through candidate records, LLM review and resolved classification. Panel C uses each method’s classified studies as its denominator and a logarithmic color scale; labels show percentages to one decimal place. Panel D reports unweighted one-vs-rest precision and recall against human consensus for 39 scVI studies and 40 studies each for scGPT, scGen and GEARS. N/A indicates a method-category pair with zero positive human-reference labels.</figcaption>
-        <div class="download-links" aria-label="Figure 2 downloads">
-          <a href="assets/figures/figure-2-high-resolution.png" download>High-resolution PNG (600 dpi)</a>
-          <a href="assets/figures/figure-2.pdf" download>Publication PDF</a>
-          <a href="assets/figures/figure-2-editable.svg" download>Editable SVG</a>
-        </div>
+        <figcaption id="figure-caption">Primary citation-use categories among classified papers. Figure 2C, September 2026 draft.</figcaption>
       </figure>
-    </section>
-
-    <span id="human-validation" aria-hidden="true"></span>
-    <section id="validation" class="section section-wide human-validation" aria-labelledby="validation-heading">
-      <div class="section-intro">
-        <p class="section-label">The human check</p>
-        <h2 id="validation-heading">Agreement is strong in some categories and uneven in others</h2>
-        <p>Precision asks how often a category assigned by the LLM reviewers agreed with the human reference. Recall asks how many human-reference positives the LLM review recovered. These are category-specific operating points from hard labels, not precision-recall curves.</p>
+      <p class="scope-note">These totals are smaller than citation counts because we count unique studies in our review snapshot. Different versions of the same study are merged, and papers without enough full-text evidence or a resolved classification are left out of this comparison.</p>
+      <div class="result-links">
+        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md">Figure, data &amp; human validation ↗</a>
+        <a href="assets/figures/figure-2-high-resolution.png">Open the complete figure ↗</a>
+        <a href="assets/figures/figure-2.pdf" download>PDF ↓</a>
+        <a href="assets/figures/figure-2-editable.svg" download>Editable SVG ↓</a>
       </div>
-
+    </section>
+    <span id="validation" aria-hidden="true"></span>
+    <section id="human-validation" class="section human-validation" aria-labelledby="validation-heading">
+      <p class="section-label">The human check</p>
+      <h2 id="validation-heading">How well did the LLM labels agree with people?</h2>
+      <p>Sampled human reviews are complete for all four methods. Two blinded reviewers agreed on reference labels. The scores below cover studies with resolved machine classifications: 39 for scVI and 40 each for scGPT, scGen and GEARS.</p>
+      <p>Precision asks how often an assigned label was right. Recall asks how many of the human-labeled cases the LLMs found.</p>
       <div class="validation-tables">
-        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scVI precision and recall">
+        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scVI precision and recall; scroll horizontally on smaller screens">
           <table class="validation-table">
-            <caption>scVI <span>n=39</span></caption>
-            <thead><tr><th scope="col">Primary category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Biological application</th><td>88.9%</td><td>80.0%</td></tr>
-              <tr><th scope="row">Method extension</th><td>50.0%</td><td>50.0%</td></tr>
-              <tr><th scope="row">Benchmark evaluation</th><td>88.9%</td><td>80.0%</td></tr>
-              <tr><th scope="row">Mention only</th><td>89.5%</td><td>100.0%</td></tr>
-            </tbody>
+            <caption>scVI</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
+            <tbody><tr><th scope="row">Biological application</th><td>88.9%</td><td>80.0%</td></tr>
+<tr><th scope="row">Method extension</th><td>50.0%</td><td>50.0%</td></tr>
+<tr><th scope="row">Benchmark evaluation</th><td>88.9%</td><td>80.0%</td></tr>
+<tr><th scope="row">Mention only</th><td>89.5%</td><td>100.0%</td></tr></tbody>
           </table>
         </div>
-        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scGPT precision and recall">
+        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scGPT precision and recall; scroll horizontally on smaller screens">
           <table class="validation-table">
-            <caption>scGPT <span>n=40</span></caption>
-            <thead><tr><th scope="col">Primary category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Biological application</th><td>44.4%</td><td>100.0%</td></tr>
-              <tr><th scope="row">Method extension</th><td>33.3%</td><td>40.0%</td></tr>
-              <tr><th scope="row">Benchmark evaluation</th><td>100.0%</td><td>45.5%</td></tr>
-              <tr><th scope="row">Mention only</th><td>100.0%</td><td>100.0%</td></tr>
-            </tbody>
+            <caption>scGPT</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
+            <tbody><tr><th scope="row">Biological application</th><td>44.4%</td><td>100.0%</td></tr>
+<tr><th scope="row">Method extension</th><td>33.3%</td><td>40.0%</td></tr>
+<tr><th scope="row">Benchmark evaluation</th><td>100.0%</td><td>45.5%</td></tr>
+<tr><th scope="row">Mention only</th><td>100.0%</td><td>100.0%</td></tr></tbody>
           </table>
         </div>
-        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scGen precision and recall">
+        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="scGen precision and recall; scroll horizontally on smaller screens">
           <table class="validation-table">
-            <caption>scGen <span>n=40</span></caption>
-            <thead><tr><th scope="col">Primary category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Biological application</th><td>100.0%</td><td>100.0%</td></tr>
-              <tr><th scope="row">Method extension</th><td>N/A</td><td>N/A</td></tr>
-              <tr><th scope="row">Benchmark evaluation</th><td>100.0%</td><td>75.0%</td></tr>
-              <tr><th scope="row">Mention only</th><td>96.6%</td><td>100.0%</td></tr>
-            </tbody>
+            <caption>scGen</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
+            <tbody><tr><th scope="row">Biological application</th><td>100.0%</td><td>100.0%</td></tr>
+<tr><th scope="row">Method extension</th><td>N/A</td><td>N/A</td></tr>
+<tr><th scope="row">Benchmark evaluation</th><td>100.0%</td><td>75.0%</td></tr>
+<tr><th scope="row">Mention only</th><td>96.6%</td><td>100.0%</td></tr></tbody>
           </table>
         </div>
-        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="GEARS precision and recall">
+        <div class="validation-table-scroll" tabindex="0" role="region" aria-label="GEARS precision and recall; scroll horizontally on smaller screens">
           <table class="validation-table">
-            <caption>GEARS <span>n=40</span></caption>
-            <thead><tr><th scope="col">Primary category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Biological application</th><td>N/A</td><td>N/A</td></tr>
-              <tr><th scope="row">Method extension</th><td>N/A</td><td>N/A</td></tr>
-              <tr><th scope="row">Benchmark evaluation</th><td>100.0%</td><td>50.0%</td></tr>
-              <tr><th scope="row">Mention only</th><td>92.6%</td><td>96.2%</td></tr>
-            </tbody>
+            <caption>GEARS</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">Precision</th><th scope="col">Recall</th></tr></thead>
+            <tbody><tr><th scope="row">Biological application</th><td>N/A</td><td>N/A</td></tr>
+<tr><th scope="row">Method extension</th><td>N/A</td><td>N/A</td></tr>
+<tr><th scope="row">Benchmark evaluation</th><td>100.0%</td><td>50.0%</td></tr>
+<tr><th scope="row">Mention only</th><td>92.6%</td><td>96.2%</td></tr></tbody>
           </table>
         </div>
       </div>
-      <p class="validation-note"><strong>Why N/A?</strong> The sampled human reference contained no positive labels for scGen method extension, GEARS biological application or GEARS method extension. By reporting convention, both precision and recall are shown as N/A for those pairs rather than zero. This does not mean the LLM reviewers made no false-positive assignments.</p>
-    </section>
-
-    <section id="downloads" class="section resources" aria-labelledby="resources-heading">
-      <div class="section-heading">
-        <p class="section-label">Inspect and reuse</p>
-        <h2 id="resources-heading">Figures, aggregate data and methods</h2>
-      </div>
-      <div class="resource-grid">
-        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md"><strong>Results and figure notes</strong><span>Denominators, validation values and interpretation limits ↗</span></a>
-        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/figure_2_primary_categories.csv"><strong>Primary-category data</strong><span>Funnel counts and category fractions ↗</span></a>
-        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/figure_2_human_validation.csv"><strong>Human-validation data</strong><span>Four-method precision and recall ↗</span></a>
-        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/human_reviewers/README.md"><strong>Human-review procedure</strong><span>Sampling, blinding and scoring conventions ↗</span></a>
-        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/docs/README.md"><strong>Review workflow</strong><span>From citation discovery to study-level evidence ↗</span></a>
-        <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/scripts/README.md"><strong>Runnable example</strong><span>Try the public review pipeline ↗</span></a>
-      </div>
+      <p>These scores evaluate each study’s primary citation-use category. Agreement varies by category; the biological-application labels for scGPT need particular care.</p>
+      <p>N/A marks categories with no positive labels in the human sample; it does not rule out false positives. Scores are point estimates without confidence intervals.</p>
+      <p><a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md">Validation details &amp; source data ↗</a></p>
     </section>
   </main>
-
-  <footer>
-    <p>BioCiteTrace · September 2026 analysis snapshot</p>
-    <p>LLM-assisted classification with sampled human consensus validation</p>
-    <p><a href="#top">Back to top ↑</a> · <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace">GitHub ↗</a></p>
-  </footer>
+  <footer><a href="#explore">Back to the reading choices ↑</a><a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace">BioCiteTrace on GitHub ↗</a></footer>
 </div>
 </body>
 </html>
