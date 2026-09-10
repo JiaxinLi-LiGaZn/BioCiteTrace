@@ -1,16 +1,14 @@
-# The first comparison
+# Citation-analysis results
 
-**AI disclaimer:** Citation-use classifications were produced with LLMs and may contain errors. Human checks cover samples, not every paper. **Sampled human reviews for scGen and GEARS are on the way; their results remain preliminary.** Sampled human reviews for scVI and scGPT are complete; their precision and recall are reported below.
+**Interpretation note:** LLMs produced the corpus-wide citation-use classifications and may make errors. Human consensus was used as a sampled reference standard, not as absolute ground truth. Sampled human validation is complete for scVI, scGPT, scGen and GEARS.
 
-Among papers with resolved classifications, biological application was much more common for scVI. For scGPT, scGen and GEARS, mention only was the most common primary category.
+Among papers with resolved primary-use classifications, biological application was much more common for scVI. For scGPT, scGen and GEARS, mention only was the most common primary category.
 
-This is a snapshot from Figure 2 of the September 2026 manuscript draft. The figure and the values below were taken from PDF page 16 of `revision_1_0904 (1).pdf`. They have not been recomputed from the underlying study-level records.
-
-![Primary citation-use categories in Figure 2C](../site/assets/citation-use-panel.png)
+[Open the high-resolution complete Figure 2](../site/assets/figures/figure-2-high-resolution.png)
 
 ## What is being counted?
 
-The figure assigns each classified study one **primary category**. The reusable workflow also keeps non-exclusive use labels, but those are a different summary. A paper whose primary category is biological application can still include benchmarking or method development.
+The figure assigns each classified study one **primary category**. The reusable workflow also keeps non-exclusive use labels, but those answer a different question. A paper whose primary category is biological application can still include benchmarking or method development.
 
 | Method | Candidate records | LLM reviewed | Classified studies |
 | --- | ---: | ---: | ---: |
@@ -19,7 +17,7 @@ The figure assigns each classified study one **primary category**. The reusable 
 | scGen | 582 | 274 | 214 |
 | GEARS | 353 | 100 | 84 |
 
-Panel C uses the **classified-studies column** as its denominator. Coverage differs across methods. Missing or unresolved papers are not mention-only papers, and these fractions should not be read as rates among all citations or all real-world users.
+Panel C uses the **classified-studies column** as its denominator. Coverage differs across methods. Duplicate study versions, unavailable or ineligible evidence, coverage-incomplete cases, citation-not-located cases and unresolved classifications are not silently treated as mention only.
 
 | Method | Biological application | Method extension | Benchmark evaluation | Other executed use | Mention only |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -28,30 +26,32 @@ Panel C uses the **classified-studies column** as its denominator. Coverage diff
 | scGen | 7.9% | 3.7% | 14.5% | 0.5% | 73.4% |
 | GEARS | 7.1% | 11.9% | 19.0% | 0.0% | 61.9% |
 
-Values are rounded as displayed in the source; a row can sum to 99.9%. The biological-application column does not by itself measure validated biological discoveries.
+Values are rounded to one decimal place as displayed. A row can sum to 99.9% because of rounding. The biological-application column does not by itself measure validated biological discoveries.
 
-[Download the transcribed category and funnel data](figure_2_primary_categories.csv)
+[Download the primary-category and funnel data](figure_2_primary_categories.csv)
 
-## How well did the human check agree?
+## Human-validation results
 
-For each evaluated method, two blinded human reviewers independently assessed 50 sampled studies and resolved disagreements by consensus. Panel D evaluates the subset with resolved machine classifications: 39 scVI studies and 40 scGPT studies. It reports **primary-category** precision and recall, not validation of every non-exclusive use label. GEARS and scGen human-validation results are not shown in this figure.
+Panel D evaluates studies in the classification-validation samples that have resolved LLM primary labels: 39 for scVI and 40 each for scGPT, scGen and GEARS. It reports unweighted one-vs-rest precision and recall for each primary category; the macro-average group has been removed.
 
-| Primary category | scVI precision / recall | scGPT precision / recall |
-| --- | ---: | ---: |
-| Macro average | 79.3% / 77.5% | 69.4% / 71.4% |
-| Biological application | 88.9% / 80.0% | 44.4% / 100.0% |
-| Method extension | 50.0% / 50.0% | 33.3% / 40.0% |
-| Benchmark evaluation | 88.9% / 80.0% | 100.0% / 45.5% |
-| Mention only | 89.5% / 100.0% | 100.0% / 100.0% |
+| Primary category | scVI precision / recall | scGPT precision / recall | scGen precision / recall | GEARS precision / recall |
+| --- | ---: | ---: | ---: | ---: |
+| Biological application | 88.9% / 80.0% | 44.4% / 100.0% | 100.0% / 100.0% | N/A / N/A |
+| Method extension | 50.0% / 50.0% | 33.3% / 40.0% | N/A / N/A | N/A / N/A |
+| Benchmark evaluation | 88.9% / 80.0% | 100.0% / 45.5% | 100.0% / 75.0% | 100.0% / 50.0% |
+| Mention only | 89.5% / 100.0% | 100.0% / 100.0% | 96.6% / 100.0% | 92.6% / 96.2% |
 
-Agreement varies by category. In particular, the biological-application precision for scGPT means that its machine-assigned applications need careful checking. These sample metrics do not directly supply a correction factor or uncertainty interval for the full corpus.
+N/A indicates a method-category pair with zero positive human-reference labels: scGen method extension, GEARS biological application and GEARS method extension. By reporting convention, both precision and recall are shown as N/A rather than zero for those pairs. This does not imply that the LLM review made no false-positive assignments.
 
-[Download the transcribed validation data](figure_2_human_validation.csv) · [Human-review procedure](../human_reviewers/README.md)
+These values are point estimates; confidence intervals have not yet been calculated. Hard labels supply one operating point, not a precision-recall curve, and the sample metrics are not a correction factor for the full citation corpus.
 
-## Original figure and provenance
+[Download the human-validation data](figure_2_human_validation.csv) · [Human-review procedure](../human_reviewers/README.md)
 
-[Open the complete Figure 2](../site/assets/figure-2.png) · [Source and extraction record](provenance.json)
+## Figure files and provenance
 
-The complete figure retains the workflow, screening funnel, primary-category comparison and human-validation panels. The website uses only Panel C to keep the story brief; its caption links back here so the denominator and validation context remain available.
+- [High-resolution PNG, 600 dpi](../site/assets/figures/figure-2-high-resolution.png)
+- [Publication PDF](../site/assets/figures/figure-2.pdf)
+- [Editable SVG](../site/assets/figures/figure-2-editable.svg)
+- [Source and file-integrity record](provenance.json)
 
-The manuscript PDF itself is not redistributed here. This folder contains the selected figure and a transcription of the displayed aggregates. It does not contain the complete production corpus, row-level classifications, sampling probabilities or final consensus tables needed to independently reproduce the study estimates.
+The public repository contains the aggregate figure data and a reusable workflow, but not the complete production corpus, row-level classifications, full-text papers or sampling probabilities needed to reproduce every study estimate independently.

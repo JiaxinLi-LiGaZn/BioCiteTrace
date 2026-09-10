@@ -1,21 +1,48 @@
 {
-  "source_document": "revision_1_0904 (1).pdf",
-  "source_sha256": "63ef2a2df928f0d70f1f54986f17ec268977637466ce4a6f2d44254efcf1ca9c",
-  "pdf_page": 16,
   "figure": "Figure 2",
-  "transcribed_on": "2026-09-05",
-  "status": "manuscript_draft_snapshot",
-  "full_figure": {
-    "path": "../site/assets/figure-2.png",
-    "extraction": "Original embedded image Im6.png, without redrawing",
-    "sha256": "afddac55e6ad40657616115c75cf703f65beab7fab9c1881c3e15b7d6a379064"
+  "figure_version": "figure2_citation_analysis_final_v13",
+  "generated_utc": "2026-09-09T17:55:20.546357+00:00",
+  "status": "final four-method validation snapshot",
+  "physical_dimensions_mm": [180.0, 220.0],
+  "typography": {
+    "resolved_family": "Nimbus Sans",
+    "web_fallbacks": ["Arial", "Helvetica", "sans-serif"]
   },
-  "panel_c": {
-    "path": "../site/assets/citation-use-panel.png",
-    "extraction": "Poppler render of page 16 at 240 dpi; crop x=379 y=965 width=1279 height=459",
-    "sha256": "37d815143996fdfa409187b6759b8925dc7dc362a905491905fd7f318ccb5b43"
+  "figure_files": {
+    "high_resolution_png": {
+      "path": "site/assets/figures/figure-2-high-resolution.png",
+      "pixels": [4251, 5196],
+      "dpi": 600,
+      "sha256": "50863e8e528fadf8c221f8b6aabbf76321c45348c9eaeff62eedff654b25f80f"
+    },
+    "publication_pdf": {
+      "path": "site/assets/figures/figure-2.pdf",
+      "sha256": "eab80f6f4dbcb31efb6c6513caeaa156ea8a972adb9bf080b071bca374c87f1d"
+    },
+    "editable_svg": {
+      "path": "site/assets/figures/figure-2-editable.svg",
+      "sha256": "c667c3028a942d55f977e7246573d34810948b49f09a55bf65a8dd833ad3ce4e"
+    }
   },
-  "data_note": "Values transcribed from panels B-D; percentages are rounded as displayed, not recomputed from study-level records.",
-  "denominator": "Panel C: resolved classified studies per method. Panel D: resolved classifications in the human-validation sample.",
-  "label_semantics": "Mutually exclusive primary-category display; not proportions of any non-exclusive use label."
+  "data_files": {
+    "primary_categories": {
+      "path": "results/figure_2_primary_categories.csv",
+      "sha256": "281079eebc2c25178b3ed75143ef7e70bc53ee44303fdcdb48025740099b7700"
+    },
+    "human_validation": {
+      "path": "results/figure_2_human_validation.csv",
+      "sha256": "cd75a8a80935966eaf95131de8f140873310f5d432fd907846cafb7f7d34f00d"
+    }
+  },
+  "denominators": {
+    "panel_c": "Studies with resolved primary citation-use classifications: scVI 951, scGPT 402, scGen 214 and GEARS 84.",
+    "panel_d": "Classification-validation studies with resolved LLM labels: scVI 39 and scGPT, scGen and GEARS 40 each."
+  },
+  "reporting_notes": [
+    "Panel C shows mutually exclusive primary categories rather than non-exclusive use labels.",
+    "Panel C uses logarithmic color normalization from the smallest positive displayed fraction to the maximum; zero is shown with a neutral near-white fill.",
+    "Panel D omits macro averages and reports category-level precision and recall.",
+    "Both precision and recall are N/A when a method-category pair has zero positive human-reference labels.",
+    "Human consensus is a sampled reference standard; validation values are point estimates without confidence intervals."
+  ]
 }

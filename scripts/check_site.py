@@ -1,5 +1,6 @@
 """Check the single-page reading paths, static assets and figure provenance."""
 
+# Standard-library parsers and hashing utilities validate local site structure and files.
 from hashlib import sha256
 from html.parser import HTMLParser
 import json
@@ -12,6 +13,8 @@ SITE = ROOT / 'site'
 
 
 class Page(HTMLParser):
+    """Collect links, IDs, headings and image metadata from one HTML page."""
+
     def __init__(self):
         super().__init__()
         self.links = []
@@ -20,6 +23,8 @@ class Page(HTMLParser):
         self.pagination = []
 
     def handle_starttag(self, tag, attributes):
+        """Record relevant attributes from one parsed HTML start tag."""
+
         attrs = dict(attributes)
         if 'id' in attrs:
             assert attrs['id'] not in self.ids, 'Duplicate HTML ID'
@@ -38,7 +43,17 @@ class Page(HTMLParser):
             assert attrs.get('width') and attrs.get('height'), 'Reserve figure dimensions'
 
 
+def png_dimensions(path):
+    """Return ``(width, height)`` in pixels for a PNG at ``path``."""
+
+    header = path.read_bytes()[:24]
+    assert header[:8] == b'\x89PNG\r\n\x1a\n', f'Invalid PNG: {path}'
+    return int.from_bytes(header[16:20], 'big'), int.from_bytes(header[20:24], 'big')
+
+
 def main():
+    """Validate the published site, its internal links and its recorded artifacts."""
+
     pages = {}
     for path in SITE.glob('*.html'):
         page = Page()
@@ -64,13 +79,20 @@ def main():
         assert asset.is_relative_to(SITE) and asset.is_file(), f'Missing CSS asset: {url}'
         if asset.suffix == '.woff2':
             assert asset.read_bytes()[:4] == b'wOF2', f'Invalid font file: {url}'
-    assert (SITE / 'assets/fonts/OFL.txt').is_file(), 'Missing font license'
     provenance = json.loads((ROOT / 'results/provenance.json').read_text())
-    for key in ('full_figure', 'panel_c'):
-        entry = provenance[key]
-        file = ROOT / 'results' / entry['path']
-        assert sha256(file.read_bytes()).hexdigest() == entry['sha256'], f'Changed source figure: {key}'
-    print('Single-page links, redirects, font assets, image text and figure hashes verified.')
+    for group in ('figure_files', 'data_files'):
+        for key, entry in provenance[group].items():
+            file = ROOT / entry['path']
+            assert file.is_file(), f'Missing recorded artifact: {group}.{key}'
+            digest = sha256(file.read_bytes()).hexdigest()
+            assert digest == entry['sha256'], f'Changed recorded artifact: {group}.{key}'
+    high_resolution = provenance['figure_files']['high_resolution_png']
+    actual_pixels = png_dimensions(ROOT / high_resolution['path'])
+    assert list(actual_pixels) == high_resolution['pixels'], 'High-resolution PNG dimensions changed'
+    homepage_text = (SITE / 'index.html').read_text()
+    assert 'pending' not in homepage_text.lower(), 'Website still reports validation as pending'
+    assert 'Macro average' not in homepage_text, 'Website still displays removed macro averages'
+    print('Single-page links, redirects, image text, final-result language and artifact hashes verified.')
 
 
 if __name__ == '__main__':

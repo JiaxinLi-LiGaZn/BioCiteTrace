@@ -1,11 +1,17 @@
-method,resolved_validation_studies,category,precision_pct,recall_pct
-scVI,39,macro_average,79.3,77.5
-scVI,39,biological_application,88.9,80.0
-scVI,39,method_extension,50.0,50.0
-scVI,39,benchmark_evaluation,88.9,80.0
-scVI,39,mention_only,89.5,100.0
-scGPT,40,macro_average,69.4,71.4
-scGPT,40,biological_application,44.4,100.0
-scGPT,40,method_extension,33.3,40.0
-scGPT,40,benchmark_evaluation,100.0,45.5
-scGPT,40,mention_only,100.0,100.0
+method,resolved_validation_studies,category,precision_pct,recall_pct,status
+scVI,39,biological_application,88.9,80.0,final
+scVI,39,method_extension,50.0,50.0,final
+scVI,39,benchmark_evaluation,88.9,80.0,final
+scVI,39,mention_only,89.5,100.0,final
+scGPT,40,biological_application,44.4,100.0,final
+scGPT,40,method_extension,33.3,40.0,final
+scGPT,40,benchmark_evaluation,100.0,45.5,final
+scGPT,40,mention_only,100.0,100.0,final
+scGen,40,biological_application,100.0,100.0,final
+scGen,40,method_extension,N/A,N/A,zero positive human-reference labels
+scGen,40,benchmark_evaluation,100.0,75.0,final
+scGen,40,mention_only,96.6,100.0,final
+GEARS,40,biological_application,N/A,N/A,zero positive human-reference labels
+GEARS,40,method_extension,N/A,N/A,zero positive human-reference labels
+GEARS,40,benchmark_evaluation,100.0,50.0,final
+GEARS,40,mention_only,92.6,96.2,final
