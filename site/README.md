@@ -18,7 +18,7 @@ The figure caption keeps the denominators explicit. The result page also explain
 
 ## Design
 
-The page uses an Arial/Helvetica-style sans-serif stack aligned with the manuscript figures. It has a white background, dark text, restrained blue accents and responsive evidence tables. On narrow screens, the full figure scrolls horizontally instead of being compressed until its labels are unreadable.
+The page uses locally hosted JetBrains Mono, with text of at least 18px outside the original figure. It has a white background, dark text, restrained blue accents and responsive evidence tables. On narrow screens, the full figure scrolls horizontally instead of being compressed until its labels are unreadable.
 
 There are no pagination controls, keyboard interception, animations or third-party runtime requests. Ordinary section links work without JavaScript. The four older chapter URLs redirect to the corresponding anchors so previously shared links remain useful.
 
@@ -37,3 +37,7 @@ Open `http://localhost:8000`. The HTML and CSS are the source; no generator, pac
 The included `.github/workflows/pages.yml` validates and uploads only this folder. It deploys on a website change to `main`, or a manual run from `main`. Pull requests validate the page without publishing it.
 
 The intended URL is `https://jiaxinli-ligazn.github.io/BioCiteTrace/`.
+
+## Preserve the reading style
+
+Use the established white background, locally hosted JetBrains Mono, dark text of at least 18px, and blue links. Keep the branching reading choices at the top and the workflow connected by plain arrows, without numbered badges or oversized count displays. New findings and figures should fit this style. Keep the AI disclaimer prominent and retain the Tibo acknowledgement.

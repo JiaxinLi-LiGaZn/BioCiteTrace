@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BioCiteTrace — How are cited single-cell AI models used?</title>
   <meta name="description" content="BioCiteTrace follows citations to four single-cell AI methods and distinguishes biological application, method extension, benchmarking and mention-only use.">
+  <link rel="preload" href="assets/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/JetBrainsMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/story.css">
 </head>
 <body>
@@ -12,27 +14,34 @@
 <div class="page">
   <header id="top" class="masthead">
     <a class="brand" href="#top">Bio<span>Cite</span>Trace</a>
-    <nav class="top-nav" aria-label="Main navigation">
-      <a href="#story">Story</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#findings">Findings</a>
-      <a href="#validation">Validation</a>
-    </nav>
     <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace" class="repo-link">GitHub <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="main">
-    <section id="explore" class="opening" aria-labelledby="question">
-      <p class="eyebrow">Citation-use analysis in single-cell biology</p>
+    <section class="opening" aria-labelledby="question">
       <h1 id="question">When an AI model is cited,<br>how is it <span>used?</span></h1>
       <p class="lede">Citation counts measure attention, but not what a citing study actually did. BioCiteTrace follows the evidence in citing papers to distinguish biological application, method extension, benchmark evaluation, other executed use and mention only.</p>
       <p class="review-status"><a href="#validation">Sampled human validation is complete for all four methods ↓</a></p>
-      <dl class="snapshot" aria-label="Analysis snapshot">
-        <div><dt>4,608</dt><dd>candidate records</dd></div>
-        <div><dt>2,734</dt><dd>LLM reviewed</dd></div>
-        <div><dt>1,651</dt><dd>classified studies</dd></div>
-        <div><dt>4</dt><dd>methods with sampled validation</dd></div>
-      </dl>
+      <nav id="explore" class="entry-points" aria-label="Choose what to explore">
+        <ul>
+          <li>
+            <a class="entry-title" href="#story">Read the story <span aria-hidden="true">↓</span></a>
+            <p>Why we started looking.</p>
+          </li>
+          <li>
+            <a class="entry-title" href="#findings">See the findings <span aria-hidden="true">↓</span></a>
+            <a class="entry-detail" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/results/README.md">Figure &amp; study notes ↗</a>
+          </li>
+          <li>
+            <a class="entry-title" href="#workflow">Explore the workflow <span aria-hidden="true">↓</span></a>
+            <a class="entry-detail" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/docs/README.md">Methods &amp; prompts ↗</a>
+          </li>
+          <li>
+            <a class="entry-title" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/scripts/README.md">Try the example <span aria-hidden="true">↗</span></a>
+            <a class="entry-detail" href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/tree/main/src/citation_use_review">Browse the code ↗</a>
+          </li>
+        </ul>
+      </nav>
     </section>
 
     <section id="story" class="section" aria-labelledby="story-heading">
@@ -50,31 +59,39 @@
     <section id="workflow" class="section" aria-labelledby="workflow-heading">
       <div class="section-heading">
         <p class="section-label">From citation to evidence</p>
-        <h2 id="workflow-heading">The review keeps coverage and uncertainty visible</h2>
+        <h2 id="workflow-heading">So <del>we</del> <span class="reviewer-name">LLMs</span> read the citing papers.</h2>
         <p>Two independent LLM assessments are consolidated from eligible study evidence, followed by blinded human review of evaluation samples.</p>
         <a href="https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/blob/main/docs/README.md">Read the full workflow ↗</a>
       </div>
       <ol class="steps" role="list">
-        <li><span>1</span><div><h3>Identify citing studies</h3><p>Link paper versions and deduplicate records so the counting unit is one scientific study.</p></div></li>
-        <li><span>2</span><div><h3>Verify eligible evidence</h3><p>Locate approved full text and retain explicit evidence-coverage states.</p></div></li>
-        <li><span>3</span><div><h3>Independent LLM review</h3><p>Two reviewers classify the study from the same evidence without seeing one another’s answers.</p></div></li>
-        <li><span>4</span><div><h3>Consolidate review outcomes</h3><p>Resolve supported decisions and keep genuinely unresolved cases out of result denominators.</p></div></li>
-        <li><span>5</span><div><h3>Sampled human validation</h3><p>Two blinded human reviewers establish consensus reference labels for an evaluation sample.</p></div></li>
+        <li><h3>Identify citing studies</h3><p>Link paper versions and deduplicate records so the counting unit is one scientific study.</p></li>
+        <li><h3>Verify eligible evidence</h3><p>Locate approved full text and retain explicit evidence-coverage states.</p></li>
+        <li><h3>Independent LLM review</h3><p>Two reviewers classify the study from the same evidence without seeing one another’s answers.</p></li>
+        <li><h3>Consolidate review outcomes</h3><p>Resolve supported decisions and keep genuinely unresolved cases out of result denominators.</p></li>
+        <li><h3>Sampled human validation</h3><p>Two blinded human reviewers establish consensus reference labels for an evaluation sample.</p></li>
       </ol>
     </section>
 
     <section id="findings" class="section section-wide findings" aria-labelledby="findings-heading">
+      <aside id="ai-disclaimer" class="ai-disclaimer" aria-labelledby="ai-disclaimer-heading">
+        <h3 id="ai-disclaimer-heading">AI disclaimer — please read before the results</h3>
+        <p>This website was built with AI assistance. LLM classifications may contain errors. Sampled human reviews are complete for all four methods.</p>
+        <p>LLMs produced the corpus-wide citation-use classifications. Human consensus was used as a sampled reference standard, not as absolute ground truth. The results are point estimates and do not yet include confidence intervals.</p>
+      </aside>
+      <p class="acknowledgment">Thanks to Tibo for the resets that helped us run the LLM review pipeline across all four methods.</p>
       <div class="results-intro">
         <p class="section-label">What the review found</p>
         <h2 id="findings-heading">The meaning of a citation differs markedly by method</h2>
         <p>Among studies with resolved primary-use classifications, <strong>40.2%</strong> of scVI citations were biological applications and <strong>16.4%</strong> were mention only. For scGPT, scGen and GEARS, mention only was the largest category, accounting for <strong>70.9%</strong>, <strong>73.4%</strong> and <strong>61.9%</strong> of classified studies, respectively.</p>
+      <dl class="snapshot" aria-label="Analysis snapshot">
+        <div><dt>4,608</dt><dd>candidate records</dd></div>
+        <div><dt>2,734</dt><dd>LLM reviewed</dd></div>
+        <div><dt>1,651</dt><dd>classified studies</dd></div>
+        <div><dt>4</dt><dd>methods with sampled validation</dd></div>
+      </dl>
         <p>The screening funnel is essential context. The 1,651 classified studies are fewer than the 4,608 candidate records because duplicate versions, unavailable or ineligible evidence, coverage-incomplete cases, citation-not-located cases and unresolved classifications are not silently converted into mention-only observations.</p>
       </div>
 
-      <aside id="ai-disclaimer" class="ai-disclaimer" aria-labelledby="ai-disclaimer-heading">
-        <h3 id="ai-disclaimer-heading">Interpretation note</h3>
-        <p>LLMs produced the corpus-wide citation-use classifications. Human consensus was used as a sampled reference standard, not as absolute ground truth. The results are point estimates and do not yet include confidence intervals.</p>
-      </aside>
 
       <figure class="figure-card figure-portrait" aria-labelledby="figure-2-caption">
         <div class="figure-scroll" tabindex="0" role="region" aria-label="High-resolution Figure 2; scroll horizontally on smaller screens">
@@ -89,6 +106,7 @@
       </figure>
     </section>
 
+    <span id="human-validation" aria-hidden="true"></span>
     <section id="validation" class="section section-wide human-validation" aria-labelledby="validation-heading">
       <div class="section-intro">
         <p class="section-label">The human check</p>
