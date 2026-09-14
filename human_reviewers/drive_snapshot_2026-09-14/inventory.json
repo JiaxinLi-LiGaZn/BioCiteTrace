@@ -40,46 +40,6 @@
     }
   },
   {
-    "source_id": "1CufKmrAiv4aVRAjKERzwXkZkBA39CXVN_vuhlA8ueUA",
-    "method": "scgpt",
-    "title": "scGPT Human Validation — Consensus & Coordinator",
-    "source_url": "https://docs.google.com/document/d/1CufKmrAiv4aVRAjKERzwXkZkBA39CXVN_vuhlA8ueUA/edit?usp=drivesdk",
-    "source_modified_at_utc": "2026-08-25T20:48:57.766Z",
-    "source_mime_type": "application/vnd.google-apps.document",
-    "export_date": "2026-09-14",
-    "metadata_rechecked_date": "2026-09-14",
-    "record_type": "unfilled_coordinator",
-    "status_note": "Unfilled coordinator table. This is not the completed consensus referenced by the result summaries.",
-    "formal_record_count": 50,
-    "calibration_record_count": 3,
-    "explicit_locked_field_count": 0,
-    "files": {
-      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgpt/coordinator_unfilled.docx",
-      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgpt/coordinator_unfilled.pdf",
-      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgpt/coordinator_unfilled.tables.json"
-    }
-  },
-  {
-    "source_id": "1vVk6MvVR3FeGOBw2uAbt3GsDBitiCOBaYHPRgrF21EY",
-    "method": "scgpt",
-    "title": "scGPT Human Validation — Reviewer 2 (Blinded)",
-    "source_url": "https://docs.google.com/document/d/1vVk6MvVR3FeGOBw2uAbt3GsDBitiCOBaYHPRgrF21EY/edit?usp=drivesdk",
-    "source_modified_at_utc": "2026-08-25T20:09:41.069Z",
-    "source_mime_type": "application/vnd.google-apps.document",
-    "export_date": "2026-09-14",
-    "metadata_rechecked_date": "2026-09-14",
-    "record_type": "unfilled_original_form",
-    "status_note": "Unfilled original Reviewer 2 form; the completed paginated document above is the relevant review record.",
-    "formal_record_count": 50,
-    "calibration_record_count": 3,
-    "explicit_locked_field_count": 0,
-    "files": {
-      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_2_unfilled_original.docx",
-      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_2_unfilled_original.pdf",
-      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_2_unfilled_original.tables.json"
-    }
-  },
-  {
     "source_id": "1JBfadro8saHpvNkEbE11OTWdSOj8CalJ2JH-Pn0rRWg",
     "method": "scgpt",
     "title": "scGPT Human Validation — Category-Specific Precision and Recall (Provisional)",
@@ -158,26 +118,6 @@
       "pdf": "human_reviewers/drive_snapshot_2026-09-14/scvi/primary_use_consensus.pdf",
       "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scvi/primary_use_consensus.tables.json",
       "rows_tsv": "human_reviewers/drive_snapshot_2026-09-14/scvi/primary_use_consensus.tsv"
-    }
-  },
-  {
-    "source_id": "1RGKTijnMr9ch0-0If1JZX-W_SMNVAJlOy-3VSDzoDHo",
-    "method": "scvi",
-    "title": "scVI Human Validation — Consensus & Coordinator",
-    "source_url": "https://docs.google.com/document/d/1RGKTijnMr9ch0-0If1JZX-W_SMNVAJlOy-3VSDzoDHo/edit?usp=drivesdk",
-    "source_modified_at_utc": "2026-09-03T17:15:07.587Z",
-    "source_mime_type": "application/vnd.google-apps.document",
-    "export_date": "2026-09-14",
-    "metadata_rechecked_date": "2026-09-14",
-    "record_type": "unfilled_coordinator",
-    "status_note": "Unfilled coordinator table; use the separate primary-use consensus backup for recorded consensus labels.",
-    "formal_record_count": 50,
-    "calibration_record_count": 3,
-    "explicit_locked_field_count": 0,
-    "files": {
-      "docx": "human_reviewers/drive_snapshot_2026-09-14/scvi/coordinator_unfilled.docx",
-      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scvi/coordinator_unfilled.pdf",
-      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scvi/coordinator_unfilled.tables.json"
     }
   },
   {

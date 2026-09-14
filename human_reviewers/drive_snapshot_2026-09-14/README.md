@@ -1,9 +1,9 @@
 # Google Drive review record snapshot
 
-This directory preserves the review documents located in Google Drive on 14 September 2026. Start with the [complete catalog](../CATALOG.md) for the source links, file roles, and completion limits.
+This directory preserves the retained review documents from the Google Drive search on 14 September 2026. Superseded unfilled forms are excluded. Start with the [complete catalog](../CATALOG.md) for the source links, file roles, and completion limits.
 
-- `inventory.json` describes 17 source documents and their observed status.
-- `MANIFEST.tsv` records the sizes and SHA-256 checksums of 54 files: 34 original DOCX/PDF exports, 17 extracted table files, and 3 case-level TSV files. Four of the original exports are the existing scGPT backups in `../completed/`; they are referenced without duplication.
+- `inventory.json` describes 14 source documents and their observed status.
+- `MANIFEST.tsv` records the sizes and SHA-256 checksums of 45 files: 28 original DOCX/PDF exports, 14 extracted table files, and 3 case-level TSV files. Four of the original exports are the existing scGPT backups in `../completed/`; they are referenced without duplication.
 - Each new source document is preserved as an unedited Google Drive DOCX export and PDF export.
 - `*.tables.json` preserves the DOCX paragraphs, table cells, hyperlink relationship targets, source DOCX path, and source DOCX checksum. Repeated page headers remain present. These files are deterministic text extractions, not new scientific reviews.
 - The scVI and scGen consensus TSVs preserve the recorded case-level text. The GEARS TSV preserves the working coordinator columns, including unresolved and blank fields. Newlines within cells are quoted according to TSV/CSV conventions; use a proper parser rather than splitting lines.

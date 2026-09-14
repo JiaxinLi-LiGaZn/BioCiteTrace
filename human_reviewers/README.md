@@ -1,12 +1,12 @@
 # Human-review materials
 
-This folder contains archived independent reviewer records for scGPT, scVI, scGen and GEARS, the available consensus and process documents, and method-agnostic templates for future validation. The [complete source catalog](CATALOG.md) distinguishes recorded reviews, consensus labels, unfinished coordinator forms, and historical results.
+This folder contains archived independent reviewer records for scGPT, scVI, scGen and GEARS, the available consensus and process documents, and method-agnostic templates for future validation. The [complete source catalog](CATALOG.md) distinguishes recorded reviews, consensus labels, and historical results.
 
 ## Four-method Drive archive
 
-The [14 September 2026 snapshot](drive_snapshot_2026-09-14/README.md) indexes 17 source documents: eight independent reviewer records, five consensus/coordinator documents, one unfilled original reviewer form, and three result/process summaries. Each method has two reviewer records covering 50 formal-validation cases; scGPT and scVI also have three calibration cases per reviewer. Raw lock fields are preserved and are not uniformly complete.
+The [14 September 2026 snapshot](drive_snapshot_2026-09-14/README.md) indexes 14 retained source documents: eight independent reviewer records, three consensus/coordinator documents, and three result/process summaries. Superseded unfilled forms are excluded. Each method has two reviewer records covering 50 formal-validation cases; scGPT and scVI also have three calibration cases per reviewer. Raw lock fields are preserved and are not uniformly complete.
 
-Available case-level consensus includes the scVI primary-use backup, the scGen primary-use consensus, and the partially reconciled GEARS coordinator. The scGPT coordinator is unfilled; a completed scGPT consensus was not located in the searched Drive records. The archive therefore does not yet supply every source required to independently reproduce the final four-method figure. See the catalog for specific remaining gaps.
+Available case-level consensus includes the scVI primary-use backup, the scGen primary-use consensus, and the partially reconciled GEARS coordinator. A completed scGPT consensus was not located in the searched Drive records. The archive therefore does not yet supply every source required to independently reproduce the final four-method figure. See the catalog for specific remaining gaps.
 
 ## Original scGPT reviewer backups
 
