@@ -49,6 +49,7 @@ These values are point estimates; confidence intervals have not yet been calcula
 
 ## Figure files and provenance
 
+- [Version of record on Zenodo: 10.5281/zenodo.22757889](https://doi.org/10.5281/zenodo.22757889), preserving GitHub commit [`0e118a25ee6e`](https://github.com/JiaxinLi-LiGaZn/BioCiteTrace/commit/0e118a25ee6e04105abbf331d5c25fd1ee68c520) on 14 September 2026.
 - [High-resolution PNG, 600 dpi](../site/assets/figures/figure-2-high-resolution.png)
 - [Publication PDF](../site/assets/figures/figure-2.pdf)
 - [Editable SVG](../site/assets/figures/figure-2-editable.svg)
