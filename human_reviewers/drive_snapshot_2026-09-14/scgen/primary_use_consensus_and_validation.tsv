@@ -1,0 +1,201 @@
+source_id	record_id	source_table_index	source_row_index	case_id_in_source	article	independent_labels	consensus_and_provenance
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-001	1	1	SCGEN-HV-001	"Opportunities for Artificial Intelligence in Advancing Precision Medicine
+DOI: 10.1007/s40142-019-00177-4"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-002	1	2	SCGEN-HV-002	"Species-agnostic transfer learning for cross-species transcriptomics data integration without gene orthology
+DOI: 10.1093/bib/bbae004"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-003	1	3	SCGEN-HV-003	"Modelling stem cell differentiation related processes—A practical overview for biologists
+DOI: 10.1002/1873-3468.70395"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-004	1	4	SCGEN-HV-004	"scDREAMER for atlas-level integration of single-cell datasets using deep generative model paired with adversarial classifier
+DOI: 10.1038/s41467-023-43590-8"	"Reviewer 1: Benchmark
+Reviewer 2: Benchmark"	"Benchmark
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-005	1	5	SCGEN-HV-005	"Benchmarking LLM-based agents for single-cell omics analysis
+DOI: 10.1186/s13059-026-03998-z"	"Reviewer 1: Benchmark
+Reviewer 2: Benchmark"	"Benchmark
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-006	1	6	SCGEN-HV-006	"BuDDI: Bulk Deconvolution with Domain Invariance to predict cell-type-specific perturbations from bulk
+DOI: 10.1371/journal.pcbi.1012742"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-007	1	7	SCGEN-HV-007	"Discovering governing equations of biological systems through representation learning and sparse model discovery
+DOI: 10.1093/nargab/lqaf048"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-008	1	8	SCGEN-HV-008	"Disrupted developmental signaling induces novel transcriptional states
+DOI: 10.1073/pnas.2418351122"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-009	1	9	SCGEN-HV-009	"PerTurboAgent: A Self-Planning Agent for Boosting Sequential Perturb-seq Experiments
+DOI: 10.1101/2025.05.25.656020"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-010	1	10	SCGEN-HV-010	"Learning Perturbation-specific Cell Representations for Prediction of Transcriptional Response across Cellular Contexts
+DOI: 10.1101/2023.03.20.533433"	"Reviewer 1: Benchmark
+Reviewer 2: Benchmark"	"Benchmark
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-011	1	11	SCGEN-HV-011	"A Cross-Modal Autoencoder Framework Learns Holistic Representations of Cardiovascular State
+DOI: 10.1101/2022.05.26.493497"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-012	1	12	SCGEN-HV-012	"scVAE: variational auto-encoders for single-cell gene expression data.
+DOI: 10.1093/bioinformatics/btaa293"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-013	1	13	SCGEN-HV-013	"Biologically Interpretable VAE with Supervision for Transcriptomics Data Under Ordinal Perturbations
+DOI: 10.1101/2024.03.28.587231"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-014	1	14	SCGEN-HV-014	"Fluctuation structure predicts genome-wide perturbation outcomes
+DOI: 10.1101/2025.06.27.661814"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-015	1	15	SCGEN-HV-015	"A practical guide to sequencing in neuropsychiatric research
+DOI: 10.1038/s44277-025-00041-0"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-016	1	16	SCGEN-HV-016	"Neural network-assisted humanisation of COVID-19 hamster transcriptomic data reveals matching severity states in human disease
+DOI: 10.1016/j.ebiom.2024.105312"	"Reviewer 1: Apply to biological data
+Reviewer 2: Apply to biological data"	"Apply to biological data
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-017	1	17	SCGEN-HV-017	"Cells of the adult human heart
+DOI: 10.1038/s41586-020-2797-4"	"Reviewer 1: Apply to biological data
+Reviewer 2: Apply to biological data"	"Apply to biological data
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-018	1	18	SCGEN-HV-018	"Causal identification of single-cell experimental perturbation effects with CINEMA-OT
+DOI: 10.1038/s41592-023-02040-5"	"Reviewer 1: Benchmark
+Reviewer 2: Benchmark"	"Benchmark
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-019	1	19	SCGEN-HV-019	"Shortcomings of silhouette in single-cell integration benchmarking
+DOI: 10.1038/s41587-025-02743-4"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-020	1	20	SCGEN-HV-020	"Domain adaptation for supervised integration of scRNA-seq data
+DOI: 10.1038/s42003-023-04668-7"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-021	1	21	SCGEN-HV-021	"Combinatorial prediction of therapeutic perturbations using causally inspired neural networks
+DOI: 10.1038/s41551-025-01481-x"	"Reviewer 1: Benchmark
+Reviewer 2: Benchmark"	"Benchmark
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-022	1	22	SCGEN-HV-022	"Application and prospects of single-cell and spatial omics technologies in woody plants
+DOI: 10.48130/fr-2023-0027"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-023	1	23	SCGEN-HV-023	"Can Pharmaceutical World Models Become Scientific Instruments? A State-of-the-Art Review of Simulation, Reasoning, and Validation
+DOI: 10.51847/hn9ejvqjoc"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-024	1	24	SCGEN-HV-024	"Assessing and mitigating batch effects in large-scale omics studies
+DOI: 10.1186/s13059-024-03401-9"	"Reviewer 1: Mention only
+Reviewer 2: Benchmark"	"Mention only
+User-adjudicated consensus"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-025	1	25	SCGEN-HV-025	"VI-VS: calibrated identification of feature dependencies in single-cell multiomics
+DOI: 10.1186/s13059-024-03419-z"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-026	1	26	SCGEN-HV-026	"The Power of Two: integrating deep diffusion models and variational autoencoders for single-cell transcriptomics analysis
+DOI: 10.1101/2023.04.13.536789"	"Reviewer 1: Benchmark
+Reviewer 2: Benchmark"	"Benchmark
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-027	1	27	SCGEN-HV-027	"Single-cell RNA-seq reveals spatially restricted multicellular fibrotic niches during lung fibrosis
+DOI: 10.1101/569855"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-028	1	28	SCGEN-HV-028	"Causal Imputation via Synthetic Interventions
+DOI: 10.48550/arxiv.2011.03127"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-029	1	29	SCGEN-HV-029	"Style transfer with variational autoencoders is a promising approach to RNA-Seq data harmonization and analysis
+DOI: 10.1093/bioinformatics/btaa624"	"Reviewer 1: Mention only
+Reviewer 2: Benchmark"	"Benchmark
+User-adjudicated consensus"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-030	1	30	SCGEN-HV-030	"Reconstructing unobserved cellular states from paired single-cell lineage tracing and transcriptomics data
+DOI: 10.1101/2021.05.28.446021"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-031	1	31	SCGEN-HV-031	"Learning genetic perturbation effects with variational causal inference
+DOI: 10.1371/journal.pcbi.1013194"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-032	1	32	SCGEN-HV-032	"Spatial single-cell mass spectrometry defines zonation of the hepatocyte proteome
+DOI: 10.1038/s41592-023-02007-6"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-033	1	33	SCGEN-HV-033	"Learning interpretable cellular and gene signature embeddings from single-cell transcriptomic data
+DOI: 10.1038/s41467-021-25534-2"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-034	1	34	SCGEN-HV-034	"Detecting subtle transcriptomic perturbations induced by lncRNAs knock-down in single-cell CRISPRi screening using a new sparse supervised autoencoder neural network
+DOI: 10.3389/fbinf.2024.1340339"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-035	1	35	SCGEN-HV-035	"lute: estimating the cell composition of heterogeneous tissue with varying cell sizes using gene expression
+DOI: 10.1186/s12864-025-11508-x"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-036	1	36	SCGEN-HV-036	"Learning cell communication from spatial graphs of cells
+DOI: 10.1101/2021.07.11.451750"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-037	1	37	SCGEN-HV-037	"Variational autoencoders learn universal latent representations of metabolomics data
+DOI: 10.1101/2021.01.14.426721"	"Reviewer 1: Mention only
+Reviewer 2: Blank"	"Mention only
+Reviewer 1 carry-forward; Reviewer 2 blank"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-038	1	38	SCGEN-HV-038	"The manatee variational autoencoder model for predicting gene expression alterations caused by transcription factor perturbations
+DOI: 10.1038/s41598-024-62620-z"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-039	1	39	SCGEN-HV-039	"A deep generative model for deciphering cellular dynamics and in silico drug discovery in complex diseases
+DOI: 10.1038/s41551-025-01423-7"	"Reviewer 1: Benchmark
+Reviewer 2: Benchmark"	"Benchmark
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-040	1	40	SCGEN-HV-040	"Differences between in vivo and ex vivo models drive divergent perturbation outcomes
+DOI: 10.1101/2025.09.02.673692"	"Reviewer 1: Other
+Reviewer 2: Blank"	"Other
+Reviewer 1 carry-forward; Reviewer 2 blank"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-041	1	41	SCGEN-HV-041	"A Roadmap for a Consensus Human Skin Cell Atlas and Single-Cell Data Standardization
+DOI: 10.1016/j.jid.2023.03.1679"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-042	1	42	SCGEN-HV-042	"Embeddings from language models are good learners for single-cell data analysis
+DOI: 10.1016/j.patter.2025.101431"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-043	1	43	SCGEN-HV-043	"Technical and legal aspects of federated learning in bioinformatics: applications, challenges and opportunities
+DOI: 10.3389/fdgth.2025.1644291"	"Reviewer 1: Mention only
+Reviewer 2: Extend or develop"	"Mention only
+User-adjudicated consensus"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-044	1	44	SCGEN-HV-044	"Contrastive Mixture of Posteriors for Counterfactual Inference, Data Integration and Fairness
+DOI: 10.48550/arxiv.2106.08161"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-045	1	45	SCGEN-HV-045	"scCompressSA: dual-channel self-attention based deep autoencoder model for single-cell clustering by compressing gene–gene interactions
+DOI: 10.1186/s12864-024-10286-2"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-046	1	46	SCGEN-HV-046	"Biological network-inspired interpretable variational autoencoder
+DOI: 10.1101/2020.12.17.423310"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-047	1	47	SCGEN-HV-047	"Clifti-GPT: privacy-preserving federated fine-tuning and transferable inference of foundation models on clinical single-cell data
+DOI: 10.1186/s13040-026-00582-w"	"Reviewer 1: Apply to biological data
+Reviewer 2: Apply to biological data"	"Apply to biological data
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-048	1	48	SCGEN-HV-048	"D-SPIN constructs gene regulatory network models from multiplexed scRNA-seq data revealing organizing principles of cellular perturbation response
+DOI: 10.1101/2023.04.19.537364"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-049	1	49	SCGEN-HV-049	"Synthetic single cell RNA sequencing data from small pilot studies using deep generative models
+DOI: 10.1038/s41598-021-88875-4"	"Reviewer 1: Mention only
+Reviewer 2: Mention only"	"Mention only
+Reviewer agreement"
+1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM	SCGEN-HV-050	1	50	SCGEN-HV-050	"Deep Learning Based Models for Preimplantation Mouse and Human Development
+DOI: 10.1101/2024.02.16.580649"	"Reviewer 1: Apply to biological data
+Reviewer 2: Benchmark"	"Benchmark
+User-adjudicated consensus"

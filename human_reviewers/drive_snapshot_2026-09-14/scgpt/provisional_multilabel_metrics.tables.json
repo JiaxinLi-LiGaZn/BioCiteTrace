@@ -1,0 +1,101 @@
+{
+  "paragraphs": [
+    "scGPT Human Validation: Category-Specific Precision and Recall",
+    "Provisional results and re-review recommendation",
+    "",
+    "Purpose",
+    "This document summarizes category-specific precision and recall for the 40-study classified validation sample, using the two-reviewer human consensus as the reference standard. The separate 10-study abstention and process-audit sample is not included in these classification metrics.",
+    "Each use category is evaluated independently in a one-vs-rest framework. A study may be positive for more than one use category. Unweighted precision describes the reviewed sample; inverse-probability-weighted (IPW) precision estimates performance in the corrected 400-study classified population.",
+    "",
+    "Category-specific results",
+    "Counts are shown as human-reference positives (H+), true positives (TP), false positives (FP), and false negatives (FN). “N/E” means not estimable because no human or agent positives were observed.",
+    "",
+    "",
+    "Category",
+    "H+ / TP / FP / FN",
+    "Precision",
+    "Sample / IPW",
+    "Recall",
+    "Sample / IPW",
+    "Apply to biological data",
+    "5 / 5 / 4 / 0",
+    "0.556 / 0.521",
+    "1.000 / 1.000",
+    "Extend or develop",
+    "6 / 6 / 9 / 0",
+    "0.400 / 0.380",
+    "1.000 / 1.000",
+    "Benchmark or evaluate",
+    "11 / 11 / 6 / 0",
+    "0.647 / 0.804",
+    "1.000 / 1.000",
+    "Mention only",
+    "20 / 20 / 0 / 0",
+    "1.000 / 1.000",
+    "1.000 / 1.000",
+    "Other executed use",
+    "0 / 0 / 0 / 0",
+    "N/E / N/E",
+    "N/E / N/E",
+    "Interpretation",
+    "The agent recovered every human-positive category in this sample (no false negatives), but it assigned additional Apply, Extend, and Benchmark labels. Over-labeling was greatest for Extend or develop. The recall values of 1.000 are point estimates based on small category counts and require uncertainty intervals before manuscript reporting.",
+    "",
+    "These values are precision and recall at the agent’s fixed classification rule, not precision–recall curves or area under the precision–recall curve (AUPRC). A curve requires a prespecified continuous score for each category; the current hard labels alone cannot provide one.",
+    "",
+    "Why the first-round labels should be revisited",
+    "The first-round review form asked for a singular “Primary use” and presented the use categories as a single list. That wording may have encouraged reviewers to select one category even when a paper served more than one purpose. By contrast, the agent contract used non-exclusive use_labels. After reconciliation, HV-022 and HV-049 were recorded as both Apply to biological data and Extend or develop, suggesting that additional multi-purpose uses may remain under-annotated.",
+    "",
+    "Recommended blinded re-review",
+    "Before these category-level metrics are used in a manuscript, both reviewers should independently revisit all 20 studies in the classified validation subset for which scGPT was judged executed. The revised question should read: “Select all applicable uses of scGPT: Apply to biological data; Extend or develop; Benchmark or evaluate; Other executed use.” A separate primary-use field may be completed afterward for descriptive summaries only.",
+    "",
+    "Reviewers should remain blinded to all agent labels, confidence, and evidence selections during this revisit. Their revised multi-label records should then be reconciled, frozen, and used to rerun the one-vs-rest precision, recall, F1, exact-set agreement, and Jaccard calculations. The three human-executed studies in the separate abstention/process audit may also be revisited, but their results should remain outside the 40-study classification-accuracy denominator.",
+    "",
+    "Reporting status",
+    "All values in the table are provisional. They should not be treated as manuscript-final category performance until the multi-select re-review is completed.",
+    ""
+  ],
+  "tables": [
+    [
+      [
+        "Category",
+        "H+ / TP / FP / FN",
+        "Precision\nSample / IPW",
+        "Recall\nSample / IPW"
+      ],
+      [
+        "Apply to biological data",
+        "5 / 5 / 4 / 0",
+        "0.556 / 0.521",
+        "1.000 / 1.000"
+      ],
+      [
+        "Extend or develop",
+        "6 / 6 / 9 / 0",
+        "0.400 / 0.380",
+        "1.000 / 1.000"
+      ],
+      [
+        "Benchmark or evaluate",
+        "11 / 11 / 6 / 0",
+        "0.647 / 0.804",
+        "1.000 / 1.000"
+      ],
+      [
+        "Mention only",
+        "20 / 20 / 0 / 0",
+        "1.000 / 1.000",
+        "1.000 / 1.000"
+      ],
+      [
+        "Other executed use",
+        "0 / 0 / 0 / 0",
+        "N/E / N/E",
+        "N/E / N/E"
+      ]
+    ]
+  ],
+  "hyperlink_targets": {},
+  "source_id": "1JBfadro8saHpvNkEbE11OTWdSOj8CalJ2JH-Pn0rRWg",
+  "source_docx": "human_reviewers/drive_snapshot_2026-09-14/scgpt/provisional_multilabel_metrics.docx",
+  "source_docx_sha256": "b83405f98360e60e21e3276880d83e4a1ff9d309806bf80ec7315d1b7b25af72"
+}

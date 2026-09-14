@@ -1,0 +1,201 @@
+source_id	record_id	source_table_index	source_row_index	article_and_id	human_primary_use	scoring_scope_and_provenance
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-001	0	1	"HV-001
+Computational tools for analyzing single-cell data in pluripotent cell differentiation studies
+DOI: 10.1016/j.crmeth.2021.100087"	Mention only	"Process audit only
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-002	0	2	"HV-002
+Multimodal Hypersampling of the adult human heart resolves tissue-specific cell states and disease-associated variants
+DOI: 10.64898/2026.06.16.732617"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-003	0	3	"HV-003
+BrainBridge Characterizes Key Factors affecting Alzheimer’s Disease and Associated Phenotypes
+DOI: 10.64898/2025.12.03.692255"	Benchmark/evaluate	"Included in primary-use score
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-004	0	4	"HV-004
+Hybrid deep learning–mechanistic modeling of cellular dynamics from a spatiotemporal single-cell atlas
+DOI: 10.1101/2025.10.02.679951"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-005	0	5	"HV-005
+Single-cell integration and multi-modal profiling reveals phenotypes and spatial organization of neutrophils in colorectal cancer.
+DOI: 10.1016/j.ccell.2025.12.003"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-006	0	6	"HV-006
+Implementing distinct spatial proteogenomic technologies: opportunities, challenges, and key considerations
+DOI: 10.1093/cei/uxae077"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-007	0	7	"HV-007
+Biological network-inspired interpretable variational autoencoder
+DOI: 10.1101/2020.12.17.423310"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-008	0	8	"HV-008
+LAIOR: a hyperbolic neural ODE variational framework for interpretable single-cell manifold learning and trajectory inference
+DOI: 10.3389/fgene.2026.1838613"	Benchmark/evaluate	"Included in primary-use score
+User-directed: Benchmark"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-009	0	9	"HV-009
+Coding agents author interpretable single-cell embedding models from the literature
+DOI: 10.64898/2026.07.07.737048"	Benchmark/evaluate	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-010	0	10	"HV-010
+Single-cell characterization of anti–LAG-3 and anti–PD-1 combination treatment in patients with melanoma
+DOI: 10.1172/jci164809"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-011	0	11	"HV-011
+JIND-Multi: Leveraging Multiple Labeled Datasets for Automated Annotation of Single-Cell RNA and ATAC Data
+DOI: 10.1101/2025.01.15.633130"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-012	0	12	"HV-012
+sCellST: a Multiple Instance Learning approach to predict single-cell gene expression from H&E images using spatial transcriptomics
+DOI: 10.1101/2024.11.07.622225"	Extend/develop	"Process audit only
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-013	0	13	"HV-013
+COVID-Datathon: Biomarker identification for COVID-19 severity based on BALF scRNA-seq data
+DOI: 10.48550/arxiv.2110.04986"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-014	0	14	"HV-014
+Kinetic Foundation of the Zero-Inflated Negative Binomial Model for Single-Cell RNA Sequencing Data
+DOI: 10.1137/19m1253198"	Mention only	"Process audit only
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-015	0	15	"HV-015
+Recovering Single-cell Heterogeneity Through Information-based Dimensionality Reduction
+DOI: 10.1101/2021.01.19.427303"	Benchmark/evaluate	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-016	0	16	"HV-016
+AtlasLens: Metadata-centric exploration and analysis of single-cell atlases
+DOI: 10.64898/2026.07.10.735823"	Apply to biological data	"Included in primary-use score
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-017	0	17	"HV-017
+Multi-omic identification of perineurial hyperplasia and lipid-associated nerve macrophages in human polyneuropathies
+DOI: 10.1038/s41467-025-62964-8"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-018	0	18	"HV-018
+Hierarchical classification of immune cell transcriptomes at population-scale
+DOI: 10.64898/2026.05.30.728980"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-019	0	19	"HV-019
+Anti-bias training for (sc)RNA-seq: experimental and computational approaches to improve precision
+DOI: 10.1093/bib/bbab148"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-020	0	20	"HV-020
+SCIntRuler: guiding the integration of multiple single-cell RNA-seq datasets with a novel statistical metric
+DOI: 10.1093/bioinformatics/btae537"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-021	0	21	"HV-021
+Biologically Informed Variational Inference Enables Interpretable Cell Phenotyping and Discovery
+DOI: 10.1101/2025.06.10.657924"	Extend/develop	"Process audit only
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-022	0	22	"HV-022
+Transforming microfluidics for single-cell analysis with robotics and artificial intelligence
+DOI: 10.1039/d5lc00216h"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-023	0	23	"HV-023
+Transcriptomic advances in studies of muscle stem cell aging: From bulk to single-cell and beyond
+DOI: 10.1038/s41422-026-01240-w"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-024	0	24	"HV-024
+A multi-dataset single-cell meta-analysis of human keloid skin across Asian, Black and White populations reveals endothelial and mesenchymal programs linked to ethnic disparities
+DOI: 10.3389/fmed.2026.1751725"	Apply to biological data	"Process audit only
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-025	0	25	"HV-025
+PI3Kγ in B cells promotes antibody responses and generation of antibody-secreting cells
+DOI: 10.1038/s41590-024-01890-1"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-026	0	26	"HV-026
+Tumor-infiltrating CD27 - IgD - regulatory B cells suppress cytotoxic CD8 + T cell responses in renal cell carcinoma
+DOI: 10.1101/2025.07.08.663720"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-027	0	27	"HV-027
+Multi-modal Diffusion Model with Dual-Cross-Attention for Multi-Omics Data Generation and Translation
+DOI: 10.1101/2025.02.27.640020"	Benchmark/evaluate	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-028	0	28	"HV-028
+Deep learning applications in single-cell genomics and transcriptomics data analysis
+DOI: 10.1016/j.biopha.2023.115077"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-029	0	29	"HV-029
+Relevant Applications of Generative Adversarial Networks in Drug Design and Discovery: Molecular De Novo Design, Dimensionality Reduction, and De Novo Peptide and Protein Design
+DOI: 10.3390/molecules25143250"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-030	0	30	"HV-030
+Epigenetic biomarkers in inflammatory bowel diseases—computational challenges and opportunities
+DOI: 10.1093/ecco-jcc/jjag022"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-031	0	31	"HV-031
+Candida albicans exhibits distinct cytoprotective responses to anti-fungal drugs that facilitate the evolution of drug resistance
+DOI: 10.1101/2020.01.21.914549"	Apply to biological data	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-032	0	32	"HV-032
+Effectively Clustering Single Cell RNA Sequencing Data by Sparse Representation
+DOI: 10.1109/tcbb.2021.3128576"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-033	0	33	"HV-033
+HoloCell: A Generative Foundation Model for Holistic Cellular Modeling
+DOI: 10.64898/2026.06.07.730684"	Benchmark/evaluate	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-034	0	34	"HV-034
+Single-Cell Multi-Omics: Insights into Therapeutic Innovations to Advance Treatment in Cancer
+DOI: 10.3390/ijms26062447"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-035	0	35	"HV-035
+Sequencing dropout-and-batch effect normalization for single-cell mRNA profiles: a survey and comparative analysis
+DOI: 10.1093/bib/bbaa248"	Benchmark/evaluate	"Process audit only
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-036	0	36	"HV-036
+SECANT: a biology-guided semi-supervised method for clustering, classification, and annotation of single-cell multi-omics
+DOI: 10.1093/pnasnexus/pgac165"	Extend/develop	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-037	0	37	"HV-037
+Assessing Markovian and Delay Models for Single-Nucleus RNA Sequencing
+DOI: 10.1007/s11538-023-01213-9"	Mention only	"Process audit only
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-038	0	38	"HV-038
+Deep-learning methods for unveiling large-scale single-cell transcriptomes
+DOI: 10.20892/j.issn.2095-3941.2023.0436"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-039	0	39	"HV-039
+SCOPE: Localizing fate-decision states and their regulatory drivers in single-cell differentiation
+DOI: 10.64898/2026.04.07.717037"	Apply to biological data	"Included in primary-use score
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-040	0	40	"HV-040
+Best practices for single-cell analysis across modalities
+DOI: 10.1038/s41576-023-00586-w"	Mention only	"Process audit only
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-041	0	41	"HV-041
+Decoding disease and therapy through multiomics integration and systems analysis
+DOI: 10.1093/bib/bbag311"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-042	0	42	"HV-042
+Pertpy: an end-to-end framework for perturbation analysis
+DOI: 10.1038/s41592-025-02909-7"	Extend/develop	"Included in primary-use score
+User-directed: Reviewer 2"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-043	0	43	"HV-043
+Benchmarking atlas-level data integration in single-cell genomics
+DOI: 10.1038/s41592-021-01336-8"	Benchmark/evaluate	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-044	0	44	"HV-044
+Toward universal cell embeddings: integrating single-cell RNA-seq datasets across species with SATURN
+DOI: 10.1038/s41592-024-02191-z"	Benchmark/evaluate	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-045	0	45	"HV-045
+An overview of computational methods in single-cell transcriptomic cell type annotation
+DOI: 10.1093/bib/bbaf207"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-046	0	46	"HV-046
+Projecting single-cell transcriptomics data onto a reference T cell atlas to interpret immune responses
+DOI: 10.1101/2020.06.23.166546"	Mention only	"Process audit only
+User-directed: Reviewer 1"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-047	0	47	"HV-047
+Deep learning in single-cell and spatial transcriptomics data analysis: advances and challenges from a data science perspective
+DOI: 10.1093/bib/bbaf136"	Benchmark/evaluate	"Included in primary-use score
+User-directed: Reviewer 2"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-048	0	48	"HV-048
+Beyond the List: Bioagent-Agnostic Signatures Could Enable a More Flexible and Resilient Biodefense Posture Than an Approach Based on Priority Agent Lists Alone
+DOI: 10.3390/pathogens10111497"	Mention only	"Process audit only
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-049	0	49	"HV-049
+Trends and Potential of Machine Learning and Deep Learning in Drug Study at Single-Cell Level
+DOI: 10.34133/research.0050"	Mention only	"Included in primary-use score
+Reviewer 1 record"
+11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE	HV-050	0	50	"HV-050
+Batch correcting single-cell spatial transcriptomics count data with Crescendo improves visualization and detection of spatial gene patterns
+DOI: 10.1186/s13059-025-03479-9"	Benchmark/evaluate	"Included in primary-use score
+Reviewer 1 record"

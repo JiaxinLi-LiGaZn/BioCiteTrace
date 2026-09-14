@@ -1,0 +1,345 @@
+[
+  {
+    "source_id": "1EfS--q1hTa_WKr99F6d3J6zUlYZpQwusnmSjFNXhEmw",
+    "method": "scgpt",
+    "title": "scGPT Human Validation — Reviewer 1 (Blinded)",
+    "source_url": "https://docs.google.com/document/d/1EfS--q1hTa_WKr99F6d3J6zUlYZpQwusnmSjFNXhEmw/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-08-26T14:22:12.150Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-08-27",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "Completed independent record; 50 formal cases and 3 calibration cases, all 53 explicitly LOCKED.",
+    "formal_record_count": 50,
+    "calibration_record_count": 3,
+    "explicit_locked_field_count": 53,
+    "files": {
+      "docx": "human_reviewers/completed/reviewer_1_completed.docx",
+      "pdf": "human_reviewers/completed/reviewer_1_completed.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_1.tables.json"
+    }
+  },
+  {
+    "source_id": "1AG19Pr3yw9EWDgwsLvsC-FR0ntugwOGaZ-aoc3hr44A",
+    "method": "scgpt",
+    "title": "scGPT Human Validation — Reviewer 2 (Blinded, paginated)",
+    "source_url": "https://docs.google.com/document/d/1AG19Pr3yw9EWDgwsLvsC-FR0ntugwOGaZ-aoc3hr44A/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-08-26T14:23:17.086Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-08-27",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "Completed paginated independent record; 50 formal cases and 3 calibration cases, all 53 explicitly LOCKED.",
+    "formal_record_count": 50,
+    "calibration_record_count": 3,
+    "explicit_locked_field_count": 53,
+    "files": {
+      "docx": "human_reviewers/completed/reviewer_2_completed.docx",
+      "pdf": "human_reviewers/completed/reviewer_2_completed.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_2.tables.json"
+    }
+  },
+  {
+    "source_id": "1CufKmrAiv4aVRAjKERzwXkZkBA39CXVN_vuhlA8ueUA",
+    "method": "scgpt",
+    "title": "scGPT Human Validation — Consensus & Coordinator",
+    "source_url": "https://docs.google.com/document/d/1CufKmrAiv4aVRAjKERzwXkZkBA39CXVN_vuhlA8ueUA/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-08-25T20:48:57.766Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "unfilled_coordinator",
+    "status_note": "Unfilled coordinator table. This is not the completed consensus referenced by the result summaries.",
+    "formal_record_count": 50,
+    "calibration_record_count": 3,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgpt/coordinator_unfilled.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgpt/coordinator_unfilled.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgpt/coordinator_unfilled.tables.json"
+    }
+  },
+  {
+    "source_id": "1vVk6MvVR3FeGOBw2uAbt3GsDBitiCOBaYHPRgrF21EY",
+    "method": "scgpt",
+    "title": "scGPT Human Validation — Reviewer 2 (Blinded)",
+    "source_url": "https://docs.google.com/document/d/1vVk6MvVR3FeGOBw2uAbt3GsDBitiCOBaYHPRgrF21EY/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-08-25T20:09:41.069Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "unfilled_original_form",
+    "status_note": "Unfilled original Reviewer 2 form; the completed paginated document above is the relevant review record.",
+    "formal_record_count": 50,
+    "calibration_record_count": 3,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_2_unfilled_original.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_2_unfilled_original.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgpt/reviewer_2_unfilled_original.tables.json"
+    }
+  },
+  {
+    "source_id": "1JBfadro8saHpvNkEbE11OTWdSOj8CalJ2JH-Pn0rRWg",
+    "method": "scgpt",
+    "title": "scGPT Human Validation — Category-Specific Precision and Recall (Provisional)",
+    "source_url": "https://docs.google.com/document/d/1JBfadro8saHpvNkEbE11OTWdSOj8CalJ2JH-Pn0rRWg/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-08-26T15:51:10.883Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "historical_provisional_metrics",
+    "status_note": "2026-08-26 provisional non-exclusive use-label metrics and re-review recommendation. These are not the final Figure 2 primary-category metrics.",
+    "formal_record_count": 0,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgpt/provisional_multilabel_metrics.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgpt/provisional_multilabel_metrics.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgpt/provisional_multilabel_metrics.tables.json"
+    }
+  },
+  {
+    "source_id": "1BZEW99VS95SV7lLAjq9n2ZXe06CVOn3Uuj6lKzSjtHc",
+    "method": "scvi",
+    "title": "scVI Human Validation — Reviewer 1 (Blinded)",
+    "source_url": "https://docs.google.com/document/d/1BZEW99VS95SV7lLAjq9n2ZXe06CVOn3Uuj6lKzSjtHc/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-04T01:22:28.898Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "Independent record with 50 formal and 3 calibration cases; original status fields are preserved, including incomplete lock marking.",
+    "formal_record_count": 50,
+    "calibration_record_count": 3,
+    "explicit_locked_field_count": 52,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scvi/reviewer_1.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scvi/reviewer_1.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scvi/reviewer_1.tables.json"
+    }
+  },
+  {
+    "source_id": "1KhthTkwQ1dshyWsOxVbjQY6R7M3epLqSPeJH7eJ48Jw",
+    "method": "scvi",
+    "title": "scVI Human Validation — Reviewer 2 (Blinded, paginated)",
+    "source_url": "https://docs.google.com/document/d/1KhthTkwQ1dshyWsOxVbjQY6R7M3epLqSPeJH7eJ48Jw/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-04T13:56:54.979Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "Paginated independent record with 50 formal and 3 calibration cases; original status fields are preserved, including incomplete lock marking.",
+    "formal_record_count": 50,
+    "calibration_record_count": 3,
+    "explicit_locked_field_count": 5,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scvi/reviewer_2.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scvi/reviewer_2.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scvi/reviewer_2.tables.json"
+    }
+  },
+  {
+    "source_id": "11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE",
+    "method": "scvi",
+    "title": "scVI Human Primary-Use Consensus Backup",
+    "source_url": "https://docs.google.com/document/d/11vJLIAz5kqjoT43zqQZh_QBDC0eLCphQhlVKFcHhFjE/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-04T15:21:51.544Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "primary_use_consensus",
+    "status_note": "50 recorded primary-use consensus labels; the document marks 40 classification cases and 10 process-audit cases. The later consolidated report excludes HV-032 from machine-classified overlap, giving n=39.",
+    "formal_record_count": 50,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scvi/primary_use_consensus.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scvi/primary_use_consensus.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scvi/primary_use_consensus.tables.json",
+      "rows_tsv": "human_reviewers/drive_snapshot_2026-09-14/scvi/primary_use_consensus.tsv"
+    }
+  },
+  {
+    "source_id": "1RGKTijnMr9ch0-0If1JZX-W_SMNVAJlOy-3VSDzoDHo",
+    "method": "scvi",
+    "title": "scVI Human Validation — Consensus & Coordinator",
+    "source_url": "https://docs.google.com/document/d/1RGKTijnMr9ch0-0If1JZX-W_SMNVAJlOy-3VSDzoDHo/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-03T17:15:07.587Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "unfilled_coordinator",
+    "status_note": "Unfilled coordinator table; use the separate primary-use consensus backup for recorded consensus labels.",
+    "formal_record_count": 50,
+    "calibration_record_count": 3,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scvi/coordinator_unfilled.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scvi/coordinator_unfilled.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scvi/coordinator_unfilled.tables.json"
+    }
+  },
+  {
+    "source_id": "1Uxvd-IVbj3A-aVsxgiiLVFk_JgUz-thnRbQvb8tadPA",
+    "method": "scgen",
+    "title": "reviewer_1_blind_form_simple",
+    "source_url": "https://docs.google.com/document/d/1Uxvd-IVbj3A-aVsxgiiLVFk_JgUz-thnRbQvb8tadPA/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-09T19:54:19.551Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "50 formal scGen cases, confirmed by the document heading and SCGEN-HV IDs; original lock markings are preserved.",
+    "formal_record_count": 50,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 49,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgen/reviewer_1.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgen/reviewer_1.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgen/reviewer_1.tables.json"
+    }
+  },
+  {
+    "source_id": "1FuonfE2R-wGm0EAB-uctPywg1jKtTgGUlQBtaPpyDrM",
+    "method": "scgen",
+    "title": "reviewer_2_blind_form_simple (1)",
+    "source_url": "https://docs.google.com/document/d/1FuonfE2R-wGm0EAB-uctPywg1jKtTgGUlQBtaPpyDrM/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-09T19:53:30.368Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "50 formal scGen cases; blank primary-use fields and lock fields remain as recorded in the source.",
+    "formal_record_count": 50,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgen/reviewer_2.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgen/reviewer_2.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgen/reviewer_2.tables.json"
+    }
+  },
+  {
+    "source_id": "1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM",
+    "method": "scgen",
+    "title": "scGen Human Primary-Use Consensus and Validation",
+    "source_url": "https://docs.google.com/document/d/1QT-CTa76SIberYbUQil_ckCIx5xxj1uJeDOekmZfApM/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-09T21:09:31.522Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "primary_use_consensus_and_metrics",
+    "status_note": "50 case-level consensus labels and aggregate validation counts for 40 classification cases. Includes 44 agreements, 4 user-adjudicated disagreements, and 2 Reviewer 1 carry-forwards where Reviewer 2 left primary use blank.",
+    "formal_record_count": 50,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/scgen/primary_use_consensus_and_validation.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/scgen/primary_use_consensus_and_validation.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/scgen/primary_use_consensus_and_validation.tables.json",
+      "rows_tsv": "human_reviewers/drive_snapshot_2026-09-14/scgen/primary_use_consensus_and_validation.tsv"
+    }
+  },
+  {
+    "source_id": "1TEBE1jgJBAjkvXmvbT9cd5spF56dDdg8uTIRYom8xV0",
+    "method": "gears",
+    "title": "reviewer_1_blind_form_simple_GEARS",
+    "source_url": "https://docs.google.com/document/d/1TEBE1jgJBAjkvXmvbT9cd5spF56dDdg8uTIRYom8xV0/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-09T21:09:41.897Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "50 formal cases; 49 explicitly LOCKED and GEARS-HV-047 has a blank status in this snapshot.",
+    "formal_record_count": 50,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 49,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/gears/reviewer_1.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/gears/reviewer_1.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/gears/reviewer_1.tables.json"
+    }
+  },
+  {
+    "source_id": "1TGc9bDW6QOX1_irFRPZ40lXlV8h74q9DtQVsftpxr2o",
+    "method": "gears",
+    "title": "reviewer_2_blind_form_simple_GEARS",
+    "source_url": "https://docs.google.com/document/d/1TGc9bDW6QOX1_irFRPZ40lXlV8h74q9DtQVsftpxr2o/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-09T21:08:47.488Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "independent_review",
+    "status_note": "50 formal cases with review content; all Review status fields are blank in this snapshot.",
+    "formal_record_count": 50,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/gears/reviewer_2.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/gears/reviewer_2.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/gears/reviewer_2.tables.json"
+    }
+  },
+  {
+    "source_id": "1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ",
+    "method": "gears",
+    "title": "GEARS Human Validation — Consensus & Coordinator",
+    "source_url": "https://docs.google.com/document/d/1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-09T21:31:54.757Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "partially_reconciled_coordinator",
+    "status_note": "50 matched IDs; 41 core-field matches, 8 recorded adjudications, and GEARS-HV-020 still requires execution-status reconciliation. This is not a fully frozen consensus.",
+    "formal_record_count": 50,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 49,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/gears/consensus_working.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/gears/consensus_working.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/gears/consensus_working.tables.json",
+      "rows_tsv": "human_reviewers/drive_snapshot_2026-09-14/gears/consensus_working.tsv"
+    }
+  },
+  {
+    "source_id": "1w6oT3-UQepgcPJCErPy9MyuUX1xW1ev68JhCJCLgpAM",
+    "method": "gears",
+    "title": "GEARS Citation Audit — Pipeline Bottlenecks and Rescue Procedures",
+    "source_url": "https://docs.google.com/document/d/1w6oT3-UQepgcPJCErPy9MyuUX1xW1ev68JhCJCLgpAM/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-03T17:43:35.108Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "historical_pipeline_summary",
+    "status_note": "2026-09-03 intermediate pipeline summary ending at 40 classified studies; superseded for final totals by Figure 2, which reports 84. Preserved as a process record.",
+    "formal_record_count": 0,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/gears/historical_pipeline_rescue.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/gears/historical_pipeline_rescue.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/gears/historical_pipeline_rescue.tables.json"
+    }
+  },
+  {
+    "source_id": "1Yb3jTHKhAxXKdeosKEou62nYmEvXhzNAawtySRdxxKU",
+    "method": "shared",
+    "title": "scGPT and scVI Citation-Use Review — Consolidated Results",
+    "source_url": "https://docs.google.com/document/d/1Yb3jTHKhAxXKdeosKEou62nYmEvXhzNAawtySRdxxKU/edit?usp=drivesdk",
+    "source_modified_at_utc": "2026-09-04T16:14:05.355Z",
+    "source_mime_type": "application/vnd.google-apps.document",
+    "export_date": "2026-09-14",
+    "metadata_rechecked_date": "2026-09-14",
+    "record_type": "aggregate_result_summary",
+    "status_note": "2026-09-04 aggregate machine and primary-use validation results; explains the scVI n=40 to n=39 change. References production files but does not contain those files.",
+    "formal_record_count": 0,
+    "calibration_record_count": 0,
+    "explicit_locked_field_count": 0,
+    "files": {
+      "docx": "human_reviewers/drive_snapshot_2026-09-14/shared/scgpt_scvi_consolidated_results.docx",
+      "pdf": "human_reviewers/drive_snapshot_2026-09-14/shared/scgpt_scvi_consolidated_results.pdf",
+      "tables_json": "human_reviewers/drive_snapshot_2026-09-14/shared/scgpt_scvi_consolidated_results.tables.json"
+    }
+  }
+]

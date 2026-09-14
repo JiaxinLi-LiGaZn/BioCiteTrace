@@ -1,0 +1,126 @@
+{
+  "paragraphs": [
+    "GEARS Citation Audit: Pipeline Bottlenecks and Rescue Procedures",
+    "Not every reduction represents a truly “lost” paper. The first transition mainly removes duplicate citation edges; later transitions reflect retrieval failures, machine-review failures, or evidence-based abstentions.",
+    "Stage-by-stage rescue summary",
+    "",
+    "Stage",
+    "Reduction",
+    "Rescue procedures used",
+    "Why studies may still stop here",
+    "936 citation edges → 353 unique studies",
+    "583",
+    "Reconciled DOI, normalized title/authors/year, and linked preprints with published versions while preserving candidate URLs.",
+    "Mostly duplicate citation edges or paper versions. Genuine loss may result from missing DOI, incorrect metadata, or erroneous merging.",
+    "353 studies → 152 OA candidates",
+    "201",
+    "Expanded searches across OpenAlex OA locations, Europe PMC/PMC XML, publisher PDFs, preprint servers, and institutional repositories.",
+    "No indexed OA link, continuing paywall, missing public version, or mismatched DOI/title metadata.",
+    "152 OA candidates → 85 verified downloads",
+    "67",
+    "Skipped manual rights review under the documented override, tried alternative URLs and PDF/XML versions, and verified file integrity and paper identity.",
+    "Paywalls, HTTP errors, bot protection, expired links, corrupted files, HTML returned instead of PDF, wrong papers, supplements only, or unextractable scans.",
+    "85 machine-review entries → 55 machine-resolved",
+    "30",
+    "Retried failed agents, repaired JSON/schema outputs, re-extracted text, searched method aliases and citation contexts, and reran adjudication.",
+    "API failures, invalid outputs, poor OCR, excessive document length, missing citation context, or unresolved agent disagreement.",
+    "55 machine-resolved → 40 substantively classified",
+    "15",
+    "Searched additional versions and supplements. Allowed classification from incomplete coverage when available text directly demonstrated GEARS use; clear citation-only cases could be MENTION_ONLY.",
+    "Missing versions or supplements, citation not located, incorrect provider edge, ambiguous method naming, or contradictory evidence.",
+    "How scGPT and scVI differed",
+    "scGPT used broad multi-source retrieval, alternative-version rescue, structured-output repair, and partial-coverage classification earlier.",
+    "scVI initially used stricter retrieval and validation rules. We later applied the scGPT rescue strategy by merging first-pass and rescue documents, relaxing mention-only validation, rerunning failed agents, and classifying directly supported cases despite incomplete coverage.",
+    "Recommended GEARS rescue queues",
+    "",
+    "Rescue queue",
+    "Number",
+    "Primary action",
+    "NO_OA_CANDIDATE",
+    "201",
+    "Search additional full-text sources and publication versions.",
+    "DOWNLOAD_OR_IDENTITY_FAILED",
+    "67",
+    "Retry downloads and resolve document identity or file-integrity failures.",
+    "MACHINE_UNRESOLVED",
+    "30",
+    "Retry agents, repair structured outputs, and readjudicate unresolved cases.",
+    "COVERAGE_INCOMPLETE / CITATION_NOT_LOCATED",
+    "15",
+    "Retrieve missing materials and repeat citation localization.",
+    "Interpretation",
+    "The final 40 studies represent 11.3% of the 353 unique citing studies. This set may be biased toward open-access, machine-readable papers with explicit and easily located descriptions of GEARS use. Reports should therefore present the 40 substantive classifications together with the remaining rescue and abstention queues.",
+    ""
+  ],
+  "tables": [
+    [
+      [
+        "Stage",
+        "Reduction",
+        "Rescue procedures used",
+        "Why studies may still stop here"
+      ],
+      [
+        "936 citation edges → 353 unique studies",
+        "583",
+        "Reconciled DOI, normalized title/authors/year, and linked preprints with published versions while preserving candidate URLs.",
+        "Mostly duplicate citation edges or paper versions. Genuine loss may result from missing DOI, incorrect metadata, or erroneous merging."
+      ],
+      [
+        "353 studies → 152 OA candidates",
+        "201",
+        "Expanded searches across OpenAlex OA locations, Europe PMC/PMC XML, publisher PDFs, preprint servers, and institutional repositories.",
+        "No indexed OA link, continuing paywall, missing public version, or mismatched DOI/title metadata."
+      ],
+      [
+        "152 OA candidates → 85 verified downloads",
+        "67",
+        "Skipped manual rights review under the documented override, tried alternative URLs and PDF/XML versions, and verified file integrity and paper identity.",
+        "Paywalls, HTTP errors, bot protection, expired links, corrupted files, HTML returned instead of PDF, wrong papers, supplements only, or unextractable scans."
+      ],
+      [
+        "85 machine-review entries → 55 machine-resolved",
+        "30",
+        "Retried failed agents, repaired JSON/schema outputs, re-extracted text, searched method aliases and citation contexts, and reran adjudication.",
+        "API failures, invalid outputs, poor OCR, excessive document length, missing citation context, or unresolved agent disagreement."
+      ],
+      [
+        "55 machine-resolved → 40 substantively classified",
+        "15",
+        "Searched additional versions and supplements. Allowed classification from incomplete coverage when available text directly demonstrated GEARS use; clear citation-only cases could be MENTION_ONLY.",
+        "Missing versions or supplements, citation not located, incorrect provider edge, ambiguous method naming, or contradictory evidence."
+      ]
+    ],
+    [
+      [
+        "Rescue queue",
+        "Number",
+        "Primary action"
+      ],
+      [
+        "NO_OA_CANDIDATE",
+        "201",
+        "Search additional full-text sources and publication versions."
+      ],
+      [
+        "DOWNLOAD_OR_IDENTITY_FAILED",
+        "67",
+        "Retry downloads and resolve document identity or file-integrity failures."
+      ],
+      [
+        "MACHINE_UNRESOLVED",
+        "30",
+        "Retry agents, repair structured outputs, and readjudicate unresolved cases."
+      ],
+      [
+        "COVERAGE_INCOMPLETE / CITATION_NOT_LOCATED",
+        "15",
+        "Retrieve missing materials and repeat citation localization."
+      ]
+    ]
+  ],
+  "hyperlink_targets": {},
+  "source_id": "1w6oT3-UQepgcPJCErPy9MyuUX1xW1ev68JhCJCLgpAM",
+  "source_docx": "human_reviewers/drive_snapshot_2026-09-14/gears/historical_pipeline_rescue.docx",
+  "source_docx_sha256": "5751252e5b9547a48686a9449d19fae988f826f0fefe03066756628613bf4efe"
+}

@@ -1,0 +1,298 @@
+{
+  "paragraphs": [
+    "scGPT and scVI Citation-Use Review — Consolidated Results",
+    "Machine outcomes and two-reviewer primary-use validation",
+    "This document brings the latest frozen scGPT and scVI citation-use results into one place. Counts are at the citing-study-record level unless physical-paper deduplication is stated.",
+    "1. How to read these numbers",
+    "Primary-use labels are mutually exclusive: Apply to biological data; Extend or develop; Benchmark or evaluate; Mention only; and Other executed use.",
+    "Coverage incomplete, citation not located, and machine unresolved or no final are evidence or process states. They are not evidence that the method was not used.",
+    "Every percentage states its denominator. Machine-composition percentages use classified records only; validation metrics use the human-reviewed subset.",
+    "2. Machine-review outcomes",
+    "",
+    "Measure",
+    "scGPT",
+    "scVI",
+    "Analysis frame",
+    "1,291 frozen citation records",
+    "1,634 machine-reviewed evidence records",
+    "Machine-reviewed frame",
+    "726 rights-approved, parser-eligible records (56.24% of 1,291)",
+    "1,634 records in the latest harmonized aggregate",
+    "Classified primary use",
+    "402 / 726 (55.37%)",
+    "951 / 1,634 (58.20%)",
+    "Coverage incomplete",
+    "226 / 726 (31.13%)",
+    "536 / 1,634 (32.80%)",
+    "Citation not located",
+    "13 / 726 (1.79%)",
+    "79 / 1,634 (4.83%)",
+    "Machine unresolved or no final",
+    "85 / 726 (11.71%)",
+    "68 / 1,634 (4.16%)",
+    "Method executed among classified",
+    "117 / 402 (29.10%)",
+    "795 / 951 (83.60%)",
+    "Upstream excluded or not reviewed",
+    "565: 354 full text unavailable; 200 rights not approved; 11 parse/coverage/context gate",
+    "Not represented in this 1,634-record aggregate",
+    "",
+    "The scVI rescue pass re-reviewed 122 records and produced 103 newly classified results relative to its v3 base. The harmonized scVI aggregate therefore contains 951 classified records.",
+    "3. Primary-use composition among classified records",
+    "",
+    "Primary-use label",
+    "scGPT: n (% of 402)",
+    "scVI: n (% of 951)",
+    "Apply to biological data",
+    "20 (4.98%)",
+    "382 (40.17%)",
+    "Benchmark or evaluate",
+    "55 (13.68%)",
+    "341 (35.86%)",
+    "Extend or develop",
+    "41 (10.20%)",
+    "66 (6.94%)",
+    "Mention only",
+    "285 (70.90%)",
+    "156 (16.40%)",
+    "Other executed use",
+    "1 (0.25%)",
+    "6 (0.63%)",
+    "Total",
+    "402 (100%)",
+    "951 (100%)",
+    "",
+    "4. Human validation of primary use",
+    "Both studies used two blinded human reviewers followed by a consensus step. Scoring treats the human consensus primary-use label as the reference standard and requires one primary label per scored paper.",
+    "For scGPT, 40 classification papers from a 50-paper formal sample were scored; 10 additional papers audited evidence and abstention states. Physical-paper deduplication gives a 400-study classified estimand and 719 eligible physical papers.",
+    "For scVI, the same 50/40 structure was used. After the rescue update, 39 of the original 40 classification papers remain machine-classified; HV-032 is now a no-final abstention.",
+    "",
+    "Validation measure",
+    "scGPT",
+    "scVI, latest aggregate",
+    "Formal human sample",
+    "50 papers",
+    "50 papers",
+    "Classification-score set",
+    "40 papers",
+    "40 papers",
+    "Current machine-classified overlap",
+    "40 papers",
+    "39 papers; HV-032 is now no final",
+    "Exact primary-use accuracy",
+    "31 / 40 (77.50%)",
+    "34 / 39 (87.18%)",
+    "End-to-end accuracy, counting current abstention as incorrect",
+    "31 / 40 (77.50%)",
+    "34 / 40 (85.00%)",
+    "Macro precision, unweighted",
+    "69.44%",
+    "79.31%",
+    "Macro recall, unweighted",
+    "71.36%",
+    "77.50%",
+    "Macro F1, unweighted",
+    "65.10%",
+    "78.22%",
+    "Supplementary design-weighted accuracy (not precision/recall)",
+    "88.42%",
+    "Not valid for the updated 951-record frame",
+    "",
+    "Per-class values below are unweighted one-vs-rest hard-label results. They are operating points, not full precision–recall curves.",
+    "",
+    "Primary label",
+    "scGPT: precision / recall / F1",
+    "scVI: precision / recall / F1",
+    "Mention only",
+    "100.0% / 100.0% / 100.0%",
+    "89.5% / 100.0% / 94.4%",
+    "Apply to biological data",
+    "44.4% / 100.0% / 61.5%",
+    "88.9% / 80.0% / 84.2%",
+    "Benchmark or evaluate",
+    "100.0% / 45.5% / 62.5%",
+    "88.9% / 80.0% / 84.2%",
+    "Extend or develop",
+    "33.3% / 40.0% / 36.4%",
+    "50.0% / 50.0% / 50.0%",
+    "",
+    "5. Interpretation and reporting limits",
+    "The category distributions describe two different citing corpora. Differences should not be interpreted as causal evidence that one method penetrated routine biological discovery more deeply.",
+    "The scGPT design-weighted primary-use accuracy is 88.42% for its original 400-study physically deduplicated classified frame. Its unweighted accuracy is shown for direct transparency.",
+    "The previous scVI sampling weights targeted an older 881-paper classified frame and are not valid for the updated 951-paper aggregate because the 103 newly classified papers had zero probability of entering the old sample.",
+    "The current scVI validation is therefore descriptive. A population estimate for all 951 classified records requires a supplementary human sample from the newly classified set.",
+    "OTHER_EXECUTED_USE is not included in the class-specific validation table because the audited classification subsets contain no estimable human-positive class support.",
+    "6. Sources and provenance",
+    "Machine outputs: the scGPT final report summary (report fingerprint e5cc7b6e…1197a) and the scVI harmonized manifest plus review-record JSONL (SHA-256 74618813…cf52). Human validation: the frozen two-reviewer consensus and primary-use scoring artifacts for each method. For scVI, the original 50-paper crosswalk was rejoined to the latest harmonized aggregate before recalculation.",
+    ""
+  ],
+  "tables": [
+    [
+      [
+        "Measure",
+        "scGPT",
+        "scVI"
+      ],
+      [
+        "Analysis frame",
+        "1,291 frozen citation records",
+        "1,634 machine-reviewed evidence records"
+      ],
+      [
+        "Machine-reviewed frame",
+        "726 rights-approved, parser-eligible records (56.24% of 1,291)",
+        "1,634 records in the latest harmonized aggregate"
+      ],
+      [
+        "Classified primary use",
+        "402 / 726 (55.37%)",
+        "951 / 1,634 (58.20%)"
+      ],
+      [
+        "Coverage incomplete",
+        "226 / 726 (31.13%)",
+        "536 / 1,634 (32.80%)"
+      ],
+      [
+        "Citation not located",
+        "13 / 726 (1.79%)",
+        "79 / 1,634 (4.83%)"
+      ],
+      [
+        "Machine unresolved or no final",
+        "85 / 726 (11.71%)",
+        "68 / 1,634 (4.16%)"
+      ],
+      [
+        "Method executed among classified",
+        "117 / 402 (29.10%)",
+        "795 / 951 (83.60%)"
+      ],
+      [
+        "Upstream excluded or not reviewed",
+        "565: 354 full text unavailable; 200 rights not approved; 11 parse/coverage/context gate",
+        "Not represented in this 1,634-record aggregate"
+      ]
+    ],
+    [
+      [
+        "Primary-use label",
+        "scGPT: n (% of 402)",
+        "scVI: n (% of 951)"
+      ],
+      [
+        "Apply to biological data",
+        "20 (4.98%)",
+        "382 (40.17%)"
+      ],
+      [
+        "Benchmark or evaluate",
+        "55 (13.68%)",
+        "341 (35.86%)"
+      ],
+      [
+        "Extend or develop",
+        "41 (10.20%)",
+        "66 (6.94%)"
+      ],
+      [
+        "Mention only",
+        "285 (70.90%)",
+        "156 (16.40%)"
+      ],
+      [
+        "Other executed use",
+        "1 (0.25%)",
+        "6 (0.63%)"
+      ],
+      [
+        "Total",
+        "402 (100%)",
+        "951 (100%)"
+      ]
+    ],
+    [
+      [
+        "Validation measure",
+        "scGPT",
+        "scVI, latest aggregate"
+      ],
+      [
+        "Formal human sample",
+        "50 papers",
+        "50 papers"
+      ],
+      [
+        "Classification-score set",
+        "40 papers",
+        "40 papers"
+      ],
+      [
+        "Current machine-classified overlap",
+        "40 papers",
+        "39 papers; HV-032 is now no final"
+      ],
+      [
+        "Exact primary-use accuracy",
+        "31 / 40 (77.50%)",
+        "34 / 39 (87.18%)"
+      ],
+      [
+        "End-to-end accuracy, counting current abstention as incorrect",
+        "31 / 40 (77.50%)",
+        "34 / 40 (85.00%)"
+      ],
+      [
+        "Macro precision, unweighted",
+        "69.44%",
+        "79.31%"
+      ],
+      [
+        "Macro recall, unweighted",
+        "71.36%",
+        "77.50%"
+      ],
+      [
+        "Macro F1, unweighted",
+        "65.10%",
+        "78.22%"
+      ],
+      [
+        "Supplementary design-weighted accuracy (not precision/recall)",
+        "88.42%",
+        "Not valid for the updated 951-record frame"
+      ]
+    ],
+    [
+      [
+        "Primary label",
+        "scGPT: precision / recall / F1",
+        "scVI: precision / recall / F1"
+      ],
+      [
+        "Mention only",
+        "100.0% / 100.0% / 100.0%",
+        "89.5% / 100.0% / 94.4%"
+      ],
+      [
+        "Apply to biological data",
+        "44.4% / 100.0% / 61.5%",
+        "88.9% / 80.0% / 84.2%"
+      ],
+      [
+        "Benchmark or evaluate",
+        "100.0% / 45.5% / 62.5%",
+        "88.9% / 80.0% / 84.2%"
+      ],
+      [
+        "Extend or develop",
+        "33.3% / 40.0% / 36.4%",
+        "50.0% / 50.0% / 50.0%"
+      ]
+    ]
+  ],
+  "hyperlink_targets": {},
+  "source_id": "1Yb3jTHKhAxXKdeosKEou62nYmEvXhzNAawtySRdxxKU",
+  "source_docx": "human_reviewers/drive_snapshot_2026-09-14/shared/scgpt_scvi_consolidated_results.docx",
+  "source_docx_sha256": "42d13cb6eab0cbf667d411c2880cf430f4871c6fdd2a6707f2c7b77520bfb878"
+}

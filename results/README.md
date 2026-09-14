@@ -1,6 +1,6 @@
 # Citation-analysis results
 
-**Interpretation note:** LLMs produced the corpus-wide citation-use classifications and may make errors. Human consensus was used as a sampled reference standard, not as absolute ground truth. Sampled human validation is complete for scVI, scGPT, scGen and GEARS.
+**Interpretation note:** LLMs produced the corpus-wide citation-use classifications and may make errors. Human consensus was used as a sampled reference standard, not as absolute ground truth. The figure reports sampled validation results for scVI, scGPT, scGen and GEARS. The [archived human-review sources](../human_reviewers/CATALOG.md) include incomplete coordinator and lock fields; the availability of a displayed metric does not mean the public evidence chain is complete.
 
 Among papers with resolved primary-use classifications, biological application was much more common for scVI. For scGPT, scGen and GEARS, mention only was the most common primary category.
 
@@ -54,4 +54,4 @@ These values are point estimates; confidence intervals have not yet been calcula
 - [Editable SVG](../site/assets/figures/figure-2-editable.svg)
 - [Source and file-integrity record](provenance.json)
 
-The public repository contains the aggregate figure data and a reusable workflow, but not the complete production corpus, row-level classifications, full-text papers or sampling probabilities needed to reproduce every study estimate independently.
+The public repository contains the aggregate figure data, a reusable workflow, eight independent reviewer records, and the available case-level consensus and process documents in the [Drive archive](../human_reviewers/CATALOG.md). It does not contain the complete production corpus, all final machine classifications, a completed scGPT consensus, the full scoring crosswalks, or sampling probabilities needed to reproduce every study estimate independently. The archived GEARS coordinator is not fully frozen. The aggregate figure values above were preserved during the archive update and were not recomputed from these documents.

@@ -1,10 +1,16 @@
 # Human-review materials
 
-This folder contains point-in-time backups of the two completed, independent human-review forms and method-agnostic templates for future citation-use validation.
+This folder contains archived independent reviewer records for scGPT, scVI, scGen and GEARS, the available consensus and process documents, and method-agnostic templates for future validation. The [complete source catalog](CATALOG.md) distinguishes recorded reviews, consensus labels, unfinished coordinator forms, and historical results.
 
-## Completed reviewer backups
+## Four-method Drive archive
 
-The files in `completed/` were exported from the final Google Docs on 27 August 2026. Reviewer identities are represented only as Reviewer 1 and Reviewer 2.
+The [14 September 2026 snapshot](drive_snapshot_2026-09-14/README.md) indexes 17 source documents: eight independent reviewer records, five consensus/coordinator documents, one unfilled original reviewer form, and three result/process summaries. Each method has two reviewer records covering 50 formal-validation cases; scGPT and scVI also have three calibration cases per reviewer. Raw lock fields are preserved and are not uniformly complete.
+
+Available case-level consensus includes the scVI primary-use backup, the scGen primary-use consensus, and the partially reconciled GEARS coordinator. The scGPT coordinator is unfilled; a completed scGPT consensus was not located in the searched Drive records. The archive therefore does not yet supply every source required to independently reproduce the final four-method figure. See the catalog for specific remaining gaps.
+
+## Original scGPT reviewer backups
+
+The scGPT files in `completed/` were exported from the completed Google Docs on 27 August 2026. Reviewer identities are represented only as Reviewer 1 and Reviewer 2. These existing files are preserved without replacement.
 
 Each completed form is preserved in two formats:
 

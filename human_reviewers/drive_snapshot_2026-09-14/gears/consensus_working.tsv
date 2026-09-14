@@ -1,0 +1,1811 @@
+source_id	record_id	source_table_index	source_row_index	article_and_id	reviewer_1_record	reviewer_2_record	consensus_working_record
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-001	0	1	"GEARS-HV-001 | FORMAL VALIDATION
+Modeling interpretable correspondence between cell state and perturbation response with CellCap
+DOI: 10.1101/2024.03.14.585078
+Article page: https://doi.org/10.1101/2024.03.14.585078
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2024/03/16/2024.03.14.585078.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: or example, scGen uses a deep generative model to predict
+67 the impact of one perturbation on a new cell population [10], and GEARS takes advantage of
+68 prior biological knowledge to model nonlinear gene interactions and nonlinearities in response
+69 to multiple perturbations [11].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: For example, scGen uses a deep generative model to predict the impact of one perturbation on a new cell population [10], and GEARS takes advantage of prior biological knowledge to model nonlinear gene interactions and nonlinearities in response to multiple perturbations [11]
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-002	0	2	"GEARS-HV-002 | FORMAL VALIDATION
+Single-cell technologies: current and near future
+DOI: 10.1007/s11427-024-2813-y
+Article page: https://doi.org/10.1007/s11427-024-2813-y
+Full text 1: https://link.springer.com/content/pdf/10.1007/s11427-024-2813-y.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: For scCRISPR data
+analysis, existing bioinformatics tools
+generally focus on three aspects, includ-
+ing data preprocessing (Wei et al., 2023),
+data denoising (Duan et al., 2019), and
+functional analysis (Roohani et al.,
+2024), aiming to uncover rich perturba-
+tion information.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: One of the most impressive applications of single-cell multi-omic technologies is the joint profiling of mRNA expression and epigenomic states. For example
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-003	0	3	"GEARS-HV-003 | FORMAL VALIDATION
+rbio1 - training scientific reasoning LLMs with biological world models as soft verifiers
+DOI: 10.1101/2025.08.18.670981
+Article page: https://doi.org/10.1101/2025.08.18.670981
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/08/21/2025.08.18.670981.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We compare against: SUMMER [32] (retrieval + knowledge-based reasoning), GEARS [38] (a specialized perturbation model), and the base Qwen2.5-3B reasoning model without biological supervision.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We compare against: SUMMER [32] (retrieval + knowledge-based reasoning), GEARS [38] (a specialized perturbation model), and the base Qwen2.5-3B reasoning model without biological supervision.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-004	0	4	"GEARS-HV-004 | FORMAL VALIDATION
+Multimodal Benchmarking of Foundation Model Representations for Cellular Perturbation Response Prediction
+DOI: 10.1101/2025.06.26.661186
+Article page: https://doi.org/10.1101/2025.06.26.661186
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/06/28/2025.06.26.661186.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: There are many specialized perturbation response models one could use on top of such embeddings (e.g. Roohani et al. (2024), Lotfollahi et al. (2023), Piran et al. (2024)), but those models are beyond the scope of our work, which intentionally fixes a single model with a consistent training protocol.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: There are many specialized perturbation response models one could use on top of such embeddings (e.g. Roohani et al. (2024), Lotfollahi et al. (2023), Piran et al. (2024)), but those models are beyond the scope of our work, which intentionally fixes a single model with a consistent training protocol.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-005	0	5	"GEARS-HV-005 | FORMAL VALIDATION
+GexMolGen: cross-modal generation of hit-like molecules via large language model encoding of gene expression signatures
+DOI: 10.1093/bib/bbae525
+Article page: https://doi.org/10.1093/bib/bbae525
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/11/26/2023.11.11.566725.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Extend
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Instead of commonly using mean square loss, we use the autofocus direction-aware loss in GEARS [32].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We further utilize the mask language model (MLM) task to fine-tune scGPT. Instead of commonly using mean square loss, we use the autofocus direction-aware loss in GEARS [32].
+Notes: 
+"	"Comparison flag: RESOLVED — human adjudication selected Mention only.
+Consensus status: RECONCILED
+Citation validity: Yes
+Method executed: No
+Uses (select all): Mention only
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We further utilize the mask language model (MLM) task to fine-tune scGPT. Instead of commonly using mean square loss, we use the autofocus direction-aware loss in GEARS [32].
+Resolution note: Human adjudication determined that GEARS itself was not executed; the paper only referred to a loss associated with GEARS.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-006	0	6	"GEARS-HV-006 | FORMAL VALIDATION
+Disentanglement of single-cell data with biolord
+DOI: 10.1038/s41587-023-02079-x
+Article page: https://doi.org/10.1038/s41587-023-02079-x
+Full text 1: https://www.nature.com/articles/s41587-023-02079-x.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We show that biolord outperforms GEARS in the prediction of unseen one-gene perturbation (normalized mean squared error, one of one gene unseen; GEARS: 0.47; biolord: 0.37) and two-gene perturbations (normalized mean squared error, two of two genes unseen; GEARS: 0.53; biolord: 0.50, one of one gene unseen; GEARS: 0.39; biolord: 0.35, zero of two genes unseen; GEARS: 0.28; biolord: 0.20; Methods; Supplementary Note 3 and Extended Data Fig. 2).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We show that biolord outperforms GEARS in the prediction of unseen one-gene perturbation (normalized mean squared error, one of one gene unseen; GEARS: 0.47; biolord: 0.37) and two-gene perturbations (normalized mean squared error, two of two genes unseen; GEARS: 0.53; biolord: 0.50, one of one gene unseen; GEARS: 0.39; biolord: 0.35, zero of two genes unseen; GEARS: 0.28; biolord: 0.20; Methods; Supplementary Note 3 and Extended Data Fig. 2).
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-007	0	7	"GEARS-HV-007 | FORMAL VALIDATION
+Impact of the Human Cell Atlas on medicine
+DOI: 10.1038/s41591-022-02104-7
+Article page: https://doi.org/10.1038/s41591-022-02104-7
+Full text 1: https://www.nature.com/articles/s41591-022-02104-7.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Moreover, machine-learning algorithms can increasingly be trained on such data to yield models that predict the impact of additional perturbations in one or more genes in the same cellular context or of the same perturbations in new biological contexts114,115,116.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Moreover, machine-learning algorithms can increasingly be trained on such data to yield models that predict the impact of additional perturbations in one or more genes in the same cellular context or of the same perturbations in new biological contexts114,115,116.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-008	0	8	"GEARS-HV-008 | FORMAL VALIDATION
+scFormer: A Universal Representation Learning Approach for Single-Cell Data Using Transformers
+DOI: 10.1101/2022.11.20.517285
+Article page: https://doi.org/10.1101/2022.11.20.517285
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2022/11/22/2022.11.20.517285.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We compare the performance against the recent GEARS method (Roohani et al., 2022) and the multi layer perceptron baseline.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We compare the performance against the recent GEARS method (Roohani et al., 2022) and the multi layer perceptron baseline.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-009	0	9	"GEARS-HV-009 | FORMAL VALIDATION
+Unagi: Deep Generative Model for Deciphering Cellular Dynamics and In-Silico Drug Discovery in Complex Diseases
+DOI: 10.21203/rs.3.rs-3676579/v1
+Article page: https://doi.org/10.21203/rs.3.rs-3676579/v1
+Full text 1: https://www.researchsquare.com/article/rs-3676579/latest.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Although GEARS25 and scGen23 are able to perform in-silico
+perturbations, they weren’t designed to process time-series data and require the in-vitro screening of
+perturbation response of disease and drug treatments as the supervision.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: nt gap in current single-cell methodologies is the absence of
+74
+
+
+unsupervised
+in-silico
+exploration capabilities. Although GEARS
+25
+and scGen
+23
+are able to perform
+in-silico
+75
+
+
+perturbations, they weren’t designed to process time-series data and require the
+in-vitro
+screening of
+76
+
+
+perturbation response of disease and drug treatments as the supervision. Thus, there is a pressing need for
+77
+
+
+methods that can virtually examine thousands of potential drugs and compounds on single-cell disease data
+78
+
+
+without ground truth training data.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-010	0	10	"GEARS-HV-010 | FORMAL VALIDATION
+On the use of variational autoencoders for biomedical data integration
+DOI: 10.1101/2025.08.18.670835
+Article page: https://doi.org/10.1101/2025.08.18.670835
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/08/22/2025.08.18.670835.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: These
+values were comparable to those of the other models benchmarked in a single gene KD setting
+by Ahlmann-Eltze et al., including foundation models such as scGPT (L2RPE1=6.88,
+L2K562=4.41) graph-based models like GEARS (L2RPE1=6.33, L2K562=4.04), and their proposed
+bilinear baseline (L2RPE1=5.84, L2K562=4.04) (Figure 6a,b, Supplementary Figure 16).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: we compared MOVE’s performance with that of alternative methods including GEARS, CPA, scGPT and their baseline linear models. T
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-011	0	11	"GEARS-HV-011 | FORMAL VALIDATION
+scEMB: Learning context representation of genes based on large-scale single-cell transcriptomics
+DOI: 10.1101/2024.09.24.614685
+Article page: https://doi.org/10.1101/2024.09.24.614685
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2024/09/26/2024.09.24.614685.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Moreover, these embedding-based methods11 [Autoencoder12, VAE13–16, GNN17], has been widely used to along with the cellular perturbation tasks along with single-cell CRISPR data, to compress the transcriptomics data (mainly single-cell) into the latent space and compare the effects of different perturbations and possess a more accurate molecular measurement as well as in silico-induced perturbations18,19.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: ecent advances in artificial intelligence (AI), such as variational autoencoder (VAE) models8–10, which explicitly learn low-dimensional embeddings from single-cell transcriptome to capture the biological meaning embedding. Moreover, these embedding-based methods11 [Autoencoder12, VAE13–16, GNN17],
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-012	0	12	"GEARS-HV-012 | FORMAL VALIDATION
+Evaluating the Utilities of Large Language Models in Single-cell Data Analysis
+DOI: 10.21203/rs.3.rs-3376641/v1
+Article page: https://doi.org/10.21203/rs.3.rs-3376641/v1
+Full text 1: https://www.researchsquare.com/article/rs-3376641/latest.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We considered scGPT and GEARS [42] for this task.
+In the training process, we masked the genes under perturbation and tried to recon-
+struct the expression levels of all the genes of the input cells rather than only the
+masked genes.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We considered scGPT and GEARS [
+42
+] for this task.
+
+
+In the training process, we masked the genes under perturbation and tried to recon-
+
+
+struct the expression levels of all the genes of the input cells rather than only the
+
+
+masked genes. We used Mean Pearson Correlation (MPC) as the metric to evaluate
+
+
+the performance of scGPT under different hyper-parameters or initial settings, and
+
+
+details can be found in Appendix
+C
+. T
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-013	0	13	"GEARS-HV-013 | FORMAL VALIDATION
+A systematic comparison of computational methods for expression forecasting
+DOI: 10.1101/2023.07.28.551039
+Article page: https://doi.org/10.1101/2023.07.28.551039
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/07/31/2023.07.28.551039.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We included all methods with peer-reviewed paper and code available as of Sept 1, 2023, which were DCD-FG, GEARS, and GeneFormer (Lopez et al., 2022; Roohani et al., 2022; Theodoris et al., 2023).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: For adamson, dixit, and norman, we eschew these filters and instead use preprocessing identical to the GEARS evaluations (Roohani et al., 2024).
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-014	0	14	"GEARS-HV-014 | FORMAL VALIDATION
+scMomer: A modality-aware pretraining framework for single-cell multi-omics modeling under missing modality conditions
+DOI: 10.1101/2025.08.04.668374
+Article page: https://doi.org/10.1101/2025.08.04.668374
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/08/05/2025.08.04.668374.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Following the setup used in CellFM and scFoundation, we integrated gene embeddings from scMomer into the GEARS13 for downstream prediction (Supplementary Fig. 11).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Results showed that scMomer outperformed GEARS, achieving improvements of 0.034 in PCC (Supplementary Table 5).
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-015	0	15	"GEARS-HV-015 | FORMAL VALIDATION
+MultiPert: An adversarial alignment and dual attention framework for single-cell multi-omics perturbation prediction
+DOI: 10.1371/journal.pcbi.1014054
+Article page: https://doi.org/10.1371/journal.pcbi.1014054
+Full text 1: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1014054&type=printable
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Extend
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Given GEARS’ prior validation of GO knowledge graph for perturbation prediction, we directly adopted their pre-trained embeddings to initialize MultiPert’s perturbation representations [16].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Extend or develop
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: . Given GEARS’ prior validation of GO knowledge graph for perturbation prediction, we directly adopted their pre-trained embeddings to initialize MultiPert’s perturbation representations [16].
+Notes: 
+"	"Comparison flag: MATCH — terminology normalization needed (“Extend” → “Extend or develop”).
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Extend or develop
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-016	0	16	"GEARS-HV-016 | FORMAL VALIDATION
+Systema: a framework for evaluating genetic perturbation response prediction beyond systematic variation
+DOI: 10.1038/s41587-025-02777-8
+Article page: https://doi.org/10.1038/s41587-025-02777-8
+Full text 1: https://www.nature.com/articles/s41587-025-02777-8.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We considered three state-of-the-art perturbation response prediction methods: compositional perturbation autoencoder (CPA)10, GEARS1 and scGPT2 (Methods).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We next evaluated performance on the task of predicting transcriptional responses to two-gene perturbations in the Norman14 dataset, the only dataset with combinatorial perturbations in our benchmark. For unseen two-gene perturbations (two-gene perturbations where none of the individual perturbations was observed at train time), the matching mean baseline outperformed all other baselines by a considerable margin, with relative improvements of 11% for PearsonΔ over the best alternative method (GEARS; Fig. 1d).
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-017	0	17	"GEARS-HV-017 | FORMAL VALIDATION
+A General Single-Cell Analysis Framework via Conditional Diffusion Generative Models
+DOI: 10.1101/2023.10.13.562243
+Article page: https://doi.org/10.1101/2023.10.13.562243
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/10/17/2023.10.13.562243.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Extend/Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Under such zero-shot setting, we incorporate biological prior for the unseen genes by adapting the gene ontology-based graph neural network from GEARS, as detailed in Section 2.2
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We used the official GEARS code base3 to reproduce the performance on the three benchmarking datasets. We need to rerun the experiments because the data splits used from the original paper were not published. Thus, directly comparing our results with the reported metrics from the GEARS paper is infeasible.
+Notes: 
+"	"Comparison flag: RESOLVED — human adjudication selected Benchmark.
+Consensus status: RECONCILED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): Benchmark
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We used the official GEARS code base to reproduce the performance on the three benchmarking datasets.
+Resolution note: Human adjudication confirmed Benchmark as the primary use.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-018	0	18	"GEARS-HV-018 | FORMAL VALIDATION
+xTrimoGene: An Efficient and Scalable Representation Learner for Single-Cell RNA-Seq Data
+DOI: 10.1101/2023.03.24.534055
+Article page: https://doi.org/10.1101/2023.03.24.534055
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/03/25/2023.03.24.534055.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Extend/Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: While utilizing xTrimoGene, the normal state (before perturbation) gene expression profile is fed into xTrimoGene and we obtained the context embedding, which replaces raw expression value input in GEARS model (refer to Appendix 7.4 for detailed description).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We compared the native GEARS model with and without incorporating embeddings from xTrimoGene.
+Notes: 
+"	"Comparison flag: RESOLVED — human adjudication selected Benchmark.
+Consensus status: RECONCILED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): Benchmark
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We compared the native GEARS model with and without incorporating embeddings from xTrimoGene.
+Resolution note: Human adjudication confirmed Benchmark as the primary use.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-019	0	19	"GEARS-HV-019 | FORMAL VALIDATION
+Knowledge-augmented Graph Machine Learning for Drug Discovery: A Survey
+DOI: 10.1145/3744237
+Article page: https://doi.org/10.1145/3744237
+Full text 1: https://pure.au.dk/ws/files/469052743/Knowledge-augmented_Graph_Machine_Learning_for_Drug_Discovery.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: GEARS [164]        Nat. Biotechnol        2024        PredMol        ✓
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Mentioned in table
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-020	0	20	"GEARS-HV-020 | FORMAL VALIDATION
+Fluctuation structure predicts genome-wide perturbation outcomes
+DOI: 10.1101/2025.06.27.661814
+Article page: https://doi.org/10.1101/2025.06.27.661814
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/07/01/2025.06.27.661814.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: At the same time, traditional linear regression models have some limitations: they typically treat genes as independent, cannot explicitly identify the genes driving the response (or the degree of impact per driver gene), and, with the exception of TRADE16, produce only point estimates of the regression coefficients and are not uncertainty-aware. Predictive models such as scGen20, GEARS21, and scGPT22, on the other hand, employ deep learning frameworks to model perturbation responses in latent spaces and can predict outcomes of unseen perturbations.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We benchmarked against five recent approaches spanning distinct methodological classes—GenePert51, scLAMBDA21, Scouter52, scGPT20, and GEARS53—as well as a linear mean baseline, motivated by recent concerns that simple linear models can match far more complex architectures on this task54. T
+Notes: 
+"	"Comparison flag: RECONCILE — differences: Method executed (No vs Yes)
+Consensus status: 
+Citation validity: Yes
+Method executed: 
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-021	0	21	"GEARS-HV-021 | FORMAL VALIDATION
+Multifaceted Representation of Genes via Deep Learning of Gene Expression Networks
+DOI: 10.1101/2024.03.07.583777
+Article page: https://doi.org/10.1101/2024.03.07.583777
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2024/03/09/2024.03.07.583777.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Recent studies have employed advanced AI techniques to model the complexities of gene networks using large gene expression datasets1–11
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Accurate predictive modeling of human gene relationships would fundamentally transform our ability to uncover the molecular mechanisms that underpin key biological and disease processes. Recent studies have employed advanced AI techniques to model the complexities of gene networks using large gene expression datasets1–11.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-022	0	22	"GEARS-HV-022 | FORMAL VALIDATION
+Learning Cross-Domain Representations for Transferable Drug Perturbations on Single-Cell Transcriptional Responses
+DOI: 10.1609/aaai.v39i18.34073
+Article page: https://doi.org/10.1609/aaai.v39i18.34073
+Full text 1: https://ojs.aaai.org/index.php/AAAI/article/download/34073/36228
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Additionally, to evaluate
+our model’s performance, we compared it against previ-
+ously published methods, including chemCPA (Hetzel et al.
+2022), GEARS (Roohani, Huang, and Leskovec 2022) and
+cycleCDR (Huang and Liu 2024).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Notably, these dual-gene perturbations were
+also chosen for testing in the GEARS study (Roohani,
+Huang, and Leskovec 2022), thus justifying a robust and ob-
+jective performance comparison.
+We trained our model on the expr
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-023	0	23	"GEARS-HV-023 | FORMAL VALIDATION
+GPerturb: Gaussian process modelling of single-cell perturbation data
+DOI: 10.1038/s41467-025-61165-7
+Article page: https://doi.org/10.1038/s41467-025-61165-7
+Full text 1: https://www.nature.com/articles/s41467-025-61165-7.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We first compared the predictive performance of GPerturb, CPA, GEARS and SAMS-VAE on a subset of the genome-wide CRISPR interference Perturb-seq dataset.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We first compared the predictive performance of GPerturb, CPA, GEARS and SAMS-VAE on a subset of the genome-wide CRISPR interference Perturb-seq dataset.33
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-024	0	24	"GEARS-HV-024 | FORMAL VALIDATION
+scPRINT: pre-training on 50 million cells allows robust gene network predictions
+DOI: 10.1038/s41467-025-58699-1
+Article page: https://doi.org/10.1038/s41467-025-58699-1
+Full text 1: https://www.nature.com/articles/s41467-025-58699-1.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Understanding the cellular mechanism is considered a milestone in biology, allowing us to predict cell behavior and the impact of drugs and gene knock-outs1,2,3,4,5.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Understanding the cellular mechanism is considered a milestone in biology, allowing us to predict cell behavior and the impact of drugs and gene knock-outs1,2,3,4,5.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-025	0	25	"GEARS-HV-025 | FORMAL VALIDATION
+Mapping ovarian cancer spatial organization uncovers immune evasion drivers at the genetic, cellular, and tissue level
+DOI: 10.1101/2023.10.16.562592
+Article page: https://doi.org/10.1101/2023.10.16.562592
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/10/19/2023.10.16.562592.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: As more Perturb-seq datasets, as the one generated here, become available across a more diverse range of cell types and conditions, it will be possible to use Perturb-seq data more effectively to extrapolate from one context to another with increasing accuracy70,71 and, in the case of malignant cell states, using CNA-to-RNA and CNA-to-cell-state associations to further guide Perturb-seq experimental design.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: it will be possible to use Perturb-seq data more effectively to extrapolate from one context to another with increasing accuracy70,71
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-026	0	26	"GEARS-HV-026 | FORMAL VALIDATION
+HyperdCas12a-based multiplexed genetic regulation in Candida albicans
+DOI: 10.1093/nar/gkaf1402
+Article page: https://doi.org/10.1093/nar/gkaf1402
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/10/20/2025.10.20.683421.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Recent technological advances in model systems have enabled the identification of a myriad of genetic interactions and non-additive phenotypic outcomes caused by changes in two or more genes [17–21].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Recent technological advances in model systems have enabled the identification of a myriad of genetic interactions and non-additive phenotypic outcomes caused by changes in two or more genes [17–21].
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-027	0	27	"GEARS-HV-027 | FORMAL VALIDATION
+Prediction of cellular morphology change under perturbations with transcriptome-guided diffusion model
+DOI: 10.1101/2025.07.16.665106
+Article page: https://doi.org/10.1101/2025.07.16.665106
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/07/16/2025.07.16.665106.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Therefore, integrating MorphDiff with methods that can predict changes in gene expression under unseen perturbations, such as GEARS47, is a possible extension.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Therefore, integrating MorphDiff with methods that can predict changes in gene expression under unseen perturbations, such as GEARS47, is a possible extension.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-028	0	28	"GEARS-HV-028 | FORMAL VALIDATION
+Causal models and prediction in cell line perturbation experiments
+DOI: 10.1186/s12859-024-06027-7
+Article page: https://doi.org/10.1186/s12859-024-06027-7
+Full text 1: https://www.researchsquare.com/article/rs-3973384/latest.pdf
+Full text 2: https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-024-06027-7
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: [10] developed GEARS to predict the effect of double knockouts/knockdowns using in vitro responses to single knockouts/knockdowns.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Several works have developed models for predicting responses to previously tested perturbations in new settings. For example, [7, 8], and [13] developed deep-learning autoencoder models to predict responses to previously untested perturbation-cell type combinations. [6] considered a similar problem and developed prediction model, SI-A, derived from the synthetic control literature in causal inference. [10] developed GEARS to predict the effect of double knockouts/knockdowns using in vitro responses to single knockouts/knockdowns.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-029	0	29	"GEARS-HV-029 | FORMAL VALIDATION
+HisToSpatialCNV: an interpretable deep learning method predicting spatial copy number variations from histopathology images
+DOI: 10.1038/s41551-026-01754-z
+Article page: https://doi.org/10.1038/s41551-026-01754-z
+Full text 1: https://www.nature.com/articles/s41551-026-01754-z.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Suffficient
+Supporting quote + locator: Similar observations were also shared by others, in that single-cell FMs currently do not necessarily outperform established task-specific methods across all downstream tasks74,75,76,77.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Similar observations were also shared by others, in that single-cell FMs currently do not necessarily outperform established task-specific methods across all downstream tasks74,75,76,77.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-030	0	30	"GEARS-HV-030 | FORMAL VALIDATION
+Imputing spatial transcriptomics through gene network constructed from protein language model
+DOI: 10.1038/s42003-024-06964-2
+Article page: https://doi.org/10.1038/s42003-024-06964-2
+Full text 1: https://www.nature.com/articles/s42003-024-06964-2.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Most importantly, TransImpLR ignores gene-to-gene relationships in gene prediction, which have shown improved performance in previous work15,16.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Most importantly, TransImpLR ignores gene-to-gene relationships in gene prediction, which have shown improved performance in previous work15,16.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-031	0	31	"GEARS-HV-031 | FORMAL VALIDATION
+Simple Causal Relationships in Gene Expression Discovered through Deep Learned Collective Variables
+DOI: 10.1101/2023.01.18.524617
+Article page: https://doi.org/10.1101/2023.01.18.524617
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/01/20/2023.01.18.524617.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: The use of autoencoders [9], UMAP [10,11], and other methods of dimensionality reduction [12,13] have demonstrated that it is possible to discover relationships in statistical covariation of many genes that can be used, for example, to distinguish different cell types and lineages [14], to predict mean gene expression under perturbation [15,16], to predict the interactions between genes under combinatorial perturbations [17], and to generate counterfactual predictions on single-cell response under new drug treatments [18] or novel perturbations [19].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: The use of autoencoders [9], UMAP [10,11], and other methods of dimensionality reduction [12,13] have demonstrated that it is possible to discover relationships in statistical covariation of many genes that can be used, for example, to distinguish different cell types and lineages [14], to predict mean gene expression under perturbation [15,16], to predict the interactions between genes under combinatorial perturbations [17], and to generate counterfactual predictions on single-cell response under new drug treatments [18] or novel perturbations [19].
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-032	0	32	"GEARS-HV-032 | FORMAL VALIDATION
+Predicting transcriptional responses to novel chemical perturbations using deep generative model
+DOI: 10.21203/rs.3.rs-3917469/v1
+Article page: https://doi.org/10.21203/rs.3.rs-3917469/v1
+Full text 1: https://www.researchsquare.com/article/rs-3917469/latest.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: GEARS and CellOracle [11, 12] leveraged64
+65
+a knowledge graph of gene-gene relationships to predict genetic perturbation
+outcomes.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: r chemical perturbations of diverse cell
+63
+
+
+type and compound combinations. GEARS and CellOracle [
+11
+,
+12
+] leveraged
+64
+
+
+a knowledge graph of gene-gene relationships to predict genetic perturbation
+65
+
+
+outcomes.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-033	0	33	"GEARS-HV-033 | FORMAL VALIDATION
+Molecular causality in the advent of foundation models
+DOI: 10.1038/s44320-024-00041-w
+Article page: https://doi.org/10.1038/s44320-024-00041-w
+Full text 1: https://link.springer.com/content/pdf/10.1038/s44320-024-00041-w.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Hybrid models make a tradeoff between those extremes, which is why they have been found to be useful in systems biology, where data are currently scarce (AlQuraishi and Sorger, 2021; Nilsson et al, 2022; Faure et al, 2023; Roohani et al, 2023; Fortelny and Bock, 2020; Lotfollahi et al, 2023; Yuan et al, 2021).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Hybrid models make a tradeoff between those extremes, which is why they have been found to be useful in systems biology, where data are currently scarce (AlQuraishi and Sorger, 2021; Nilsson et al, 2022; Faure et al, 2023; Roohani et al, 2023;
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-034	0	34	"GEARS-HV-034 | FORMAL VALIDATION
+Knowledge graph-aided Bayesian active learning for top-K genetic interaction discovery
+DOI: 10.1038/s41598-025-13972-7
+Article page: https://doi.org/10.1038/s41598-025-13972-7
+Full text 1: https://www.nature.com/articles/s41598-025-13972-7.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: For gene knockdown experiments, active learning strategies have been investigated in several studies3,4,5,6,7,8.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: For gene knockdown experiments, active learning strategies have been investigated in several studies3,4,5,6,7,8.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-035	0	35	"GEARS-HV-035 | FORMAL VALIDATION
+Benchmarking foundation cell models for post-perturbation RNA-seq prediction
+DOI: 10.1186/s12864-025-11600-2
+Article page: https://doi.org/10.1186/s12864-025-11600-2
+Full text 1: https://bmcgenomics.biomedcentral.com/counter/pdf/10.1186/s12864-025-11600-2
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We reproduced scGPT’s results on the GEARS benchmarking datasets using the cell-gears v0.0.1 package and a fork of scGPT v0.2.1 (commit 7301b51).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We reproduced scGPT’s results on the GEARS benchmarking datasets using the cell-gears v0.0.1 package and a fork of scGPT v0.2.1 (commit 7301b51).
+Notes: 
+"	"Comparison flag: RESOLVED — human adjudication selected Mention only.
+Consensus status: RECONCILED
+Citation validity: Yes
+Method executed: No
+Uses (select all): Mention only
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We reproduced scGPT’s results on the GEARS benchmarking datasets using the cell-gears v0.0.1 package and a fork of scGPT v0.2.1 (commit 7301b51).
+Resolution note: Human adjudication determined that the study used the GEARS datasets/package context but did not execute GEARS as the evaluated method.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-036	0	36	"GEARS-HV-036 | FORMAL VALIDATION
+World Models for Pharmaceutical Science Should Simulate Biological Consequences rather than Merely Continue Statistical Patterns
+DOI: 10.51847/efvx6kqqna
+Article page: https://doi.org/10.51847/efvx6kqqna
+Full text 1: https://pharmacophorejournal.com/storage/files/article/5bd92b3d-cf40-41bc-80a2-5a1214db27a5-fP5jJbFj6Ln5v3zj/iZJfMPXRrTmfSTg.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Genetic interaction screens provide rich single-cell phenotypes for testing whether a model recovers nonlinear interaction structure; multiplex chemical transcriptomics measures heterogeneous cellular responses to pharmacological perturbations; and prediction of unseen multigene interventions tests whether a model generalizes beyond conditions explicitly represented during training [23-25].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Genetic interaction screens provide rich
+single-cell phenotypes for testing whether a model recovers nonlinear interaction structure; multiplex chemical transcriptomics
+measures heterogeneous cellular responses to pharmacological perturbations; and prediction of unseen multigene interventions
+tests whether a model generalizes beyond conditions explicitly represented during training [23-25].
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-037	0	37	"GEARS-HV-037 | FORMAL VALIDATION
+Perturbomics: CRISPR–Cas screening-based functional genomics approach for drug target discovery
+DOI: 10.1038/s12276-025-01487-0
+Article page: https://doi.org/10.1038/s12276-025-01487-0
+Full text 1: https://www.nature.com/articles/s12276-025-01487-0.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Leskovec and colleagues, for instance, developed the graph-enhanced gene activation and repression simulator (GEARS), which integrates CRISPRa screening data with previously published Perturb-seq datasets to predict combinatorial perturbation effects on gene interactions100.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Leskovec and colleagues, for instance, developed the graph-enhanced gene activation and repression simulator (GEARS), which integrates CRISPRa screening data with previously published Perturb-seq datasets to predict combinatorial perturbation effects on gene interactions100.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-038	0	38	"GEARS-HV-038 | FORMAL VALIDATION
+scYeast: a Biological-knowledge-guided Foundation Model on Yeast Single-Cell Transcriptomics
+DOI: 10.1101/2025.08.20.671179
+Article page: https://doi.org/10.1101/2025.08.20.671179
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/08/25/2025.08.20.671179.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Extend
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Since scYeast has already integrated prior knowledge such as gene co-expression and transcriptional regulatory relationships during its pre-training, we adapted the GEARS [32] framework by using scYeast as the base model for predicting gene perturbation responses (Methods) (Fig. 4a).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Extend or develop
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: we adapted the GEARS [32] framework by using scYeast as the base model for predicting gene perturbation responses (Methods) (Fig. 4a).
+Notes: 
+"	"Comparison flag: MATCH — terminology normalization needed (“Extend” → “Extend or develop”).
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Extend or develop
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-039	0	39	"GEARS-HV-039 | FORMAL VALIDATION
+Cell Decoder: decoding cell identity with multi-scale explainable deep learning
+DOI: 10.1186/s13059-025-03832-y
+Article page: https://doi.org/10.1186/s13059-025-03832-y
+Full text 1: https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-025-03832-y
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Due to the incorporation of gene/protein interaction information, Cell Decoder opens up the possibility of predicting cell responses to genetic perturbations [42].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Cell Decoder opens up the possibility of predicting cell responses to genetic perturbations [42].
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-040	0	40	"GEARS-HV-040 | FORMAL VALIDATION
+Medea: An AI agent for therapeutic reasoning across biological contexts
+DOI: 10.64898/2026.01.16.696667
+Article page: https://doi.org/10.64898/2026.01.16.696667
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2026/01/20/2026.01.16.696667.full.pdf
+"	"Review status: LOCKED
+Citation validity: No
+Method executed: No
+Uses (select all): 
+Primary use: 
+Biological insight: 
+Evidence sufficiency: 
+Supporting quote + locator: 
+Notes: 
+"	"Review status: 
+Citation validity: No
+Method executed: 
+Uses (select all): 
+Primary use: 
+Biological insight: 
+Evidence sufficiency: No
+Supporting quote + locator: 
+Notes: 
+"	"Comparison flag: RESOLVED — citation not located; exclude from the substantively classified dataset.
+Consensus status: RECONCILED
+Citation validity: Unclear
+Method executed: Unclear
+Uses (select all): Unclear
+Primary use: Unclear
+Biological insight: Unclear
+Evidence sufficiency: Citation not located
+Supporting quote + locator: 
+Resolution note: Human adjudication: remove this record from the substantively classified dataset because the GEARS citation was not located.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-041	0	41	"GEARS-HV-041 | FORMAL VALIDATION
+The manatee variational autoencoder model for predicting gene expression alterations caused by transcription factor perturbations
+DOI: 10.1038/s41598-024-62620-z
+Article page: https://doi.org/10.1038/s41598-024-62620-z
+Full text 1: https://www.nature.com/articles/s41598-024-62620-z.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: CPA3 autoencoder, together with GEARS4 and graphVCI5 graph neural network models disentangle perturbation covariates with basal cellular states, thus providing more flexibility for the in silico perturbation analysis.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: CPA3 autoencoder, together with GEARS4 and graphVCI5 graph neural network models disentangle perturbation covariates with basal cellular states, thus providing more flexibility for the in silico perturbation analysis.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-042	0	42	"GEARS-HV-042 | FORMAL VALIDATION
+Harnessing the power of single-cell large language models with parameter-efficient fine-tuning using scPEFT
+DOI: 10.1038/s42256-025-01170-z
+Article page: https://doi.org/10.1038/s42256-025-01170-z
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/04/23/2025.04.21.649754.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: It improved the mean squared error (MSE) and Pearson’s correlation coefficient (PCC) for the top 20 most differentially expressed genes (MSE_DE and PCC_DE) by 0.06 and up to 0.15, respectively, compared with zero-shot scFoundation, and by 0.02–0.05 and up to 0.04, respectively, compared with GEARS29 (Supplementary Table 5).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: For perturbation prediction using scFoundation and scGPT, scPEFT enabled scFoundation to overcome GPU memory limitations encountered during fine-tuning. It improved the mean squared error (MSE) and Pearson’s correlation coefficient (PCC) for the top 20 most differentially expressed genes (MSE_DE and PCC_DE) by 0.06 and up to 0.15, respectively, compared with zero-shot scFoundation, and by 0.02–0.05 and up to 0.04, respectively, compared with GEARS29 (Supplementary Table 5). These improvements highlight the importance of efficient adaptation for this task. scPEFT also outperformed a linear model baseline30 by 0.02 to 0.09 in MSE_DE and 0.02 to 0.15 in PCC_DE. However, none of the deep learning models surpassed the linear model when evaluated across all genes (Supplementary Note 9). scPEFT with the scGPT backbone performed comparably with fine-tuned scGPT and GEARS, except on the Norman dataset with two-gene perturbations (Supplementary Table 6). When evaluating all genes, no significant differences were observed among these models. Given its lower memory and time requirements, scPEFT offers a practical and accessible solution for predicting perturbation responses in the most differentially expressed genes.
+Notes: 
+"	"Comparison flag: RESOLVED — human adjudication confirmed that GEARS was executed.
+Consensus status: RECONCILED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): Benchmark
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: It improved the mean squared error (MSE) and Pearson’s correlation coefficient (PCC) for the top 20 most differentially expressed genes by 0.02–0.05 and up to 0.04, respectively, compared with GEARS (Supplementary Table 5).
+Resolution note: Human adjudication confirmed execution; Benchmark remains the primary use.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-043	0	43	"GEARS-HV-043 | FORMAL VALIDATION
+Predicting Multigene Transcriptional Outcomes Based on Dual-Stream Mamba Neural Network
+DOI: 10.12677/biphy.2025.131001
+Article page: https://doi.org/10.12677/biphy.2025.131001
+Full text 1: https://drpress.org/ojs/index.php/fcis/article/download/31264/30614
+Full text 2: https://pdf.hanspub.org/biphy_2790105.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: The experimental results in Figure 4
+demonstrate that the proposed model exhibits significant
+advantages across all data groups, with prediction
+performance substantially surpassing all baseline models
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: 
+Uses (select all): 
+Primary use: 
+Biological insight: 
+Evidence sufficiency: No
+Supporting quote + locator: 
+Notes: 
+"	"Comparison flag: RESOLVED — human adjudication followed Reviewer 1.
+Consensus status: RECONCILED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): Benchmark
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: The experimental results in Figure 4 demonstrate that the proposed model exhibits significant advantages across all data groups, with prediction performance substantially surpassing all baseline models.
+Resolution note: Human adjudication adopted Reviewer 1’s classification and evidence-sufficiency assessment.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-044	0	44	"GEARS-HV-044 | FORMAL VALIDATION
+BIOFORMERS: A SCALABLE FRAMEWORK FOR EXPLORING BIOSTATES USING TRANSFORMERS
+DOI: 10.1101/2023.11.29.569320
+Article page: https://doi.org/10.1101/2023.11.29.569320
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/12/01/2023.11.29.569320.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: In the one gene perturbation experiments, we adhered to the preprocessing protocol established by Roohani et al. [26], which includes normalization by total molecular counts, log transformation of the data, selection of 5,000 highly variable molecules, and inclusion of any perturbed molecules otherwise omitted.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: . For this task, our benchmark dataset was the Perturb-seq dataset by Adamson et al. [25], which was preprocessed by Roohani et al. [26].
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-045	0	45	"GEARS-HV-045 | FORMAL VALIDATION
+Primer on machine learning applications in brain immunology
+DOI: 10.3389/fbinf.2025.1554010
+Article page: https://doi.org/10.3389/fbinf.2025.1554010
+Full text 1: https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2025.1554010/pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: For example, machine learning tools can be used to enhance dimensionality reduction and integration of large datasets, but also for more sophisticated tasks, such as predictive modeling of gene perturbations (Xu et al., 2021; Lotfollahi et al., 2022; Roohani et al., 2024).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: For example, machine learning tools can be used to enhance dimensionality reduction and integration of large datasets, but also for more sophisticated tasks, such as predictive modeling of gene perturbations (Xu et al., 2021; Lotfollahi et al., 2022; Roohani et al., 2024).
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-046	0	46	"GEARS-HV-046 | FORMAL VALIDATION
+Generative genomics accurately predicts future experimental results
+DOI: 10.1101/2025.09.08.674753
+Article page: https://doi.org/10.1101/2025.09.08.674753
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2025/09/09/2025.09.08.674753.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Despite being a valuable resource for AI model development20,34,35, Perturb-seq data presents unique challenges, including technical artifacts and non-specific responses20,36–39, which require focused resolution for this data type that goes beyond the scope of our initial study.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Fourth, while our models encompass a wide array of gene expression experiments, we did not include extensive Perturb-seq data during training. Despite being a valuable resource for AI model development20,34,35, Perturb-seq data presents unique challenges, including technical artifacts and non-specific responses20,36–39, which require focused resolution for this data type that goes beyond the scope of our initial study.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-047	0	47	"GEARS-HV-047 | FORMAL VALIDATION
+Prediction of cellular morphology changes under perturbations with a transcriptome-guided diffusion model
+DOI: 10.1038/s41467-025-63478-z
+Article page: https://doi.org/10.1038/s41467-025-63478-z
+Full text 1: https://www.nature.com/articles/s41467-025-63478-z.pdf
+"	"Review status: 
+Citation validity: 
+Method executed: 
+Uses (select all): 
+Primary use: 
+Biological insight: 
+Evidence sufficiency: 
+Supporting quote + locator: 
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Therefore, integrating MorphDiff with methods that can predict changes in gene expression under unseen perturbations, such as GEARS47, is a possible extension. S
+Notes: 
+"	"Comparison flag: RESOLVED — human adjudication selected Mention only.
+Consensus status: RECONCILED
+Citation validity: Yes
+Method executed: No
+Uses (select all): Mention only
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Therefore, integrating MorphDiff with methods that can predict changes in gene expression under unseen perturbations, such as GEARS, is a possible extension.
+Resolution note: Human adjudication classified the record as Mention only.
+
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-048	0	48	"GEARS-HV-048 | FORMAL VALIDATION
+CellPLM: Pre-training of Cell Language Model Beyond Single Cells
+DOI: 10.1101/2023.10.03.560734
+Article page: https://doi.org/10.1101/2023.10.03.560734
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2023/10/05/2023.10.03.560734.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: We compare the performance between CellPLM and two baselines, i.e., a recent preprint GEARS method (Roohani et al., 2022), and scGen (Lotfollahi et al., 2019).
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: We compare the performance between CellPLM and two baselines, i.e., a recent preprint GEARS method (Roohani et al., 2022), and scGen (Lotfollahi et al., 2019).
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: Yes
+Uses (select all): 
+Primary use: Benchmark
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-049	0	49	"GEARS-HV-049 | FORMAL VALIDATION
+Decoding cell identity with multi-scale explainable deep learning
+DOI: 10.1101/2024.02.05.578922
+Article page: https://doi.org/10.1101/2024.02.05.578922
+Full text 1: https://www.biorxiv.org/content/biorxiv/early/2024/02/08/2024.02.05.578922.full.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: Cell Decoder opens up the possibility of predicting cell responses to genetic perturbations57.
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: Due to the incorporation of gene/protein interaction information, Cell Decoder opens up the possibility of predicting cell responses to genetic perturbations57.
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
+1ziHc8g2isdCeJHOntjYqWhf0Q1EVXu1JC3gVJ0-QpeQ	GEARS-HV-050	0	50	"GEARS-HV-050 | FORMAL VALIDATION
+Perturbation Atlases as Pharmacological Reasoning Engines for Connecting Molecular Interventions to Context-Dependent Cellular Responses
+DOI: 10.51847/a1xh4xuw5o
+Article page: https://doi.org/10.51847/a1xh4xuw5o
+Full text 1: https://pharmacophorejournal.com/storage/files/article/aa68d254-a799-4a9c-8a30-0f7cf119a88a-Y08w047JPZKDeQ4r/9rBBC2PqJpy90ji.pdf
+"	"Review status: LOCKED
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: GEARS shows how graph-based information can contribute to prediction of transcriptional outcomes for novel multigene perturbations [16].
+Notes: 
+"	"Review status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Yes
+Supporting quote + locator: GEARS shows how graph-based information can contribute to prediction of transcriptional outcomes for novel multigene perturbations [16].
+Notes: 
+"	"Comparison flag: MATCH — normalized core fields agree.
+Consensus status: 
+Citation validity: Yes
+Method executed: No
+Uses (select all): 
+Primary use: Mention only
+Biological insight: No
+Evidence sufficiency: Sufficient
+Supporting quote + locator: 
+Resolution note: 
+"
